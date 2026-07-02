@@ -466,8 +466,12 @@ class HessianOptimizer(Optimizer):
             len(self.forces) > 1
             and (self.forces[-2].shape == gradient.shape)
             and len(self.coords) > 1
-            # Coordinates may have been rebuilt. Take care of that.
-            and (self.coords[-2].shape == self.coords[1].shape)
+            # Coordinates may have been rebuilt, changing the coordinate count.
+            # Only the single cycle spanning the rebuild has mismatched shapes, so
+            # compare the two most recent coordinate sets (not a fixed early one):
+            # otherwise every post-rebuild cycle stays False and the Hessian/trust
+            # radius updates are frozen for the rest of the optimization.
+            and (self.coords[-1].shape == self.coords[-2].shape)
             and len(self.energies) > 1
         )
         if can_update:
