@@ -620,6 +620,12 @@ class Geometry:
 
                 self.internal = coord_class(self.atoms, coords3d, **coord_kwargs)
                 self._coords = coords3d.flatten()
+                # The coordinates changed (step applied) and the internals were
+                # rebuilt, so any cached energy/forces/Hessian belong to the old
+                # geometry. Clear them, otherwise the optimizer's reset() silently
+                # reuses a stale cached Hessian instead of recomputing at the new
+                # geometry (matches the normal set_coords path, which also clears).
+                self.clear()
                 raise RebuiltInternalsException(
                     typed_prims=self.internal.typed_prims.copy()
                 )
