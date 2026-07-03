@@ -136,10 +136,22 @@ class RSPRFOptimizer(TSHessianOptimizer):
                 )
             )
             dstep2_dalpha = dstep2_dalpha_max + dstep2_dalpha_min
+            # Guard the restricted-step derivative against a singularity: when an RFO
+            # eigenvalue approaches a Hessian eigenvalue the denominator (…)**3 -> 0,
+            # and near convergence the numerator -> 0 too, giving 0/0 = nan. Left
+            # unchecked this makes alpha (and the resulting step) non-finite, which
+            # blows the geometry up. Stop refining alpha and use the current step,
+            # which is scaled to the trust radius below.
+            if (not np.isfinite(dstep2_dalpha)) or (dstep2_dalpha == 0.0):
+                self.log("Singular restricted-step derivative; stopping micro-cycles.")
+                break
             # Update alpha
             alpha_step = (
                 2 * (self.trust_radius * step_norm - step_norm**2) / dstep2_dalpha
             )
+            if not np.isfinite(alpha_step):
+                self.log("Non-finite alpha step; stopping micro-cycles.")
+                break
             alpha += alpha_step
 
         # Right now the step is still given in the Hessians eigensystem. We
@@ -148,11 +160,24 @@ class RSPRFOptimizer(TSHessianOptimizer):
         step = eigvecs.dot(step)
         step_norm = np.linalg.norm(step)
 
-        # With max_micro_cycles = 1 the RS part is disabled and the step
-        # probably isn't scaled correctly in the one micro cycle.
-        # In this case we use a naive scaling if the step is too big.
-        if (self.max_micro_cycles == 1) and (step_norm > self.trust_radius):
+        # Fall back to naive scaling when the restricted-step procedure did not
+        # yield a sane step. This covers max_micro_cycles == 1 (RS disabled), an
+        # early break from the singularity guard above, and RFO/alpha singularities
+        # that leave the step non-finite.
+        if not np.all(np.isfinite(step)):
+            self.log(
+                "Non-finite RS-PRFO step; falling back to a trust-radius step "
+                "along the gradient direction."
+            )
+            grad_norm = np.linalg.norm(gradient)
+            if grad_norm == 0.0:
+                step = np.zeros_like(step)
+            else:
+                step = -gradient / grad_norm * self.trust_radius
+            step_norm = np.linalg.norm(step)
+        elif step_norm > self.trust_radius:
             step = step / step_norm * self.trust_radius
+            step_norm = np.linalg.norm(step)
         self.log(f"norm(step)={np.linalg.norm(step):.6f}")
 
         # Eq. (6) from [4] seems erronous ... the prediction is usually only ~50%
