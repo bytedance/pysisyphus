@@ -114,32 +114,44 @@ class RSPRFOptimizer(TSHessianOptimizer):
                 )
                 break
 
-            # Derivative of the squared step w.r.t. alpha
+            # Derivative of the squared step w.r.t. alpha. Each summand
+            #   g_i**2 / (eigval_i - rfo_eigval * alpha)**3
+            # is singular when an RFO eigenvalue meets a Hessian eigenvalue. Near
+            # convergence the numerator g_i -> 0 as well, so the physical limit of
+            # the 0/0 term is 0. Evaluate it that way (safe divide) instead of
+            # letting it produce nan, which otherwise propagates into alpha and
+            # either blows the step up or leaves it degenerate (a null-space step
+            # that does not move the geometry, ending in ZeroStepLength).
+            def _dstep2(grad_sub, eigvals_sub, rfo_eigval, quad):
+                num = grad_sub ** 2
+                den = (eigvals_sub - rfo_eigval * alpha) ** 3
+                quot = np.divide(num, den, out=np.zeros_like(num), where=(den != 0.0))
+                return 2 * rfo_eigval / (1 + quad) * np.sum(quot)
+
             # max subspace
-            dstep2_dalpha_max = (
-                2
-                * eigval_max
-                / (1 + step_max.dot(step_max) ** 2 * alpha)
-                * np.sum(
-                    gradient_trans[max_indices] ** 2
-                    / (eigvals[max_indices] - eigval_max * alpha) ** 3
-                )
+            dstep2_dalpha_max = _dstep2(
+                gradient_trans[max_indices], eigvals[max_indices], eigval_max,
+                step_max.dot(step_max) ** 2 * alpha,
             )
             # min subspace
-            dstep2_dalpha_min = (
-                2
-                * eigval_min
-                / (1 + step_min.dot(step_min) * alpha)
-                * np.sum(
-                    gradient_trans[min_indices] ** 2
-                    / (eigvals[min_indices] - eigval_min * alpha) ** 3
-                )
+            dstep2_dalpha_min = _dstep2(
+                gradient_trans[min_indices], eigvals[min_indices], eigval_min,
+                step_min.dot(step_min) * alpha,
             )
             dstep2_dalpha = dstep2_dalpha_max + dstep2_dalpha_min
+            # If the derivative still vanishes or is non-finite, alpha cannot be
+            # refined further; stop and let the trust-radius scaling below bound
+            # the step.
+            if (not np.isfinite(dstep2_dalpha)) or (dstep2_dalpha == 0.0):
+                self.log("Restricted-step derivative not usable; stopping micro-cycles.")
+                break
             # Update alpha
             alpha_step = (
                 2 * (self.trust_radius * step_norm - step_norm**2) / dstep2_dalpha
             )
+            if not np.isfinite(alpha_step):
+                self.log("Non-finite alpha step; stopping micro-cycles.")
+                break
             alpha += alpha_step
 
         # Right now the step is still given in the Hessians eigensystem. We
@@ -148,11 +160,24 @@ class RSPRFOptimizer(TSHessianOptimizer):
         step = eigvecs.dot(step)
         step_norm = np.linalg.norm(step)
 
-        # With max_micro_cycles = 1 the RS part is disabled and the step
-        # probably isn't scaled correctly in the one micro cycle.
-        # In this case we use a naive scaling if the step is too big.
-        if (self.max_micro_cycles == 1) and (step_norm > self.trust_radius):
+        # Fall back to naive scaling when the restricted-step procedure did not
+        # yield a sane step. This covers max_micro_cycles == 1 (RS disabled), an
+        # early break from the singularity guard above, and RFO/alpha singularities
+        # that leave the step non-finite.
+        if not np.all(np.isfinite(step)):
+            self.log(
+                "Non-finite RS-PRFO step; falling back to a trust-radius step "
+                "along the gradient direction."
+            )
+            grad_norm = np.linalg.norm(gradient)
+            if grad_norm == 0.0:
+                step = np.zeros_like(step)
+            else:
+                step = -gradient / grad_norm * self.trust_radius
+            step_norm = np.linalg.norm(step)
+        elif step_norm > self.trust_radius:
             step = step / step_norm * self.trust_radius
+            step_norm = np.linalg.norm(step)
         self.log(f"norm(step)={np.linalg.norm(step):.6f}")
 
         # Eq. (6) from [4] seems erronous ... the prediction is usually only ~50%

@@ -1,9 +1,22 @@
 import os
 import shutil
+import warnings
 
 import numpy as np
 import pyscf
-from pyscf import grad, gto, lib, hessian, qmmm, tddft
+from pyscf import grad, gto, lib, hessian, qmmm, tddft, solvent
+
+try:
+    from gpu4pyscf.drivers.dft_3c_driver import parse_3c, MethodType, gen_disp_fun, gen_disp_grad_fun, gen_disp_hess_fun
+except Exception as e:
+    print()
+    print("Either you don't have a GPU, so cupy failed with \"CUDA driver version is insufficient for CUDA runtime version\"")
+    print("Or GPU4PySCF version is lower than 1.3.1, so import failed with \"No module named 'gpu4pyscf.drivers.dft_3c_driver'\"")
+    print("Or some other problem occurs when trying to load parse_3c() function from gpu4pyscf.")
+    print("Please contact gpu4pyscf developers for more info.")
+    print()
+    #raise e
+    pass
 
 from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
 from pysisyphus.helpers import geom_loader
@@ -39,6 +52,11 @@ class PySCF(OverlapCalculator):
         basis,
         xc=None,
         method="scf",
+        solvation_model=False,
+        solvent_epi=78.3553,
+        solvent=None,
+        ecp=None,
+        pseudo=None,
         root=None,
         nstates=None,
         auxbasis=None,
@@ -48,6 +66,8 @@ class PySCF(OverlapCalculator):
         grid_level=3,
         pruning="nwchem",
         use_gpu=False,
+        atom_grid=None,
+        derivative_grid_response=False,
         **kwargs,
     ):
         super().__init__(**kwargs)
@@ -55,10 +75,22 @@ class PySCF(OverlapCalculator):
         self.basis = basis
         self.xc = xc
         self.method = method.lower()
+        self.solvation_model = solvation_model
+        self.solvent_epi = solvent_epi
+        self.solvent = solvent  # Solvent name for SMD model
         if self.method in ("tda", "tddft") and self.xc is None:
             self.multisteps[self.method] = ("scf", self.method)
         if self.xc and self.method != "tddft":
             self.method = "dft"
+
+        self.ecp = ecp
+        self.pseudo = pseudo
+        if isinstance(xc, str) and len(self.xc) > 13 and self.xc[-13:] == "3c_customized":
+            pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp = parse_3c(xc[:-11])
+            self.parameters_3c = pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp
+        else:
+            self.parameters_3c = None
+
         self.root = root
         self.nstates = nstates
         if self.method == "tddft":
@@ -75,6 +107,8 @@ class PySCF(OverlapCalculator):
         else:
             self.unrestricted = unrestricted
         self.grid_level = int(grid_level)
+        self.atom_grid = atom_grid
+        self.derivative_grid_response = derivative_grid_response
         self.pruning = pruning.lower()
 
         self.chkfile = None
@@ -96,6 +130,8 @@ class PySCF(OverlapCalculator):
 
     def build_grid(self, mf):
         mf.grids.level = self.grid_level
+        if self.atom_grid is not None:
+            mf.grids.atom_grid = self.atom_grid
         mf.grids.prune = self.pruning_method[self.pruning]
         mf.grids.build()
 
@@ -106,7 +142,7 @@ class PySCF(OverlapCalculator):
         else:
             return mf
 
-    def get_driver(self, step, mol=None, mf=None):
+    def get_driver(self, step, mol=None, mf=None, apply_solvent=True):
         def _get_driver():
             return self.drivers[(step, self.unrestricted)]
 
@@ -133,12 +169,50 @@ class PySCF(OverlapCalculator):
             mf.nstates = self.nstates
         else:
             raise Exception("Unknown method '{step}'!")
+
+        # set up solvation model (only if apply_solvent is True)
+        if apply_solvent:
+            mf = self.apply_solvation_model(mf)
+
+        return mf
+
+    def apply_solvation_model(self, mf):
+        """Apply solvation model to mf object."""
+        if self.solvation_model:
+            if self.solvation_model in ['IEF-PCM', 'C-PCM', 'SS(V)PE', 'COSMO']:
+                mf = mf.PCM()
+                mf.with_solvent.method = self.solvation_model
+                mf.with_solvent.eps = self.solvent_epi
+            elif self.solvation_model == 'DDCOSMO':
+                mf = mf.DDCOSMO()
+                mf.with_solvent.eps = self.solvent_epi
+            elif self.solvation_model == 'SMD':
+                mf = mf.SMD()
+                # SMD requires solvent name, not epsilon
+                if self.solvent:
+                    mf.with_solvent.solvent = self.solvent
+                else:
+                    # Fallback: if no solvent name provided, try to use default or warn
+                    print(f"Warning: SMD model requires solvent name, but none provided. Using default.")
+            else:
+                print(f"Solvation model {self.solvation_model} is not supported in GPU4PySCF, treat as Null")
         return mf
 
     def prepare_mol(self, atoms, coords, build=True):
         mol = gto.Mole()
         mol.atom = [(atom, c) for atom, c in zip(atoms, coords.reshape(-1, 3))]
         mol.basis = self.basis
+        if self.ecp is not None:
+            mol.ecp = self.ecp
+        if self.pseudo is not None:
+            mol.pseudo = self.pseudo
+        if self.parameters_3c is not None:
+            pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp = self.parameters_3c
+            if self.basis != basis:
+                warnings.warn(f"The basis provided in the input ({self.basis}) is not the required basis ({basis}) for the 3c method. "
+                              f"The 3c basis ({basis}) will be used.")
+            mol.basis = basis
+            mol.ecp = ecp
         mol.unit = "Bohr"
         mol.charge = self.charge
         mol.spin = self.mult - 1
@@ -193,6 +267,14 @@ class PySCF(OverlapCalculator):
         grad_driver = mf.Gradients()
         if self.root:
             grad_driver.state = self.root
+        if self.parameters_3c is not None:
+            pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp = self.parameters_3c
+            grad_driver.get_dispersion = MethodType(gen_disp_grad_fun(xc_disp, xc_gcp), grad_driver)
+        with_df = getattr(mf, 'with_df', None)
+        if with_df:
+            grad_driver.auxbasis_response = 1
+        if self.derivative_grid_response:
+            grad_driver.grid_response = True
         gradient = grad_driver.kernel()
         self.log("Completed gradient step")
 
@@ -215,7 +297,16 @@ class PySCF(OverlapCalculator):
 
         mol = self.prepare_input(atoms, coords)
         mf = self.run(mol, point_charges=point_charges)
-        H = mf.Hessian().kernel()
+        hessian_driver = mf.Hessian()
+        if self.parameters_3c is not None:
+            pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp = self.parameters_3c
+            hessian_driver.get_dispersion = MethodType(gen_disp_hess_fun(xc_disp, xc_gcp), hessian_driver)
+        with_df = getattr(mf, 'with_df', None)
+        if with_df:
+            hessian_driver.auxbasis_response = 2
+        if self.derivative_grid_response:
+            hessian_driver.grid_response = True
+        H = hessian_driver.kernel()
 
         # The returned hessian is 4d ... ok. This probably serves a purpose
         # that I don't understand. We transform H to a nice, simple 2d array.
@@ -237,7 +328,8 @@ class PySCF(OverlapCalculator):
         self.log(f"Running steps '{steps}' for method {self.method}")
         for i, step in enumerate(steps):
             if i == 0:
-                mf = self.get_driver(step, mol=mol)
+                # Don't apply solvent model yet - need to apply density_fit first
+                mf = self.get_driver(step, mol=mol, apply_solvent=False)
                 assert step in ("scf", "dft")
                 if self.chkfile:
                     # Copy old chkfile to new chkfile
@@ -252,6 +344,17 @@ class PySCF(OverlapCalculator):
                 if self.auxbasis:
                     mf = mf.density_fit(auxbasis=self.auxbasis)
                     self.log(f"Using density fitting with auxbasis {self.auxbasis}.")
+
+                # Apply solvation model after density_fit (if needed)
+                mf = self.apply_solvation_model(mf)
+
+                if self.parameters_3c is not None:
+                    # Caution: make sure the dispersion is set after to_gpu() function
+                    pyscf_xc, nlc, basis, ecp, (xc_disp, disp), xc_gcp = self.parameters_3c
+                    mf.xc = pyscf_xc
+                    mf.nlc = nlc
+                    mf.get_dispersion = MethodType(gen_disp_fun(xc_disp, xc_gcp), mf)
+                    mf.do_disp = lambda: True
 
                 if point_charges is not None:
                     mf = qmmm.mm_charge(mf, point_charges[:, :3], point_charges[:, 3])
@@ -277,6 +380,11 @@ class PySCF(OverlapCalculator):
         # Keep mf and dump mol
         # save_mol(mol, self.make_fn("mol.chk"))
         self.mf = mf.reset()  # release integrals and other temporary intermediates.
+        if self.use_gpu:
+            # DF methods are eager to use more memory. Recycle as much memory as
+            # possible for the DF tensor.
+            import cupy
+            cupy.get_default_memory_pool().free_all_blocks()
         self.calc_counter += 1
 
         return mf
