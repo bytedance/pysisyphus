@@ -106,6 +106,11 @@ try:
     from pysisyphus.calculators.PySCF import PySCF
 
     CALC_DICT["pyscf"] = PySCF
+
+    from pysisyphus.calculators.RigorousPySCF import RigorousPySCF
+
+    CALC_DICT["rigorouspyscf"] = RigorousPySCF
+    CALC_DICT["rigorous_pyscf"] = RigorousPySCF
 except ImportError:
     pass
 
