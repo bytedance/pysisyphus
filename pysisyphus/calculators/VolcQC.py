@@ -13,7 +13,7 @@ from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
 from pysisyphus.helpers import geom_loader
 
 
-class RigorousPySCF(OverlapCalculator):
+class VolcQC(OverlapCalculator):
     def __init__(
         self,
 
@@ -128,7 +128,7 @@ class RigorousPySCF(OverlapCalculator):
     @staticmethod
     def geom_from_fn(fn, **kwargs):
         geom = geom_loader(fn)
-        geom.set_calculator(RigorousPySCF(**kwargs))
+        geom.set_calculator(VolcQC(**kwargs))
         return geom
 
     def get_driver(self, mol):
@@ -341,7 +341,7 @@ class RigorousPySCF(OverlapCalculator):
         return results
 
     def get_energy(self, atoms, coords, **prepare_kwargs):
-        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in RigorousPySCF"
+        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in VolcQC"
 
         mol = self.prepare_input(atoms, coords)
         mf = self.run(mol)
@@ -354,7 +354,7 @@ class RigorousPySCF(OverlapCalculator):
         return results
 
     def get_forces(self, atoms, coords, **prepare_kwargs):
-        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in RigorousPySCF"
+        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in VolcQC"
 
         with_tddft = self.pyscf_configs["with_tddft"]
         assert type(with_tddft) is bool
@@ -392,7 +392,7 @@ class RigorousPySCF(OverlapCalculator):
         return results
 
     def get_hessian(self, atoms, coords, **prepare_kwargs):
-        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in RigorousPySCF"
+        assert "point_charges" not in prepare_kwargs, "point_charges is not supported in VolcQC"
 
         hess_grid_response = self.pyscf_configs["hess_grid_response"]
         assert type(hess_grid_response) is bool
@@ -483,7 +483,7 @@ class RigorousPySCF(OverlapCalculator):
         return all_energies
 
     def prepare_overlap_data(self, path):
-        raise NotImplementedError("prepare_overlap_data() is not implemented in RigorousPySCF")
+        raise NotImplementedError("prepare_overlap_data() is not implemented in VolcQC")
         # gs_mf = self.mf._scf
         # exc_mf = self.mf
 
@@ -505,7 +505,7 @@ class RigorousPySCF(OverlapCalculator):
         # return C, X, Y, all_energies
 
     def parse_charges(self):
-        raise NotImplementedError("parse_charges() is not implemented in RigorousPySCF")
+        raise NotImplementedError("parse_charges() is not implemented in VolcQC")
         # results = self.mf.analyze(with_meta_lowdin=False)
         # # Mulliken charges
         # charges = results[0][1]
@@ -525,4 +525,4 @@ class RigorousPySCF(OverlapCalculator):
             self.log("Found no chkfile information in chkfiles!")
 
     def __str__(self):
-        return f"RigorousPySCF({self.name})"
+        return f"VolcQC({self.name})"

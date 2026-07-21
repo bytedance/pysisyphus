@@ -107,10 +107,9 @@ try:
 
     CALC_DICT["pyscf"] = PySCF
 
-    from pysisyphus.calculators.RigorousPySCF import RigorousPySCF
+    from pysisyphus.calculators.VolcQC import VolcQC
 
-    CALC_DICT["rigorouspyscf"] = RigorousPySCF
-    CALC_DICT["rigorous_pyscf"] = RigorousPySCF
+    CALC_DICT["volcqc"] = VolcQC
 except ImportError:
     pass
 
