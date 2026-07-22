@@ -7,6 +7,7 @@ try:
 except ImportError:
     cp = None
 
+import pyscf
 from pyscf import gto, lib, dft, scf
 
 from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
@@ -121,6 +122,7 @@ class VolcQC(OverlapCalculator):
 
         print(f"PySCF configs = {self.pyscf_configs}, inherited configs = {inherited_configs}")
 
+        self.chkfile = None
         self.out_fn = "pyscf.out"
 
         lib.num_threads(self.pal)
@@ -164,6 +166,18 @@ class VolcQC(OverlapCalculator):
         assert type(scf_conv_tol) is float and scf_conv_tol > 0
         with_tddft = self.pyscf_configs["with_tddft"]
         assert type(with_tddft) is bool
+        pruning = self.pyscf_configs["pruning"]
+        assert pruning is None or type(pruning) is str
+
+        pruning_methods = {
+            "nwchem": pyscf.dft.gen_grid.nwchem_prune,
+            "sg1": pyscf.dft.gen_grid.sg1_prune,
+            "treutler": pyscf.dft.gen_grid.treutler_prune,
+            "none": None,
+        }
+        if pruning is not None:
+            pruning = pruning.lower()
+            pruning = pruning_methods[pruning]
 
         ### Read parameters done
 
@@ -182,6 +196,7 @@ class VolcQC(OverlapCalculator):
                 mf.grids.atom_grid = grids_atom_grid
             else:
                 raise ValueError('Both grids_level and grids_atom_grid are None, when DFT calculation is performed.')
+            mf.grids.prune = pruning
 
             if mf._numint.libxc.is_nlc(mf.xc) or nlc:
                 if nlcgrids_level is not None:
@@ -192,12 +207,13 @@ class VolcQC(OverlapCalculator):
                     mf.nlcgrids.atom_grid = nlcgrids_atom_grid
                 else:
                     raise ValueError('Both nlcgrids_level and nlcgrids_atom_grid are None, when DFT with NLC is specified.')
+                mf.nlcgrids.prune = pruning
 
         mf.nlc = nlc
         mf.disp = disp
 
         if with_df:
-            assert type(auxbasis) is str and len(auxbasis) > 0
+            assert type(auxbasis) in [dict, str] and len(auxbasis) > 0
 
             mf = mf.density_fit(auxbasis=auxbasis)
 
@@ -248,7 +264,7 @@ class VolcQC(OverlapCalculator):
 
     def prepare_mol(self, atoms, coords, build=True):
         basis = self.pyscf_configs["basis"]
-        assert type(basis) is str and len(basis) > 0
+        assert type(basis) in [dict, str] and len(basis) > 0
         ecp = self.pyscf_configs["ecp"]
         verbose = self.pyscf_configs["verbose"]
         assert type(verbose) is int and verbose >= 0
@@ -259,7 +275,7 @@ class VolcQC(OverlapCalculator):
         mol.atom = [(atom, c) for atom, c in zip(atoms, coords.reshape(-1, 3))]
         mol.basis = basis
         if ecp is not None:
-            assert type(ecp) is str and len(ecp) > 0
+            assert type(ecp) in [dict, str]
             mol.ecp = ecp
         mol.unit = "Bohr"
         mol.charge = self.charge
@@ -275,9 +291,9 @@ class VolcQC(OverlapCalculator):
     def generate_initial_guess(self, mf):
         # Generate the optional HOMO-LUMO mixed initial guess.
 
-        guessmix = self.pyscf_config['guessmix']
+        guessmix = self.pyscf_configs['guessmix']
         assert type(guessmix) is int or type(guessmix) is float
-        unrestricted = self.pyscf_config['unrestricted']
+        unrestricted = self.pyscf_configs['unrestricted']
         assert type(unrestricted) is bool
 
         ### Read parameters done
@@ -459,7 +475,9 @@ class VolcQC(OverlapCalculator):
             mf = mf.undo_newton()
 
         self.mf = mf.reset()  # release integrals and other temporary intermediates.
-        if self.use_gpu:
+        with_gpu = self.pyscf_configs["with_gpu"]
+        assert type(with_gpu) is bool
+        if with_gpu:
             cp.get_default_memory_pool().free_all_blocks()
 
         self.calc_counter += 1
