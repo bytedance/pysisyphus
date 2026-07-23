@@ -307,6 +307,7 @@ class VolcQC(OverlapCalculator):
         mf_copy = mf.copy()
         mf_copy.init_guess_breaksym = 0
         mf_copy.max_cycle = 1
+        mf_copy.verbose = 0 # Suppress the "WARN: SCF failed to converge", which is quite misleading.
         mf_copy.kernel()
 
         mo_coeff = mf_copy.mo_coeff
@@ -386,9 +387,7 @@ class VolcQC(OverlapCalculator):
         if with_tddft:
             assert type(tddft_options_roots_for_tdgrad) is int and tddft_options_roots_for_tdgrad >= 0
             grad_driver.state = tddft_options_roots_for_tdgrad
-        with_df = getattr(mf, 'with_df', None)
-        if with_df:
-            grad_driver.auxbasis_response = 1
+        grad_driver.auxbasis_response = True
         grad_driver.grid_response = grad_grid_response
         gradient = grad_driver.kernel()
         self.log("Completed gradient step")
@@ -418,9 +417,7 @@ class VolcQC(OverlapCalculator):
         mol = self.prepare_input(atoms, coords)
         mf = self.run(mol)
         hessian_driver = mf.Hessian()
-        with_df = getattr(mf, 'with_df', None)
-        if with_df:
-            hessian_driver.auxbasis_response = 2
+        hessian_driver.auxbasis_response = 2
         hessian_driver.grid_response = hess_grid_response
         hessian = hessian_driver.kernel()
 
