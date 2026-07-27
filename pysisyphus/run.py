@@ -106,6 +106,10 @@ try:
     from pysisyphus.calculators.PySCF import PySCF
 
     CALC_DICT["pyscf"] = PySCF
+
+    from pysisyphus.calculators.VolcQC import VolcQC
+
+    CALC_DICT["volcqc"] = VolcQC
 except ImportError:
     pass
 
