@@ -242,13 +242,14 @@ class VolcQC(OverlapCalculator):
                 raise ValueError(f"Unrecognized solvent_method = {solvent_method}.")
 
         if uniform_external_electric_field:
-            uniform_external_electric_field = np.array(uniform_external_electric_field, dtype = np.float64)
-            assert uniform_external_electric_field.shape == (3,), f"Incorrect specification of external electric field = {uniform_external_electric_field}."
+            raise ValueError("Hessian calculation for uniform_external_electric_field is not supported yet.")
+            # uniform_external_electric_field = np.array(uniform_external_electric_field, dtype = np.float64)
+            # assert uniform_external_electric_field.shape == (3,), f"Incorrect specification of external electric field = {uniform_external_electric_field}."
 
-            assert with_gpu, "uniform_external_electric_field only supported if with_gpu."
+            # assert with_gpu, "uniform_external_electric_field only supported if with_gpu."
 
-            from gpu4pyscf.qmmm.external_field import add_external_field
-            mf = add_external_field(mf, electric_field = uniform_external_electric_field)
+            # from gpu4pyscf.qmmm.external_field import add_external_field
+            # mf = add_external_field(mf, electric_field = uniform_external_electric_field)
 
         if not with_gpu:
             assert basis_linear_dependency_threshold == 0, "basis_linear_dependency_threshold only supported if with_gpu."
