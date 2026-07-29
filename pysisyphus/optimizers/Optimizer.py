@@ -761,6 +761,11 @@ class Optimizer(metaclass=abc.ABCMeta):
             int_forces = self.geometry.forces
             max_int_forces = np.abs(int_forces).max()
             rms_int_forces = np.sqrt(np.mean(int_forces**2))
+
+            if rms_cart_forces > rms_int_forces * 10 or max_cart_forces > max_int_forces * 10:
+                print("Warning: Cartesian forces are far from converged!!!")
+                print("Consider change 'geom':'type' to 'cart', as there might be bug in internal coordinate implementation.")
+
             int_str = f"""
             \tmax(forces, internal): {max_int_forces:.6f} hartree/(bohr,rad)
             \trms(forces, internal): {rms_int_forces:.6f} hartree/(bohr,rad)"""
