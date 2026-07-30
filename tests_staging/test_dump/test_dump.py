@@ -2,15 +2,15 @@ import h5py
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.cos.GrowingString import GrowingString
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.interpolate import interpolate
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.StringOptimizer import StringOptimizer
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
-from pysisyphus.run import run_from_dict
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.cos.GrowingString import GrowingString
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.interpolate import interpolate
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.StringOptimizer import StringOptimizer
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.run import run_from_dict
 
 
 def test_dump_neb():

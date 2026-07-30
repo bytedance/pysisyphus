@@ -4,15 +4,15 @@ import h5py
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.ORCA import parse_orca_cis
-from pysisyphus.config import WF_LIB_DIR
-from pysisyphus.wavefunction import Wavefunction
-from pysisyphus.wavefunction.pop_analysis import (
+from byted_pysisyphus.calculators.ORCA import parse_orca_cis
+from byted_pysisyphus.config import WF_LIB_DIR
+from byted_pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.pop_analysis import (
     mulliken_charges,
     mulliken_charges_from_wf,
     iao_charges_from_wf,
 )
-from pysisyphus.wavefunction.excited_states import norm_ci_coeffs
+from byted_pysisyphus.wavefunction.excited_states import norm_ci_coeffs
 
 
 @pytest.mark.parametrize(

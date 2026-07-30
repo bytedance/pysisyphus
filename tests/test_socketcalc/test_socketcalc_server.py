@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.calculators.SocketCalc import SocketCalc
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators.SocketCalc import SocketCalc
 
 @pytest.mark.skip
 def test_socketcalc():

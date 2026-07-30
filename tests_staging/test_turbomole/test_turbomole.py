@@ -6,8 +6,8 @@ from pathlib import Path
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file
-from pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file
+from byted_pysisyphus.calculators.Turbomole import Turbomole
 
 THIS_DIR = pathlib.Path(os.path.dirname(os.path.realpath(__file__)))
 

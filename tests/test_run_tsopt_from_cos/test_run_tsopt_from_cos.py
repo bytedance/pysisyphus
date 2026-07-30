@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.run import run_tsopt_from_cos
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.run import run_tsopt_from_cos
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

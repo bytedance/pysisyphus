@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.optimizers.CubicNewton import CubicNewton
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.optimizers.CubicNewton import CubicNewton
 
 
 @pytest.mark.parametrize(

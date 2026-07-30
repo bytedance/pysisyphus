@@ -14,8 +14,8 @@ import numpy as np
 from scipy.spatial.distance import pdist
 from scipy.optimize import minimize
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.calculators.AnaPot import AnaPot
 
 np.set_printoptions(suppress=True, precision=4)
 

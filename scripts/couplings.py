@@ -9,8 +9,8 @@ import numpy as np
 from scipy.interpolate import interp1d
 
 
-from pysisyphus.constants import AU2EV
-from pysisyphus.helpers import index_array_from_overlaps
+from byted_pysisyphus.constants import AU2EV
+from byted_pysisyphus.helpers import index_array_from_overlaps
 
 np.set_printoptions(suppress=True, precision=4)
 

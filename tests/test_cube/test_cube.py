@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.io.cube import Cube
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io.cube import Cube
+from byted_pysisyphus.helpers import geom_loader
 
 
 def test_cube(this_dir):

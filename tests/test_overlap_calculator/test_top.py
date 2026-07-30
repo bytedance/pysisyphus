@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.calculators.ORCA import parse_orca_cis
-from pysisyphus.wavefunction import Wavefunction
-from pysisyphus.wavefunction.excited_states import top_differences, norm_ci_coeffs
+from byted_pysisyphus.calculators.ORCA import parse_orca_cis
+from byted_pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.excited_states import top_differences, norm_ci_coeffs
 
 
 def test_top_differences(this_dir):

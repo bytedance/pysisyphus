@@ -1,7 +1,7 @@
 import argparse
 import sys
 
-from pysisyphus.irc.initial_displ import cubic_displ_for_h5
+from byted_pysisyphus.irc.initial_displ import cubic_displ_for_h5
 
 
 def parse_args(args):

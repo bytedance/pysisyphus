@@ -2,22 +2,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.NFK import NFK
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.cos.SimpleZTS import SimpleZTS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.interpolate.Interpolator import Interpolator
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.plotters.AnimPlot import AnimPlot
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.NFK import NFK
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.cos.SimpleZTS import SimpleZTS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.plotters.AnimPlot import AnimPlot
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 def get_geoms():

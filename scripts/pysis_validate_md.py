@@ -15,7 +15,7 @@ except ModuleNotFoundError:
     )
     sys.exit()
 
-from pysisyphus.constants import AU2KJPERMOL, BOHR2ANG
+from byted_pysisyphus.constants import AU2KJPERMOL, BOHR2ANG
 
 
 BOHR2NM = BOHR2ANG / 10

@@ -5,9 +5,9 @@ from pathlib import Path
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file
-from pysisyphus.calculators.Gaussian16 import Gaussian16
-from pysisyphus.calculators.Psi4 import Psi4
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.Psi4 import Psi4
 
 np.set_printoptions(precision=2, linewidth=120)
 

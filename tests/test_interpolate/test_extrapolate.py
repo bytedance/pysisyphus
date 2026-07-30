@@ -1,8 +1,8 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.interpolate.Interpolator import Interpolator
-from pysisyphus.interpolate.Redund import Redund
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.interpolate.Redund import Redund
 
 
 @pytest.mark.parametrize(

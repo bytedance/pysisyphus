@@ -7,13 +7,13 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.AnaPotCBM import AnaPotCBM
-from pysisyphus.calculators.Gaussian16 import Gaussian16
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.tsoptimizers.dimer import dimer_method
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.AnaPotCBM import AnaPotCBM
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.tsoptimizers.dimer import dimer_method
 
 
 def get_geoms(coords=None):

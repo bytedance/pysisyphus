@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from pysisyphus.optimizers.poly_fit import quartic_fit
+from byted_pysisyphus.optimizers.poly_fit import quartic_fit
 
 
 def get_poly_dpoly(deg=4, max_=False):

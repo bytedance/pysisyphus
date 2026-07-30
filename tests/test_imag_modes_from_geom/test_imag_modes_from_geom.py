@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_loader, imag_modes_from_geom
+from byted_pysisyphus.helpers import geom_loader, imag_modes_from_geom
 
 
 def test_imag_modes_from_geom(this_dir):

@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.wavefunction.Basis import (
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.wavefunction.Basis import (
     basis_from_orca_str,
     basis_from_pyscf_str,
     shells_with_basis,

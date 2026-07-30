@@ -1,8 +1,8 @@
 import pytest
 
-from pysisyphus.calculators.PyXTB import PyXTB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PyXTB import PyXTB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 @using("xtb")

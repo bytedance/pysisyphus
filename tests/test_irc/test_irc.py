@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators import Gaussian16, Turbomole
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.helpers import geom_loader
-from pysisyphus.irc import *
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators import Gaussian16, Turbomole
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.irc import *
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

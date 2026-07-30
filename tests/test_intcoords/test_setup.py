@@ -1,10 +1,10 @@
 import numpy as np
 
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords import RedundantCoords
-from pysisyphus.intcoords.setup import setup_redundant
-from pysisyphus.helpers_pure import get_cubic_crystal
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords import RedundantCoords
+from byted_pysisyphus.intcoords.setup import setup_redundant
+from byted_pysisyphus.helpers_pure import get_cubic_crystal
 
 
 def get_chain(num):

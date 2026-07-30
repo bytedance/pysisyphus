@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.calculators import XTB
-from pysisyphus.dynamics import mdp
-from pysisyphus.dynamics.mdp import parse_raw_term_funcs
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
-from pysisyphus.run import run_from_dict
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.dynamics import mdp
+from byted_pysisyphus.dynamics.mdp import parse_raw_term_funcs
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.run import run_from_dict
 
 
 def test_muller_brown_mdp():

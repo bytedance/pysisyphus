@@ -2,12 +2,12 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.run import run_tsopt_from_cos
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.run import run_tsopt_from_cos
+from byted_pysisyphus.testing import using
 
 
 # @pytest.mark.parametrize(
@@ -17,8 +17,8 @@ from pysisyphus.testing import using
     # ]
 # )
 # def test_run_tsopt_from_cos(tsopt_key, tsopt_kwargs):
-    # from pysisyphus.calculators.AnaPot import AnaPot
-    # from pysisyphus.interpolate.helpers import interpolate_all
+    # from byted_pysisyphus.calculators.AnaPot import AnaPot
+    # from byted_pysisyphus.interpolate.helpers import interpolate_all
     # initial = AnaPot.get_geom((-1.05274, 1.02776, 0))
     # final = AnaPot.get_geom((1.94101, 3.85427, 0))
     # geoms = (initial, final)

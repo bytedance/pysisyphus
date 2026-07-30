@@ -2,8 +2,8 @@ import networkx as nx
 from networkx.algorithms import isomorphism
 import numpy as np
 
-from pysisyphus.intcoords.setup import get_bond_sets
-from pysisyphus.io import geom_from_zmat
+from byted_pysisyphus.intcoords.setup import get_bond_sets
+from byted_pysisyphus.io import geom_from_zmat
 
 
 def geom_to_graph(geom):

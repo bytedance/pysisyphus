@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.constants import AU2KJPERMOL, C
-from pysisyphus.drivers import (
+from byted_pysisyphus.constants import AU2KJPERMOL, C
+from byted_pysisyphus.drivers import (
     eyring_rate,
     harmonic_tst_rate,
     bell_corr,
@@ -9,9 +9,9 @@ from pysisyphus.drivers import (
     eckart_corr_brown,
     wigner_corr,
 )
-from pysisyphus.drivers.rates import get_rates_for_geoms, render_rx_rates
-from pysisyphus.io import geom_from_hessian
-from pysisyphus.testing import using
+from byted_pysisyphus.drivers.rates import get_rates_for_geoms, render_rx_rates
+from byted_pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.testing import using
 
 
 T = 298.15

@@ -6,11 +6,11 @@ from collections import namedtuple
 import numpy as np
 from scipy.spatial.distance import pdist
 
-# from pysisyphus.calculators import *
-from pysisyphus.calculators import Gaussian16, OpenMolcas, ORCA, Psi4, Turbomole, XTB
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.Geometry import Geometry
-from pysisyphus.elem_data import COVALENT_RADII as CR
+# from byted_pysisyphus.calculators import *
+from byted_pysisyphus.calculators import Gaussian16, OpenMolcas, ORCA, Psi4, Turbomole, XTB
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
 
 
 CALC_DICT = {

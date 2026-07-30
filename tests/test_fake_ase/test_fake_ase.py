@@ -4,7 +4,7 @@ from ase.optimize import BFGS
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import FakeASE, LennardJones
+from byted_pysisyphus.calculators import FakeASE, LennardJones
 
 
 def test_fake_ase():

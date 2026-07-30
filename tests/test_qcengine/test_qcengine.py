@@ -2,12 +2,12 @@ import numpy as np
 import pytest
 
 try:
-    from pysisyphus.calculators.QCEngine import QCEngine
+    from byted_pysisyphus.calculators.QCEngine import QCEngine
 except ImportError:
     print("QCEngine import failed. Did you install it?")
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
-from pysisyphus.calculators import Turbomole
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.calculators import Turbomole
 
 
 @using("turbomole")
@@ -118,7 +118,7 @@ def test_qcengine_openmm():
     assert energy == pytest.approx(6.4193809337e20)
     assert norm == pytest.approx(1.4649609864e22)
 
-    # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+    # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
     # opt = RFOptimizer(geom)
     # opt.run()
 

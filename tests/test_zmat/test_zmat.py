@@ -1,9 +1,9 @@
 import pytest
 from rmsd import kabsch_rmsd
 
-from pysisyphus.constants import ANG2BOHR as AB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.io.zmat import geom_from_zmat, zmat_from_fn, ZLine
+from byted_pysisyphus.constants import ANG2BOHR as AB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io.zmat import geom_from_zmat, zmat_from_fn, ZLine
 
 
 def assert_geom(ref_fn, zmat_fn, atol=2.5e-5):

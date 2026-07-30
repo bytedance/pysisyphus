@@ -1,13 +1,13 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.ONIOMv2 import ONIOM
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import do_final_hessian, geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.ONIOMv2 import ONIOM
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import do_final_hessian, geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 init_logging()

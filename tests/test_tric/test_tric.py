@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.calculators.PySCF import PySCF
 
 
 @pytest.mark.skip_ci

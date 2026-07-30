@@ -4,11 +4,11 @@ import sys
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.modefollow import geom_lanczos
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.modefollow import geom_lanczos
+from byted_pysisyphus.testing import using
 
 
 logger = logging.getLogger("lanczos")

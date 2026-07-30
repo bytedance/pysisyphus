@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 def run_opt(geom):

@@ -7,13 +7,13 @@ from time import sleep
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators import ORCA
-from pysisyphus.calculators.ORCA import parse_orca_densities, parse_orca_cis
-from pysisyphus.config import WF_LIB_DIR
-from pysisyphus.testing import using
-from pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.calculators.ORCA import parse_orca_densities, parse_orca_cis
+from byted_pysisyphus.config import WF_LIB_DIR
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.wavefunction import Wavefunction
 
 
 @pytest.fixture

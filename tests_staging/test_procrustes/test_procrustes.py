@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 
-from pysisyphus.calculators.IDPP import idpp_interpolate
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.calculators.IDPP import idpp_interpolate
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
 
 import pytest
 

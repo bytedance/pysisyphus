@@ -1,6 +1,6 @@
 import pytest
 
-from pysisyphus.io.sdf import parse_sdf, geom_from_sdf
+from byted_pysisyphus.io.sdf import parse_sdf, geom_from_sdf
 
 
 @pytest.fixture

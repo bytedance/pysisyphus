@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

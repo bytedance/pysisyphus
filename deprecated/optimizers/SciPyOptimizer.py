@@ -5,8 +5,8 @@ import time
 import numpy as np
 from scipy.optimize import minimize
 
-from pysisyphus.helpers import check_for_stop_sign
-from pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.helpers import check_for_stop_sign
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
 
 
 class StopOptException(Exception):

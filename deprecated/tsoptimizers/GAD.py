@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
 
 
 class GAD(HessianOptimizer):

@@ -1,11 +1,11 @@
 from distributed import LocalCluster
 
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_loader
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.testing import using
 
 
 @using("orca")

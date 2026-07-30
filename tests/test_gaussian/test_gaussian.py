@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.calculators import Gaussian16
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import Gaussian16
+from byted_pysisyphus.testing import using
 
 
 @pytest.mark.parametrize("route", ("symmetry", "nosymm", "force", "opt", "freq", "irc"))

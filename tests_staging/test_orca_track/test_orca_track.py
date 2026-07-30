@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
 
 import numpy as np
 import pytest

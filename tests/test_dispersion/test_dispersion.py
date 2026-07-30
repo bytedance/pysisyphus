@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import Composite, DFTD4, Turbomole
-from pysisyphus.elem_data import INV_ATOMIC_NUMBERS
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import Composite, DFTD4, Turbomole
+from byted_pysisyphus.elem_data import INV_ATOMIC_NUMBERS
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

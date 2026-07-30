@@ -2,11 +2,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.helpers import geom_loader
-from pysisyphus.irc.Instanton import Instanton
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.irc.Instanton import Instanton
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
 
 
 def fin_diff(inst, fun_name, key, deriv_arr, dr=1e-6):

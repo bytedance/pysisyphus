@@ -4,10 +4,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.helpers import geom_from_xyz_file
-from pysisyphus.optimizers.hessian_updates import bfgs_update, flowchart_update
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update, flowchart_update
 
 
 

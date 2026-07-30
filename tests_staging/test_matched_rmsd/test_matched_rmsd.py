@@ -5,8 +5,8 @@ from pathlib import Path
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_xyz_file
-from pysisyphus.stocastic.align import matched_rmsd
+from byted_pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.stocastic.align import matched_rmsd
 
 THIS_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
 

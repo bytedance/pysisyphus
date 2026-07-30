@@ -8,8 +8,8 @@ except ModuleNotFoundError:
     pass
 import pytest
 
-from pysisyphus.wavefunction import Shells
-from pysisyphus.testing import using
+from byted_pysisyphus.wavefunction import Shells
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

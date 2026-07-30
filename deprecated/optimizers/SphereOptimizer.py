@@ -3,7 +3,7 @@
 import numpy as np
 from scipy.optimize import minimize
 
-from pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
 
 
 class SphereOptimizer(Optimizer):
@@ -37,8 +37,8 @@ class SphereOptimizer(Optimizer):
 def run():
     import matplotlib.pyplot as plt
     from matplotlib.patches import Circle
-    from pysisyphus.calculators.CerjanMiller import CerjanMiller
-    from pysisyphus.calculators.AnaPot import AnaPot
+    from byted_pysisyphus.calculators.CerjanMiller import CerjanMiller
+    from byted_pysisyphus.calculators.AnaPot import AnaPot
 
     ref_coords = np.array((0.05, 0, 0))
     geom = CerjanMiller.get_geom(ref_coords)

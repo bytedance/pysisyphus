@@ -6,9 +6,9 @@ from pathlib import Path
 import numpy as np
 import rmsd
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_xyz_file, match_geoms
-from pysisyphus.stocastic.align import match_geom_atoms
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_xyz_file, match_geoms
+from byted_pysisyphus.stocastic.align import match_geom_atoms
 
 THIS_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
 

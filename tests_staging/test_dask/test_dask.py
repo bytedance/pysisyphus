@@ -5,12 +5,12 @@ import os
 from pathlib import Path
 import sys
 
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_xyz_file
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators.WFOWrapper import WFOWrapper
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators.WFOWrapper import WFOWrapper
 
 import numpy as np
 

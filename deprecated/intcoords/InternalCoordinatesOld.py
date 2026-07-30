@@ -15,12 +15,12 @@ import logging
 import numpy as np
 from scipy.spatial.distance import pdist, squareform
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.elem_data import VDW_RADII, COVALENT_RADII as CR
-from pysisyphus.intcoords.derivatives import d2q_b, d2q_a, d2q_d
-from pysisyphus.intcoords.exceptions import NeedNewInternalsException
-from pysisyphus.intcoords.findbonds import get_pair_covalent_radii
-from pysisyphus.intcoords.fragments import merge_fragments
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.elem_data import VDW_RADII, COVALENT_RADII as CR
+from byted_pysisyphus.intcoords.derivatives import d2q_b, d2q_a, d2q_d
+from byted_pysisyphus.intcoords.exceptions import NeedNewInternalsException
+from byted_pysisyphus.intcoords.findbonds import get_pair_covalent_radii
+from byted_pysisyphus.intcoords.fragments import merge_fragments
 
 
 PrimitiveCoord = namedtuple(

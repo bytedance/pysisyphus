@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import ORCA, Composite
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ORCA, Composite
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.testing import using
 
 try:
     from thermoanalysis.QCData import QCData

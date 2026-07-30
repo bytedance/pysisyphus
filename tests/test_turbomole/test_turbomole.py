@@ -3,13 +3,13 @@
 import numpy as np
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import Turbomole
-from pysisyphus.cos.GrowingString import GrowingString
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import eigval_to_wavenumber, kill_dir
-from pysisyphus.optimizers.StringOptimizer import StringOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import Turbomole
+from byted_pysisyphus.cos.GrowingString import GrowingString
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber, kill_dir
+from byted_pysisyphus.optimizers.StringOptimizer import StringOptimizer
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

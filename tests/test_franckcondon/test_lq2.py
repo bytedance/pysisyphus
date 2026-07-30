@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from pysisyphus.constants import NU2AU
-from pysisyphus.franckcondon.helpers import nu2angfreq_au
-from pysisyphus.franckcondon import lq2_abs_cross_sec, unitless_displs_from_eigensystem
-from pysisyphus.io import geom_from_hessian
-from pysisyphus.helpers import eigval_to_wavenumber
+from byted_pysisyphus.constants import NU2AU
+from byted_pysisyphus.franckcondon.helpers import nu2angfreq_au
+from byted_pysisyphus.franckcondon import lq2_abs_cross_sec, unitless_displs_from_eigensystem
+from byted_pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.helpers import eigval_to_wavenumber
 
 
 def test_lq2(this_dir):

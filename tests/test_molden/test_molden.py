@@ -1,6 +1,6 @@
 import pytest
 
-from pysisyphus.io import geoms_from_molden, geoms_from_xyz
+from byted_pysisyphus.io import geoms_from_molden, geoms_from_xyz
 
 
 def test_molden(this_dir):

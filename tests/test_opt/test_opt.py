@@ -1,27 +1,27 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.AnaPot3 import AnaPot3
-from pysisyphus.calculators.AnaPot4 import AnaPot4
-from pysisyphus.calculators.AnaPotCBM import AnaPotCBM
-from pysisyphus.calculators.CerjanMiller import CerjanMiller
-from pysisyphus.calculators.FourWellAnaPot import FourWellAnaPot
-from pysisyphus.calculators.LEPSBase import LEPSBase
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.calculators.NFK import NFK
-from pysisyphus.calculators.Rosenbrock import Rosenbrock
-from pysisyphus.calculators.VRIPot import VRIPot
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.AnaPot3 import AnaPot3
+from byted_pysisyphus.calculators.AnaPot4 import AnaPot4
+from byted_pysisyphus.calculators.AnaPotCBM import AnaPotCBM
+from byted_pysisyphus.calculators.CerjanMiller import CerjanMiller
+from byted_pysisyphus.calculators.FourWellAnaPot import FourWellAnaPot
+from byted_pysisyphus.calculators.LEPSBase import LEPSBase
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.calculators.NFK import NFK
+from byted_pysisyphus.calculators.Rosenbrock import Rosenbrock
+from byted_pysisyphus.calculators.VRIPot import VRIPot
 
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.closures import lbfgs_closure, modified_broyden_closure
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.optimizers.NCOptimizer import NCOptimizer
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.RSA import RSA
-from pysisyphus.optimizers.StabilizedQNMethod import StabilizedQNMethod
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.closures import lbfgs_closure, modified_broyden_closure
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.optimizers.NCOptimizer import NCOptimizer
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.RSA import RSA
+from byted_pysisyphus.optimizers.StabilizedQNMethod import StabilizedQNMethod
 
 
 @pytest.mark.parametrize(

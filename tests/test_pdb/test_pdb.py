@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.io.pdb import geom_to_pdb_str
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io.pdb import geom_to_pdb_str
 
 
 @pytest.mark.parametrize(

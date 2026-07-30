@@ -6,9 +6,9 @@ from pathlib import Path
 import pytest
 import numpy as np
 
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_library
 
 from qchelper.geometry import parse_xyz_file
 

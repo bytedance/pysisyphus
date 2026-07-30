@@ -1,9 +1,9 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords import Stretch
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords import Stretch
 
 
 @pytest.fixture

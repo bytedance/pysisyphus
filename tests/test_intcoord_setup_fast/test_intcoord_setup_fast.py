@@ -1,6 +1,6 @@
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.setup import get_dihedral_inds
-from pysisyphus.intcoords.setup_fast import (
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.setup import get_dihedral_inds
+from byted_pysisyphus.intcoords.setup_fast import (
     find_bonds_for_geom,
     find_bonds_bends,
     find_dihedrals,

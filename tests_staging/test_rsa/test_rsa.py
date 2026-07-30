@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import root_scalar
 
-from pysisyphus.optimizers.hessian_updates import bfgs_update
-from pysisyphus.helpers import geom_from_library, shake_coords, geom_from_xyz_file
-from pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update
+from byted_pysisyphus.helpers import geom_from_library, shake_coords, geom_from_xyz_file
+from byted_pysisyphus.calculators.XTB import XTB
 
 
 np.set_printoptions(suppress=True, precision=4, linewidth=120)
@@ -97,7 +97,7 @@ def run():
     # geom.coords = shake_coords(geom.coords, seed=25032019)
     calc = XTB(charge=0, mult=1, pal=4)
     geom.set_calculator(calc)
-    from pysisyphus.optimizers.RSAlgorithm import RSAlgorithm
+    from byted_pysisyphus.optimizers.RSAlgorithm import RSAlgorithm
     rsa_kwargs = {
         "hessian_recalc": 5,
     }
@@ -112,7 +112,7 @@ def run():
     # H = np.loadtxt("hessian")
     # g = np.loadtxt("gradient")
     # H = geom.hessian
-    # from pysisyphus.calculators.AnaPot import AnaPot
+    # from byted_pysisyphus.calculators.AnaPot import AnaPot
     # pot = AnaPot()
     # geom = AnaPot.get_geom((0, 3, 0))
     # H = geom.hessian

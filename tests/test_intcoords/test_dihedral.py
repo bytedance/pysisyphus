@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.elem_data import COVALENT_RADII as CR, MASS_DICT as MD
-from pysisyphus.trj import print_internals
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR, MASS_DICT as MD
+from byted_pysisyphus.trj import print_internals
 
 
 def test_dihedral_definition():

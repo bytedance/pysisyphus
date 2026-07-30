@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import sparse
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.setup_fast import find_bonds
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.setup_fast import find_bonds
 
 
 def test_reverse_cuthill_mckee():

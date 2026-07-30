@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Turbomole import Turbomole
 
 
 @pytest.mark.skip

@@ -2,10 +2,10 @@ from pathlib import Path
 
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.drivers.precon_pos_rot import precon_pos_rot
-from pysisyphus.helpers import geom_loader
-# from pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.drivers.precon_pos_rot import precon_pos_rot
+from byted_pysisyphus.helpers import geom_loader
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
 
 
 Bm = Benchmark("precon_pos_rot")

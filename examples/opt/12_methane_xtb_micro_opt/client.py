@@ -4,10 +4,10 @@ import socket
 import numpy as np
 import yaml
 
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader
 
-from pysisyphus.socket_helper import send_closure, recv_closure, get_fmts
+from byted_pysisyphus.socket_helper import send_closure, recv_closure, get_fmts
 
 
 def ipi_client(addr, atoms, forces_getter, hessian_getter=None, hdrlen=12):

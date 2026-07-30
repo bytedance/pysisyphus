@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.testing import using
-from pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
 
 
 @pytest.mark.skip

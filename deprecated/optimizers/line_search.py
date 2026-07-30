@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.line_searches import wolfe
+from byted_pysisyphus.optimizers.line_searches import wolfe
 
 
 def run_line_search(f, df, get_p, x0, alpha_0=1, alpha_max=1):

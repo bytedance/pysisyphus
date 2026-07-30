@@ -5,11 +5,11 @@ from ase.calculators.lj import LennardJones as ase_LJ
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.LennardJones import LennardJones
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators.LennardJones import LennardJones
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 def test_lennard_jones():

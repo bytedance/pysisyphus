@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import Psi4
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import Psi4
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

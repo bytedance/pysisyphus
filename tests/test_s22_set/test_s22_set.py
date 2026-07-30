@@ -5,10 +5,10 @@ import sys
 
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import ORCA
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 S22Bm = Benchmark("s22", coord_type="redund")

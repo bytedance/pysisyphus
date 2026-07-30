@@ -1,11 +1,11 @@
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.testing import using
 
 @pytest.mark.skip
 @pytest.mark.parametrize(

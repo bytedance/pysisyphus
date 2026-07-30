@@ -6,15 +6,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.plotters.AnimPlot import AnimPlot
-from pysisyphus.calculators.AnaPot3 import AnaPot3
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.cos.SimpleZTS import SimpleZTS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.NaiveSteepestDescent import NaiveSteepestDescent
+from byted_pysisyphus.plotters.AnimPlot import AnimPlot
+from byted_pysisyphus.calculators.AnaPot3 import AnaPot3
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.cos.SimpleZTS import SimpleZTS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.NaiveSteepestDescent import NaiveSteepestDescent
 
 KWARGS = {
     "images": 10,

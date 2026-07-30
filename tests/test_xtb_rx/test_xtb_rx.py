@@ -4,12 +4,12 @@ import tempfile
 
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.helpers import align_geoms
-# from pysisyphus.helpers_pure import filter_fixture_store
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
-from pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.helpers import align_geoms
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 Bh = Benchmark(

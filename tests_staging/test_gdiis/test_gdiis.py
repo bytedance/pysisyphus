@@ -10,11 +10,11 @@ import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.optimizers.gdiis import gdiis
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.optimizers.gdiis import gdiis
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 def get_step(H, forces, trust):
@@ -98,7 +98,7 @@ def test_rfo_benzene():
     opt.run()
 
 
-from pysisyphus.optimizers.gdiis import gediis
+from byted_pysisyphus.optimizers.gdiis import gediis
 
 def from_coeffs(vec, coeffs):
     return np.sum(coeffs[:,None] * vec[::-1][:len(coeffs)], axis=0)

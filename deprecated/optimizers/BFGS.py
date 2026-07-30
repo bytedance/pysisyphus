@@ -3,8 +3,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.helpers import fit_rigid, procrustes
-from pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
+from byted_pysisyphus.helpers import fit_rigid, procrustes
+from byted_pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
 
 # [1] Nocedal, Wright - Numerical Optimization, 2006
 

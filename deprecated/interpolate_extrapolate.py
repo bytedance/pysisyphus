@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.gdiis import gdiis, gediis
-from pysisyphus.optimizers.poly_fit import poly_line_search
+from byted_pysisyphus.optimizers.gdiis import gdiis, gediis
+from byted_pysisyphus.optimizers.poly_fit import poly_line_search
 
 
 def interpolate_extrapolate(coords, energies, forces, steps,

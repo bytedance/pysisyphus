@@ -5,15 +5,15 @@ from natsort import natsorted
 import numpy as np
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import Dimer, Gaussian16
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_xyz_file, geom_from_library, do_final_hessian
-from pysisyphus.tsoptimizers.dimer import dimer_method
-from pysisyphus.tsoptimizers.dimerv2 import dimer_method as dimer_method_v2
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import Dimer, Gaussian16
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_xyz_file, geom_from_library, do_final_hessian
+from byted_pysisyphus.tsoptimizers.dimer import dimer_method
+from byted_pysisyphus.tsoptimizers.dimerv2 import dimer_method as dimer_method_v2
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.testing import using
 
 
 def make_N_init_dict():

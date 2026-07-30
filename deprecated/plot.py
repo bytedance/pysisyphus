@@ -15,11 +15,11 @@ import numpy as np
 from scipy.interpolate import splrep, splev
 import yaml
 
-from pysisyphus.constants import AU2KJPERMOL, BOHR2ANG, AU2EV
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.Geometry import Geometry
-from pysisyphus.peakdetect import peakdetect
-from pysisyphus.wrapper.jmol import render_cdd_cube
+from byted_pysisyphus.constants import AU2KJPERMOL, BOHR2ANG, AU2EV
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.peakdetect import peakdetect
+from byted_pysisyphus.wrapper.jmol import render_cdd_cube
 
 
 CDD_PNG_FNS = "cdd_png_fns"

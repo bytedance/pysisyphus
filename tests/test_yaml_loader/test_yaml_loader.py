@@ -2,8 +2,8 @@ import numpy as np
 import pytest
 import yaml
 
-from pysisyphus.yaml_mods import get_loader
-from pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV, ANG2BOHR, BOHR2M
+from byted_pysisyphus.yaml_mods import get_loader
+from byted_pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV, ANG2BOHR, BOHR2M
 
 
 @pytest.mark.parametrize(

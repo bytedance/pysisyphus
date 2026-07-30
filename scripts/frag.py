@@ -4,11 +4,11 @@ import argparse
 import itertools as it
 import sys
 
-from pysisyphus.elem_data import get_tm_indices
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import full_expand, highlight_text
-from pysisyphus.intcoords.setup import get_fragments, get_bond_sets
+from byted_pysisyphus.elem_data import get_tm_indices
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import full_expand, highlight_text
+from byted_pysisyphus.intcoords.setup import get_fragments, get_bond_sets
 
 
 def parse_args(args):

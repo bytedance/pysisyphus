@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import Gaussian16, ORCA5, Turbomole
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import Gaussian16, ORCA5, Turbomole
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 np.set_printoptions(suppress=True, precision=8)

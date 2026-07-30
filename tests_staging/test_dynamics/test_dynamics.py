@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.dynamics.velocity_verlet import md
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.dynamics.velocity_verlet import md
+from byted_pysisyphus.helpers import geom_loader
 
 
 def test_oniom_md():
@@ -17,7 +17,7 @@ def test_oniom_md():
         },
     }
     high_inds = (4,5,6)
-    from pysisyphus.calculators.ONIOM import ONIOM
+    from byted_pysisyphus.calculators.ONIOM import ONIOM
     oniom = ONIOM(calc_dict, high_inds)
 
     geom = geom_loader("lib:acetaldehyd_oniom.xyz")
@@ -30,7 +30,7 @@ def test_oniom_md():
         "dt": 0.5,
     }
     md_result = md(geom, **md_kwargs)
-    from pysisyphus.xyzloader import make_trj_str
+    from byted_pysisyphus.xyzloader import make_trj_str
 
     coords = md_result.coords.reshape(-1, len(geom.atoms), 3) * BOHR2ANG
     trj_str = make_trj_str(geom.atoms, coords)

@@ -4,8 +4,8 @@ from pyscf.tools import cubegen
 from pyscf.lib.chkfile import load_mol
 
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.PySCF import PySCF
 
 
 def get_density_cube(mol, mf, cube_fn="density.cub"):

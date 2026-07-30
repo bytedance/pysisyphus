@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers import MicroOptimizer
-from pysisyphus.testing import using
-from pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers import MicroOptimizer
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
 
 
 def get_coords(atoms, cart_coords):

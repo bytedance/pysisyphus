@@ -5,13 +5,13 @@ import logging; logging.disable(logging.DEBUG)
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.InternalCoordinates import RedundantCoords
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.InternalCoordinates import RedundantCoords
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
 
 from printer import print_gaussian_ints, read_gaussian_ints, compare_to_gaussian
 

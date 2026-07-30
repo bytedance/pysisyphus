@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.drivers import run_perf, print_perf_results
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.drivers import run_perf, print_perf_results
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

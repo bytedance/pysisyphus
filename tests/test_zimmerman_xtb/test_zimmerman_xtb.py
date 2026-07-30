@@ -4,11 +4,11 @@ import tempfile
 
 import pytest
 
-# from pysisyphus.helpers import geom_loader, align_geoms
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
-from pysisyphus.xyzloader import write_geoms_to_trj
+# from byted_pysisyphus.helpers import geom_loader, align_geoms
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 ZmXTB = Benchmark("zimmerman_xtb")

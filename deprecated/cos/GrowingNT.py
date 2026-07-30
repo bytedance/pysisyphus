@@ -6,8 +6,8 @@ from copy import copy
 
 import numpy as np
 
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.Geometry import Geometry
 
 
 class GrowingNT(ChainOfStates):

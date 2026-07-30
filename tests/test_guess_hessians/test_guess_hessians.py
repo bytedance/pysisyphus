@@ -1,12 +1,12 @@
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader, do_final_hessian
-from pysisyphus.optimizers.guess_hessians import ts_hessian
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader, do_final_hessian
+from byted_pysisyphus.optimizers.guess_hessians import ts_hessian
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.testing import using
 
 import numpy as np
 

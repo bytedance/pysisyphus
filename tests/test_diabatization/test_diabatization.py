@@ -1,7 +1,7 @@
 import pytest
 import yaml
 
-from pysisyphus.drivers import dq_diabatization_from_run_dict
+from byted_pysisyphus.drivers import dq_diabatization_from_run_dict
 
 
 def test_d_diabatization(this_dir):

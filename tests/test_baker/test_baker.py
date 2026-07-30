@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators.PySCF import PySCF
-# from pysisyphus.helpers_pure import filter_fixture_store
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators.PySCF import PySCF
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 def calc_getter(charge, mult):

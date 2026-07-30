@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators.ORCA import ORCA
 
 
 np.set_printoptions(precision=4, suppress=True)

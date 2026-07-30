@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_xyz_file
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.xyzloader import make_trj_str
+from byted_pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.xyzloader import make_trj_str
 
 
 def fragment(geom, prim_coord, step=6, step_num=50):

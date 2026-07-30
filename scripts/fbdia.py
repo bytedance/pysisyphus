@@ -5,8 +5,8 @@ import sys
 
 import numpy as np
 
-from pysisyphus.constants import AU2EV
-from pysisyphus.wavefunction import dq_diabatization
+from byted_pysisyphus.constants import AU2EV
+from byted_pysisyphus.wavefunction import dq_diabatization
 
 
 def parse_args(args):

@@ -6,16 +6,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.plotters.AnimPlot import AnimPlot
-from pysisyphus.calculators.MullerBrownPot import MullerBrownPot
-#from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.cos.SimpleZTS import SimpleZTS
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.plotters.AnimPlot import AnimPlot
+from byted_pysisyphus.calculators.MullerBrownPot import MullerBrownPot
+#from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.cos.SimpleZTS import SimpleZTS
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
 
 KWARGS = {
     "images": 4,
@@ -127,8 +127,8 @@ def test_lbfgs_neb():
     k_min = 1000
     k_max = k_min+10
     neb = NEB(get_geoms(("A", "B")), k_min=k_min, k_max=k_max, fix_ends=True)
-    from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-    # from pysisyphus.optimizers.LBFGS_mod import LBFGS
+    from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+    # from byted_pysisyphus.optimizers.LBFGS_mod import LBFGS
     opt = run_cos_opt(neb, LBFGS, **kwargs)
 
     # assert(opt.is_converged)

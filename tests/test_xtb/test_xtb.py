@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

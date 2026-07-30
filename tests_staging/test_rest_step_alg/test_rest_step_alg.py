@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.optimizers.RSA import RSA
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.optimizers.RSA import RSA
 
 
 def test_rsa():

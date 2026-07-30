@@ -2,9 +2,9 @@ import numpy as np
 import pytest
 from scipy.spatial.transform import Rotation
 
-from pysisyphus.constants import NA, BOHR2ANG
-from pysisyphus.helpers import align_coords, geom_loader
-from pysisyphus.interpolate import interpolate
+from byted_pysisyphus.constants import NA, BOHR2ANG
+from byted_pysisyphus.helpers import align_coords, geom_loader
+from byted_pysisyphus.interpolate import interpolate
 
 
 def get_geoms(translate=0., euler=None):
@@ -50,7 +50,7 @@ def test_align_coords_interpolate():
     all_coords = [geom.coords for geom in interpolated]
     aligned = align_coords(all_coords)
 
-    # from pysisyphus.xyzloader import coords_to_trj
+    # from byted_pysisyphus.xyzloader import coords_to_trj
     # trj_fn = "interpol.trj"
     # atoms = geoms[0].atoms
     # coords_to_trj("interpol.trj", atoms, all_coords)

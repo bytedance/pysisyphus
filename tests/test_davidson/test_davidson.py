@@ -1,14 +1,14 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.modefollow import geom_davidson
-from pysisyphus.modefollow.NormalMode import NormalMode
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.modefollow import geom_davidson
+from byted_pysisyphus.modefollow.NormalMode import NormalMode
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.testing import using
 
 
 def get_guess(vec, masses_rep, rng, scale=1e-1):

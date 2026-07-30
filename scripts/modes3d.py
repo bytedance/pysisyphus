@@ -21,9 +21,9 @@ from ursina import (
 )
 from ursina.shaders import lit_with_shadows_shader
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.Stretch import Stretch
-from pysisyphus.io.hessian import geom_from_hessian
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.Stretch import Stretch
+from byted_pysisyphus.io.hessian import geom_from_hessian
 
 
 C = {

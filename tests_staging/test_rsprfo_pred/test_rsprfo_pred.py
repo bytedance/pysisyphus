@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
 
 
 def test_pred():

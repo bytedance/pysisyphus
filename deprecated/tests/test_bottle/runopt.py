@@ -3,8 +3,8 @@ import numpy as np
 import requests
 import simplejson as json
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.server.optimizer import OptState
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.server.optimizer import OptState
 
 
 def run():

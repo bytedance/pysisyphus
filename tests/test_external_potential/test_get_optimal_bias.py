@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.calculators import XTB
-from pysisyphus.drivers.opt import get_optimal_bias
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.drivers.opt import get_optimal_bias
+from byted_pysisyphus.testing import using
 
 
 @using("xtb")

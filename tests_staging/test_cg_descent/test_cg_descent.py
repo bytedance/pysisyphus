@@ -3,9 +3,9 @@ import numpy as np
 import pytest
 
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.Rosenbrock import Rosenbrock
-from pysisyphus.optimizers.line_searches import hager_zhang, backtracking
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.Rosenbrock import Rosenbrock
+from byted_pysisyphus.optimizers.line_searches import hager_zhang, backtracking
 
 
 def cg_descent(x0, fun, jac, max_cycles=50):

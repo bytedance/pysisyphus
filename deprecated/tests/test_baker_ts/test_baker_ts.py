@@ -9,14 +9,14 @@ import time
 import numpy as np
 import pandas as pd
 
-from pysisyphus.calculators.Gaussian16 import Gaussian16
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.color import red, green
-from pysisyphus.helpers import get_baker_ts_geoms, do_final_hessian, \
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.color import red, green
+from byted_pysisyphus.helpers import get_baker_ts_geoms, do_final_hessian, \
                                geom_from_library, get_baker_ts_geoms_flat, \
                                geom_loader
-from pysisyphus.intcoords.augment_bonds import augment_bonds
-from pysisyphus.tsoptimizers import *
+from byted_pysisyphus.intcoords.augment_bonds import augment_bonds
+from byted_pysisyphus.tsoptimizers import *
 
 
 def print_summary(converged, failed, cycles, ran, runid):

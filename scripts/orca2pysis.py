@@ -6,10 +6,10 @@ import sys
 
 import numpy as np
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.calculators.ORCA import make_sym_mat
-from pysisyphus.Geometry import Geometry
-from pysisyphus.io.hessian import save_hessian
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.calculators.ORCA import make_sym_mat
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.io.hessian import save_hessian
 
 
 def parse_args(args):

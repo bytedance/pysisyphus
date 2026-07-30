@@ -1,9 +1,9 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.constants import VELO2E
-from pysisyphus.dynamics.helpers import (
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.constants import VELO2E
+from byted_pysisyphus.dynamics.helpers import (
     kinetic_energy_from_velocities,
     kinetic_energy_for_temperature,
     temperature_for_kinetic_energy,
@@ -12,10 +12,10 @@ from pysisyphus.dynamics.helpers import (
     unscaled_velocity_distribution,
     get_mb_velocities_for_geom,
 )
-from pysisyphus.dynamics import md
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.dynamics import md
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 def test_kinetic_energy_from_velocities():
@@ -139,14 +139,14 @@ def test_mb_velocities():
     res = md(geom, v0, steps, dt)
     assert dt * steps / 1000 == pytest.approx(res.t_ps)
 
-    # from pysisyphus.xyzloader import coords_to_trj
+    # from byted_pysisyphus.xyzloader import coords_to_trj
     # coords_to_trj("md.trj", geom.atoms, res.coords)
 
 
 @using("xtb")
 def test_thermostat():
     geom = geom_loader("lib:dynamics/10_water.xyz")
-    from pysisyphus.calculators.XTB import XTB
+    from byted_pysisyphus.calculators.XTB import XTB
 
     geom.set_calculator(XTB(pal=2))
 
@@ -174,7 +174,7 @@ def test_thermostat():
 
     E_tot = res.E_tot
     E_tot -= E_tot.mean()
-    from pysisyphus.constants import AU2KJPERMOL
+    from byted_pysisyphus.constants import AU2KJPERMOL
 
     E_tot *= AU2KJPERMOL
     T = res.T

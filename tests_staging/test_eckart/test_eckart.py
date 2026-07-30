@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
 
 
 def eigvals2nus(vals):

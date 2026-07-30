@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.cos.GrowingString import GrowingString
-from pysisyphus.optimizers.StringOptimizer import StringOptimizer
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.cos.GrowingString import GrowingString
+from byted_pysisyphus.optimizers.StringOptimizer import StringOptimizer
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
 
 
 @pytest.mark.parametrize(

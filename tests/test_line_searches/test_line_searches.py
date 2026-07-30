@@ -1,13 +1,13 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.Rosenbrock import Rosenbrock
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
-from pysisyphus.line_searches import Backtracking, HagerZhang, StrongWolfe
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.Rosenbrock import Rosenbrock
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.line_searches import Backtracking, HagerZhang, StrongWolfe
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
 
 
 class CGDescent(Optimizer):

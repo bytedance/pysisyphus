@@ -4,12 +4,12 @@ import shutil
 
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import Dimer
-from pysisyphus.calculators.PySCF import PySCF
-# from pysisyphus.helpers_pure import filter_fixture_store
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import Dimer
+from byted_pysisyphus.calculators.PySCF import PySCF
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.testing import using
 
 
 BakerTSBm = Benchmark(

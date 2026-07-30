@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.franckcondon.imdho import imdho_abs_cross_section
+from byted_pysisyphus.franckcondon.imdho import imdho_abs_cross_section
 
 
 def test_imdho():

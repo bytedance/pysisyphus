@@ -9,7 +9,7 @@ import sys
 
 import numpy as np
 
-from pysisyphus.wrapper.mwfn import get_mwfn_exc_str, make_cdd
+from byted_pysisyphus.wrapper.mwfn import get_mwfn_exc_str, make_cdd
 
 
 def parse_args(args):

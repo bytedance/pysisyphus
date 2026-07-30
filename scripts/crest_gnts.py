@@ -13,14 +13,14 @@ import orjson
 import numpy as np
 import psutil
 
-from pysisyphus.calculators import XTB
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.cos.GrowingNT import GrowingNT
-from pysisyphus.helpers import geom_loader, do_final_hessian, check_for_end_sign
-from pysisyphus.helpers_pure import highlight_text, touch
-from pysisyphus.irc import EulerPC
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.cos.GrowingNT import GrowingNT
+from byted_pysisyphus.helpers import geom_loader, do_final_hessian, check_for_end_sign
+from byted_pysisyphus.helpers_pure import highlight_text, touch
+from byted_pysisyphus.irc import EulerPC
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
 
 
 def dump_trj(geoms, fn):

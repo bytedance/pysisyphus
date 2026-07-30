@@ -1,17 +1,17 @@
 import numpy as np
 import pytest
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.calculators import ExternalPotential, XTB
-from pysisyphus.calculators.ExternalPotential import HarmonicSphere, Restraint
-from pysisyphus.calculators.LennardJones import LennardJones
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.calculators import ExternalPotential, XTB
+from byted_pysisyphus.calculators.ExternalPotential import HarmonicSphere, Restraint
+from byted_pysisyphus.calculators.LennardJones import LennardJones
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 init_logging()
@@ -207,7 +207,7 @@ def test_harmonic_sphere_pressure(coords, ref_pressure):
 # def test_h2o_restraint():
 # geom = geom_loader("lib:h2o.xyz")
 # print("atoms", geom.atoms)
-# from pysisyphus.constants import ANG2BOHR
+# from byted_pysisyphus.constants import ANG2BOHR
 # restraints = [
 # [["BOND", 0, 1], 10000, 2.0*ANG2BOHR],
 # # [["BOND", 1, 2], 10, 2.5],
@@ -229,9 +229,9 @@ def test_harmonic_sphere_pressure(coords, ref_pressure):
 # ]
 # ext = ExternalPotential(calc, potentials=potentials)
 # geom.set_calculator(ext)
-# # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+# # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 # # opt = RFOptimizer(geom, dump=True)
-# from pysisyphus.optimizers.SteepestDescent import SteepestDescent
+# from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
 # opt = SteepestDescent(geom, dump=True, max_step=0.05, max_cycles=1000)
 # opt.run()
 

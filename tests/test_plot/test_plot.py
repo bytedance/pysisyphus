@@ -1,12 +1,12 @@
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.cos.GrowingString import GrowingString
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.StringOptimizer import StringOptimizer
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.plot import plot_cos_energies, plot_cos_forces, plot_opt
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.cos.GrowingString import GrowingString
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.StringOptimizer import StringOptimizer
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.plot import plot_cos_energies, plot_cos_forces, plot_opt
 
 
 def test_multi_run():

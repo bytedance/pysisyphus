@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.linalg import finite_difference_hessian
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.linalg import finite_difference_hessian
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 def assert_hessians(geom):

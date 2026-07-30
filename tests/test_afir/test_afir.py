@@ -1,16 +1,16 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AFIR import AFIR
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators import XTB
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.linalg import finite_difference_hessian
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AFIR import AFIR
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.linalg import finite_difference_hessian
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 init_logging()

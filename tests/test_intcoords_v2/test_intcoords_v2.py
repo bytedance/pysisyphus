@@ -1,19 +1,19 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords import (
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords import (
     Bend,
     LinearBend,
     Stretch,
     Bend,
     Torsion,
 )
-from pysisyphus.intcoords.PrimTypes import PrimTypes as PT
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes as PT
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 def compare_internals(xyz_fn):
