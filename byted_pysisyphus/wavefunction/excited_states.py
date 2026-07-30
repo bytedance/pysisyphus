@@ -10,7 +10,7 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.wavefunction.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.wavefunction import Wavefunction
 
 
 def norm_ci_coeffs(

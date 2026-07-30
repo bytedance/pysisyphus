@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.irc.IRC import IRC
 
 
 # [1] http://pubs.acs.org/doi/pdf/10.1021/ja00295a002

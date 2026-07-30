@@ -11,11 +11,11 @@ from pprint import pprint
 
 import numpy as np
 
-from pysisyphus.calculators import IPIServer, ONIOM
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords.exceptions import RebuiltInternalsException
-from pysisyphus.helpers_pure import full_expand, highlight_text, recursive_update
-from pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.calculators import IPIServer, ONIOM
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords.exceptions import RebuiltInternalsException
+from byted_pysisyphus.helpers_pure import full_expand, highlight_text, recursive_update
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
 
 
 def get_geom_kwargs(layer_ind, layer_mask):
@@ -95,7 +95,7 @@ class Layers:
         # We import 'get_opt_cls' in the constructor, as it relies on dicts, that
         # contain references to this class (LayerOpt). Trying to import 'get_opt_cls'
         # at the top of the module will result in an circular import.
-        from pysisyphus.optimizers.cls_map import get_opt_cls
+        from byted_pysisyphus.optimizers.cls_map import get_opt_cls
 
         indices_below = set()
         # Iterate in reverse order from smallest (lowest) layer to biggest (highest) layer.

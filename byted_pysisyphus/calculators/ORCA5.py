@@ -1,4 +1,4 @@
-from pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.calculators.ORCA import ORCA
 
 
 class ORCA5(ORCA):

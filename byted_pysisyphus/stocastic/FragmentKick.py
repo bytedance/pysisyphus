@@ -5,9 +5,9 @@ import itertools as it
 import numpy as np
 import rmsd
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.linalg import get_rot_mat
-from pysisyphus.stocastic.Kick import Kick
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.linalg import get_rot_mat
+from byted_pysisyphus.stocastic.Kick import Kick
 
 
 class FragmentKick(Kick):

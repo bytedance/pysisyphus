@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.intcoords.setup import get_bond_mat
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.intcoords.setup import get_bond_mat
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
 
 
 class StabilizedQNMethod(Optimizer):

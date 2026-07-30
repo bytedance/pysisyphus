@@ -5,9 +5,9 @@ from pathlib import Path
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_xyz_file, geoms_from_trj
-from pysisyphus.xyzloader import make_trj_str_from_geoms
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_xyz_file, geoms_from_trj
+from byted_pysisyphus.xyzloader import make_trj_str_from_geoms
 
 
 THIS_DIR = Path(os.path.dirname(os.path.realpath(__file__)))

@@ -17,9 +17,9 @@ from jinja2 import Template
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.helpers_pure import highlight_text, to_subscript_num
-from pysisyphus.wavefunction import logger
-from pysisyphus.wavefunction.localization import (
+from byted_pysisyphus.helpers_pure import highlight_text, to_subscript_num
+from byted_pysisyphus.wavefunction import logger
+from byted_pysisyphus.wavefunction.localization import (
     JacobiSweepResult,
     jacobi_sweeps,
     get_fb_ab_func,

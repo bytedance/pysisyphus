@@ -3,11 +3,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.CerjanMiller import CerjanMiller
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.init_logging import init_logging
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.CerjanMiller import CerjanMiller
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.init_logging import init_logging
 
 
 def test_rsprfo_hcn_ts_xtb():

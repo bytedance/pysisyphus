@@ -5,8 +5,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords import RedundantCoords
-from pysisyphus.linalg import gram_schmidt
+from byted_pysisyphus.intcoords import RedundantCoords
+from byted_pysisyphus.linalg import gram_schmidt
 
 
 class DLC(RedundantCoords):

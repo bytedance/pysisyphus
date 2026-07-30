@@ -7,7 +7,7 @@ import shutil
 import sys
 
 
-from pysisyphus import logger
+from byted_pysisyphus import logger
 
 
 CONFIG_DIR = Path(os.path.abspath(os.path.dirname(__file__)))

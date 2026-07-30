@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.intcoords.Torsion import Torsion
+from byted_pysisyphus.intcoords.Torsion import Torsion
 
 
 class DummyTorsion(Torsion):

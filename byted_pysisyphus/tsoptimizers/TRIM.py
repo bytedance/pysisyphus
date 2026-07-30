@@ -5,7 +5,7 @@
 import numpy as np
 
 from scipy.optimize import newton
-from pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
+from byted_pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
 
 
 class TRIM(TSHessianOptimizer):

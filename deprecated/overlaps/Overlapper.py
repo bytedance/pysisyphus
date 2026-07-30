@@ -9,11 +9,11 @@ import re
 from natsort import natsorted
 import numpy as np
 
-from pysisyphus.calculators.Gaussian09 import Gaussian09
-from pysisyphus.calculators.Gaussian16 import Gaussian16
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.calculators.Turbomole import Turbomole
-from pysisyphus.helpers import (geom_from_xyz_file, index_array_from_overlaps,
+from byted_pysisyphus.calculators.Gaussian09 import Gaussian09
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.helpers import (geom_from_xyz_file, index_array_from_overlaps,
                                 np_print
 )
 

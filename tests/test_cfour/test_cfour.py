@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.calculators import CFOUR
-from pysisyphus.helpers import geom_loader
-from pysisyphus.irc import EulerPC
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import CFOUR
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.irc import EulerPC
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

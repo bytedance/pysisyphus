@@ -1,9 +1,9 @@
 import itertools as it
 
-from pysisyphus.calculators import TIP3P, ExternalPotential
-from pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
-from pysisyphus.dynamics import md
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators import TIP3P, ExternalPotential
+from byted_pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
+from byted_pysisyphus.dynamics import md
+from byted_pysisyphus.helpers import geom_loader
 
 
 def get_water_constraints(index):
@@ -53,7 +53,7 @@ def test_rattle_tip3p(this_dir):
     # import pdb; pdb.set_trace()
     md_result = md(geom, **md_kwargs)
 
-    from pysisyphus.xyzloader import coords_to_trj
+    from byted_pysisyphus.xyzloader import coords_to_trj
     coords = md_result.coords
     trj_fn = "md.trj"
     atoms = geom.atoms

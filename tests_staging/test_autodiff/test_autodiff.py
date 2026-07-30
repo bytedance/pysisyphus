@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords import autodiff
-from pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.intcoords import autodiff
+from byted_pysisyphus.helpers import geom_from_library
 
 
 np.set_printoptions(suppress=True, precision=4)

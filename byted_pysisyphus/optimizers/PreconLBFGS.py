@@ -5,13 +5,13 @@ from typing import Literal, Optional
 import numpy as np
 from scipy.sparse.linalg import spsolve
 
-from pysisyphus.calculators import Dimer
-from pysisyphus.cos.GrowingNT import GrowingNT
-from pysisyphus.Geometry import Geometry
-from pysisyphus.line_searches import *
-from pysisyphus.optimizers.closures import bfgs_multiply
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.precon import precon_getter, PreconKind
+from byted_pysisyphus.calculators import Dimer
+from byted_pysisyphus.cos.GrowingNT import GrowingNT
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.line_searches import *
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.precon import precon_getter, PreconKind
 
 
 LineSearch = Literal["armijo", "armijo_fg", "strong_wolfe", "hz", None, False]

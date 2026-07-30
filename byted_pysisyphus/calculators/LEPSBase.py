@@ -1,5 +1,5 @@
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
-from pysisyphus.calculators.LEPSExpr import LEPSExpr
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.LEPSExpr import LEPSExpr
 
 
 class LEPSBase(AnaPotBase):

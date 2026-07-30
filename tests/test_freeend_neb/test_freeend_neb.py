@@ -1,7 +1,7 @@
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.FreeEndNEBPot import FreeEndNEBPot
-from pysisyphus.cos.FreeEndNEB import FreeEndNEB
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.FreeEndNEBPot import FreeEndNEBPot
+from byted_pysisyphus.cos.FreeEndNEB import FreeEndNEB
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
 
 
 def test_freeend_anapot():

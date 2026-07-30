@@ -16,8 +16,8 @@ from numpy.typing import NDArray
 from scipy.special import factorial as fact
 from scipy.special import binom
 
-from pysisyphus.wavefunction.helpers import canonical_order
-from pysisyphus.wavefunction.normalization import get_lmn_factors
+from byted_pysisyphus.wavefunction.helpers import canonical_order
+from byted_pysisyphus.wavefunction.normalization import get_lmn_factors
 
 
 ZERO_THRESH = 1e-14

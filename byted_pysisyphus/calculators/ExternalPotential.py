@@ -4,14 +4,14 @@ from typing import Optional
 import numpy as np
 from numpy.typing import ArrayLike
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import KB, AU2J
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords.PrimTypes import prims_from_prim_inputs
-from pysisyphus.intcoords.update import correct_dihedrals
-from pysisyphus.intcoords import Torsion
-from pysisyphus.linalg import rmsd_grad
-from pysisyphus.calculators.DFTD3 import DFTD3
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import KB, AU2J
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords.PrimTypes import prims_from_prim_inputs
+from byted_pysisyphus.intcoords.update import correct_dihedrals
+from byted_pysisyphus.intcoords import Torsion
+from byted_pysisyphus.linalg import rmsd_grad
+from byted_pysisyphus.calculators.DFTD3 import DFTD3
 
 class LogFermi:
     def __init__(self, beta, radius, T=300, origin=(0.0, 0.0, 0.0), geom=None):

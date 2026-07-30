@@ -5,16 +5,16 @@ from typing import Literal, Optional
 import numpy as np
 from scipy.optimize import root_scalar
 
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import rms
-from pysisyphus.io.hessian import save_hessian
-from pysisyphus.optimizers.guess_hessians import (
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.io.hessian import save_hessian
+from byted_pysisyphus.optimizers.guess_hessians import (
     get_guess_hessian,
     xtb_hessian,
     HessInit,
 )
-from pysisyphus.optimizers.hessian_updates import (
+from byted_pysisyphus.optimizers.hessian_updates import (
     bfgs_update,
     flowchart_update,
     damped_bfgs_update,
@@ -23,8 +23,8 @@ from pysisyphus.optimizers.hessian_updates import (
     ts_bfgs_update_org,
     ts_bfgs_update_revised,
 )
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.exceptions import OptimizationError
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.exceptions import OptimizationError
 
 
 def dummy_hessian_update(H, dx, dg):

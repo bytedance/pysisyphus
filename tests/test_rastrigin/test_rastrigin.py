@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.calculators.Rastrigin import Rastrigin
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators.Rastrigin import Rastrigin
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 def test_rastrigin_minimum():

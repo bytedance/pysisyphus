@@ -1,9 +1,9 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.ORCA import parse_orca_cis
-from pysisyphus.wavefunction import Wavefunction
-from pysisyphus.wavefunction.excited_states import (
+from byted_pysisyphus.calculators.ORCA import parse_orca_cis
+from byted_pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.excited_states import (
     norm_ci_coeffs,
     get_state_to_state_transition_density,
 )

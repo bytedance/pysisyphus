@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.linalg import norm3
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.linalg import norm3
 
 
 class BondedFragment(Primitive):

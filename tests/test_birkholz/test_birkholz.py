@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader
-# from pysisyphus.helpers_pure import filter_fixture_store
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 @pytest.mark.benchmark

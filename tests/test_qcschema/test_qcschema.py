@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from pysisyphus.io import geom_from_qcschema
+from byted_pysisyphus.io import geom_from_qcschema
 
 
 @pytest.fixture

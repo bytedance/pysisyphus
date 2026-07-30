@@ -3,8 +3,8 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.calculators import (
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.calculators import (
     Gaussian09,
     Gaussian16,
     ORCA,
@@ -14,7 +14,7 @@ from pysisyphus.calculators import (
 )
 
 try:
-    from pysisyphus.calculators.PySCF import PySCF
+    from byted_pysisyphus.calculators.PySCF import PySCF
 except (ModuleNotFoundError, OSError):
     # Dummy class so we can keep the PySCF reference in the test_h2o2 test
     class PySCF:
@@ -22,7 +22,7 @@ except (ModuleNotFoundError, OSError):
 
 
 try:
-    from pysisyphus.calculators.QCEngine import QCEngine
+    from byted_pysisyphus.calculators.QCEngine import QCEngine
 except ImportError:
     # Dummy class so we can keep the QCEngine reference in the test_h2o2 test
     class QCEngine:
@@ -30,15 +30,15 @@ except ImportError:
 
 
 try:
-    from pysisyphus.calculators.OBabel import OBabel
+    from byted_pysisyphus.calculators.OBabel import OBabel
 except ImportError:
     class OBabel:
         pass
 
 
-from pysisyphus.helpers import Geometry, geom_loader
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import Geometry, geom_loader
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture

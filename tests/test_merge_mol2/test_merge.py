@@ -3,8 +3,8 @@ import tempfile
 
 import pytest
 
-from pysisyphus.drivers.merge_mol2 import merge_mol2_geoms
-from pysisyphus.testing import using
+from byted_pysisyphus.drivers.merge_mol2 import merge_mol2_geoms
+from byted_pysisyphus.testing import using
 
 
 @using("openbabel")

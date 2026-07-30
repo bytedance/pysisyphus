@@ -7,8 +7,8 @@ from pathlib import Path
 
 import numpy as np
 
-from pysisyphus.helpers_pure import rms
-from pysisyphus.intcoords.helpers import get_weighted_bond_mode
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.intcoords.helpers import get_weighted_bond_mode
 
 
 class GrowingNT:

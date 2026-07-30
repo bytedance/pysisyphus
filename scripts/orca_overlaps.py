@@ -3,8 +3,8 @@
 import argparse
 import sys
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.helpers_pure import highlight_text
 
 
 def parse_args(args):

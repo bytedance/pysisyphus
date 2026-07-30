@@ -1,11 +1,11 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import standard_state_corr
-from pysisyphus.io.hessian import geom_from_hessian
-from pysisyphus.run import run_from_dict
-from pysisyphus.drivers.barriers import do_endopt_ts_barriers
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import standard_state_corr
+from byted_pysisyphus.io.hessian import geom_from_hessian
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.drivers.barriers import do_endopt_ts_barriers
+from byted_pysisyphus.testing import using
 
 
 @using("xtb")

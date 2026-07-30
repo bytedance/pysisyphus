@@ -8,10 +8,10 @@ import cloudpickle
 from natsort import natsorted
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file, geoms_from_trj
-from pysisyphus.calculators.Turbomole import Turbomole
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file, geoms_from_trj
+from byted_pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
 
 
 THIS_DIR = pathlib.Path(os.path.dirname(os.path.realpath(__file__)))

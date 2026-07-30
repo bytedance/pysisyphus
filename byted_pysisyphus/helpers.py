@@ -14,16 +14,16 @@ import scipy as sp
 from scipy.optimize import linear_sum_assignment
 from scipy.spatial.distance import cdist
 
-from pysisyphus.config import p_DEFAULT, T_DEFAULT, LIB_DIR
-from pysisyphus.constants import ANG2BOHR, AU2KJPERMOL
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import (
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT, LIB_DIR
+from byted_pysisyphus.constants import ANG2BOHR, AU2KJPERMOL
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import (
     eigval_to_wavenumber,
     report_isotopes,
     highlight_text,
     rms,
 )
-from pysisyphus.io import (
+from byted_pysisyphus.io import (
     geom_from_cjson,
     geom_from_crd,
     geom_from_cube,
@@ -37,11 +37,11 @@ from pysisyphus.io import (
     geoms_from_inline_xyz,
     geom_from_pubchem_name,
 )
-from pysisyphus.thermo import (
+from byted_pysisyphus.thermo import (
     can_thermoanalysis,
     print_thermoanalysis,
 )
-from pysisyphus.xyzloader import parse_xyz_file, parse_trj_file, make_trj_str
+from byted_pysisyphus.xyzloader import parse_xyz_file, parse_trj_file, make_trj_str
 
 
 def geom_from_xyz_file(xyz_fn, coord_type="cart", **coord_kwargs):

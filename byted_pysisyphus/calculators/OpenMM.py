@@ -7,8 +7,8 @@ try:
 except ModuleNotFoundError:
     print("OpenMM is not installed!")
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 
 class OpenMM(Calculator):

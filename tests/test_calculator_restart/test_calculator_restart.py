@@ -3,18 +3,18 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators import ORCA, Gaussian16, Turbomole
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators import ORCA, Gaussian16, Turbomole
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.testing import using
 
 
 init_logging()

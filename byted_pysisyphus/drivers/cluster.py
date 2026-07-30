@@ -6,9 +6,9 @@ from typing import Dict, List
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.io.pdb import parse_pdb
-from pysisyphus.io.psf import parse_psf
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.io.pdb import parse_pdb
+from byted_pysisyphus.io.psf import parse_psf
 
 
 @dataclass

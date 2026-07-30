@@ -10,8 +10,8 @@ except ModuleNotFoundError:
 except ImportError:
     pass
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import BOHR2ANG, AU2KJPERMOL, AU2KCALPERMOL
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import BOHR2ANG, AU2KJPERMOL, AU2KCALPERMOL
 
 
 def _getpluginnames(ptype):

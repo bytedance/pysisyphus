@@ -1,4 +1,4 @@
-from pysisyphus.optimizers import (
+from byted_pysisyphus.optimizers import (
     BFGS,
     CubicNewton,
     ConjugateGradient,
@@ -15,7 +15,7 @@ from pysisyphus.optimizers import (
     StabilizedQNMethod,
     StringOptimizer,
 )
-from pysisyphus.tsoptimizers import (
+from byted_pysisyphus.tsoptimizers import (
     RSPRFOptimizer,
     TRIM,
     RSIRFOptimizer,

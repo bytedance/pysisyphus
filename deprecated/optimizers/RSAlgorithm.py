@@ -7,7 +7,7 @@ from math import sqrt
 import numpy as np
 from scipy.optimize import root_scalar
 
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
 
 
 class RSAlgorithm(HessianOptimizer):

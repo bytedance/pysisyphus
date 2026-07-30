@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
 
 class BacktrackingOptimizer(Optimizer):
 

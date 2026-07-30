@@ -1,8 +1,8 @@
 import numpy as np 
 import h5py
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
 
 
 def save_hessian(h5_fn, geom, cart_hessian=None, energy=None, mult=None):

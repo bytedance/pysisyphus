@@ -4,7 +4,7 @@ import numpy as np
 from numpy.typing import NDArray
 from scipy.special import factorial2
 
-from pysisyphus.wavefunction.helpers import canonical_order
+from byted_pysisyphus.wavefunction.helpers import canonical_order
 
 
 # @functools.cache

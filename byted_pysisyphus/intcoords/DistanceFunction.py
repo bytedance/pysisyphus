@@ -1,5 +1,5 @@
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.intcoords.Stretch import Stretch
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.intcoords.Stretch import Stretch
 
 
 class DistanceFunction(Primitive):

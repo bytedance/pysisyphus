@@ -32,10 +32,10 @@ import numpy as np
 from numpy.typing import NDArray
 from numpy.polynomial.laguerre import Laguerre
 
-from pysisyphus.constants import AMU2AU, AU2EV, AU2SEC, C, KB, PLANCK
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.io import geom_from_hessian
-from pysisyphus.Geometry import Geometry, get_trans_rot_projector
+from byted_pysisyphus.constants import AMU2AU, AU2EV, AU2SEC, C, KB, PLANCK
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.Geometry import Geometry, get_trans_rot_projector
 
 
 # From cm⁻¹ to angular frequency in atomic units

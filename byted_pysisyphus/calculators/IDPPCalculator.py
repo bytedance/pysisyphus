@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.spatial.distance import pdist, squareform
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 
 class IDPPCalculator(Calculator):

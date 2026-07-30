@@ -2,8 +2,8 @@ import os
 
 import h5py
 
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from networkx.algorithms import isomorphism
 
-from pysisyphus.intcoords.setup import get_bond_mat
-from pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.intcoords.setup import get_bond_mat
+from byted_pysisyphus.helpers import geom_from_xyz_file
 
 
 def get_labels(geom):

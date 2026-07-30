@@ -9,10 +9,10 @@ try:
 except ModuleNotFoundError:
     can_thermoanalysis = False
 
-from pysisyphus.config import p_DEFAULT, T_DEFAULT
-from pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.Geometry import Geometry
 
 
 def get_thermoanalysis_from_hess_h5(

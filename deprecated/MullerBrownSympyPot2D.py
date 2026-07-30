@@ -1,4 +1,4 @@
-from pysisyphus.calculators.AnaPotBase2D import AnaPotBase2D
+from byted_pysisyphus.calculators.AnaPotBase2D import AnaPotBase2D
 
 # [1] http://www.cims.nyu.edu/~eve2/string_jcp_simplified07.pdf
 

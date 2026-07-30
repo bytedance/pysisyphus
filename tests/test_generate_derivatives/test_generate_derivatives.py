@@ -1,4 +1,4 @@
-from pysisyphus.intcoords.generate_derivatives import generate_wilson
+from byted_pysisyphus.intcoords.generate_derivatives import generate_wilson
 
 
 def test_generate_derivatives():

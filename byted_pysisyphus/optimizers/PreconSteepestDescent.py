@@ -1,4 +1,4 @@
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
 
 
 class PreconSteepestDescent(PreconLBFGS):

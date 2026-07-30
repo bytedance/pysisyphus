@@ -11,10 +11,10 @@ import warnings
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.constants import BOHR2ANG, ANG2BOHR
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction import norm_ci_coeffs, Wavefunction
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.constants import BOHR2ANG, ANG2BOHR
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction import norm_ci_coeffs, Wavefunction
 
 
 def make_sym_mat(table_block):

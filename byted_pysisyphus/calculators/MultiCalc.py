@@ -1,8 +1,8 @@
 import sys
 import time
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.calculators import ORCA, ORCA5, Turbomole, XTB
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators import ORCA, ORCA5, Turbomole, XTB
 
 CALC_CLASSES = {
     "orca": ORCA.ORCA,
@@ -12,7 +12,7 @@ CALC_CLASSES = {
 }
 
 try:
-    from pysisyphus.calculators import PySCF
+    from byted_pysisyphus.calculators import PySCF
 
     CALC_CLASSES["pyscf"] = PySCF.PySCF
 except ModuleNotFoundError:

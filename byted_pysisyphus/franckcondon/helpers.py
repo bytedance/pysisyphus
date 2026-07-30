@@ -1,4 +1,4 @@
-from pysisyphus.constants import AU2SEC, JOULE2EV, C as speed_of_light, PI, HBAR
+from byted_pysisyphus.constants import AU2SEC, JOULE2EV, C as speed_of_light, PI, HBAR
 
 
 def nu2angfreq_au(wavenum):

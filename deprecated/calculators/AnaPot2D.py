@@ -1,4 +1,4 @@
-from pysisyphus.calculators.AnaPotBase2D import AnaPotBase2D
+from byted_pysisyphus.calculators.AnaPotBase2D import AnaPotBase2D
 
 class AnaPot2D(AnaPotBase2D):
 

@@ -18,8 +18,8 @@ __all__ = [
     "StabilizedQNMethod",
 ]
 
-from pysisyphus.optimizers.CubicNewton import CubicNewton
-from pysisyphus.optimizers.MicroOptimizer import MicroOptimizer
+from byted_pysisyphus.optimizers.CubicNewton import CubicNewton
+from byted_pysisyphus.optimizers.MicroOptimizer import MicroOptimizer
 
 logger = logging.getLogger("optimizer")
 logger.setLevel(logging.DEBUG)

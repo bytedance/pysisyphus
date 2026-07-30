@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.xyzloader import make_trj_str
-from pysisyphus.Geometry import get_trans_rot_projector
-from pysisyphus.constants import BOHR2ANG, KBAU, VELO2E
+from byted_pysisyphus.xyzloader import make_trj_str
+from byted_pysisyphus.Geometry import get_trans_rot_projector
+from byted_pysisyphus.constants import BOHR2ANG, KBAU, VELO2E
 
 
 def dump_coords(atoms, coords, trj_fn):

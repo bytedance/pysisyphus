@@ -2,8 +2,8 @@ from datetime import timedelta
 import sys
 import time
 
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.TablePrinter import TablePrinter
 
 
 def run_perf(

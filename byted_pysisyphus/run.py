@@ -19,21 +19,21 @@ import numpy as np
 import scipy as sp
 import yaml
 
-from pysisyphus import __version__
-from pysisyphus.calculators import *
-from pysisyphus.config import OUT_DIR_DEFAULT, p_DEFAULT, T_DEFAULT
-from pysisyphus.cos import *
-from pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
-from pysisyphus.color import bool_color
-from pysisyphus.exceptions import HEIIsFirstOrLastException
-from pysisyphus.dynamics import (
+from byted_pysisyphus import __version__
+from byted_pysisyphus.calculators import *
+from byted_pysisyphus.config import OUT_DIR_DEFAULT, p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.cos import *
+from byted_pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
+from byted_pysisyphus.color import bool_color
+from byted_pysisyphus.exceptions import HEIIsFirstOrLastException
+from byted_pysisyphus.dynamics import (
     get_mb_velocities_for_geom,
     mdp,
     md,
     get_colvar,
     Gaussian,
 )
-from pysisyphus.drivers import (
+from byted_pysisyphus.drivers import (
     relaxed_1d_scan,
     run_afir_paths,
     run_opt,
@@ -41,16 +41,16 @@ from pysisyphus.drivers import (
     run_perf,
     print_perf_results,
 )
-from pysisyphus.drivers.barriers import do_endopt_ts_barriers
+from byted_pysisyphus.drivers.barriers import do_endopt_ts_barriers
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import (
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import (
     confirm_input,
     shake_coords,
     print_barrier,
     get_tangent_trj_str,
 )
-from pysisyphus.helpers_pure import (
+from byted_pysisyphus.helpers_pure import (
     find_closest_sequence,
     merge_sets,
     recursive_update,
@@ -58,20 +58,20 @@ from pysisyphus.helpers_pure import (
     approx_float,
     results_to_json,
 )
-from pysisyphus.intcoords import PrimitiveNotDefinedException
-from pysisyphus.intcoords.setup import get_bond_mat
-from pysisyphus.init_logging import init_logging
-from pysisyphus.intcoords.PrimTypes import PrimTypes, normalize_prim_inputs
-from pysisyphus.intcoords.helpers import form_coordinate_union
-from pysisyphus.intcoords.setup import get_bond_sets
-from pysisyphus.interpolate import interpolate_all
-from pysisyphus.irc import *
-from pysisyphus.io import save_hessian
-from pysisyphus.stocastic import *
-from pysisyphus.thermo import can_thermoanalysis
-from pysisyphus.trj import get_geoms, dump_geoms, standardize_geoms
-from pysisyphus.xyzloader import write_geoms_to_trj
-from pysisyphus.yaml_mods import get_loader, UNITS
+from byted_pysisyphus.intcoords import PrimitiveNotDefinedException
+from byted_pysisyphus.intcoords.setup import get_bond_mat
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes, normalize_prim_inputs
+from byted_pysisyphus.intcoords.helpers import form_coordinate_union
+from byted_pysisyphus.intcoords.setup import get_bond_sets
+from byted_pysisyphus.interpolate import interpolate_all
+from byted_pysisyphus.irc import *
+from byted_pysisyphus.io import save_hessian
+from byted_pysisyphus.stocastic import *
+from byted_pysisyphus.thermo import can_thermoanalysis
+from byted_pysisyphus.trj import get_geoms, dump_geoms, standardize_geoms
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.yaml_mods import get_loader, UNITS
 
 
 CALC_DICT = {
@@ -103,18 +103,18 @@ CALC_DICT = {
 }
 
 try:
-    from pysisyphus.calculators.PySCF import PySCF
+    from byted_pysisyphus.calculators.PySCF import PySCF
 
     CALC_DICT["pyscf"] = PySCF
 
-    from pysisyphus.calculators.VolcQC import VolcQC
+    from byted_pysisyphus.calculators.VolcQC import VolcQC
 
     CALC_DICT["volcqc"] = VolcQC
 except ImportError:
     pass
 
 try:
-    from pysisyphus.calculators.QCEngine import QCEngine
+    from byted_pysisyphus.calculators.QCEngine import QCEngine
 
     CALC_DICT["qcengine"] = QCEngine
 except ImportError:
@@ -648,7 +648,7 @@ def run_md(geom, calc_getter, md_kwargs):
     ).flatten()
     md_result = md(geom, v0=v0, steps=steps, dt=dt, gaussians=gaussians, **md_kwargs)
 
-    # from pysisyphus.xyzloader import coords_to_trj
+    # from byted_pysisyphus.xyzloader import coords_to_trj
     # trj_fn = "md.trj"
     # _ = coords_to_trj(
     # trj_fn, geom.atoms, md_result.coords[::md_kwargs["dump_stride"]]

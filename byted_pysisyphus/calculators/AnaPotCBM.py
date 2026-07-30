@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
 
 # Taken from [1] 10.1021/ct9005147
 #  J. Chem. Theory Comput., 2010, 6 (4), pp 1136–1144

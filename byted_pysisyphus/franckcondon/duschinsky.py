@@ -20,8 +20,8 @@ import itertools as it
 import numpy as np
 import scipy as sp
 
-from pysisyphus.constants import AMU2AU, AMU2KG, BOHR2M, C, HBAR
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.constants import AMU2AU, AMU2KG, BOHR2M, C, HBAR
+from byted_pysisyphus.Geometry import Geometry
 
 
 AMU2KG_SQRT = np.sqrt(AMU2KG)

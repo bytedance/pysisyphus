@@ -18,15 +18,15 @@ from numpy.typing import NDArray
 import scipy as sp
 
 
-from pysisyphus.config import L_MAX, L_AUX_MAX
-from pysisyphus.elem_data import (
+from byted_pysisyphus.config import L_MAX, L_AUX_MAX
+from byted_pysisyphus.elem_data import (
     ATOMIC_NUMBERS,
     INV_ATOMIC_NUMBERS,
     nuc_charges_for_atoms,
 )
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.linalg import multi_component_sym_mat
-from pysisyphus.wavefunction.helpers import (
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.linalg import multi_component_sym_mat
+from byted_pysisyphus.wavefunction.helpers import (
     canonical_order,
     get_l,
     get_shell_shape,
@@ -34,7 +34,7 @@ from pysisyphus.wavefunction.helpers import (
     permut_for_order,
 )
 
-from pysisyphus.wavefunction.ints import (
+from byted_pysisyphus.wavefunction.ints import (
     cart_gto3d,
     coulomb3d,
     diag_quadrupole3d,
@@ -46,8 +46,8 @@ from pysisyphus.wavefunction.ints import (
     int3c2e3d_sph,
 )
 
-from pysisyphus.wavefunction.cart2sph import cart2sph_coeffs
-from pysisyphus.wavefunction.normalization import norm_cgto_lmn
+from byted_pysisyphus.wavefunction.cart2sph import cart2sph_coeffs
+from byted_pysisyphus.wavefunction.normalization import norm_cgto_lmn
 
 
 class Shell:
@@ -368,7 +368,7 @@ class Shells:
         return sum([shell.size for shell in self.shells])
 
     def from_basis(self, name, shells_cls=None, **kwargs):
-        from pysisyphus.wavefunction.Basis import shells_with_basis
+        from byted_pysisyphus.wavefunction.Basis import shells_with_basis
 
         atoms, coords3d = self.atoms_coords3d
         if shells_cls is None:
@@ -381,7 +381,7 @@ class Shells:
     @file_or_str(".in")
     def from_aomix(text):
         # import here, to avoid cyclic imports
-        from pysisyphus.io.aomix import shells_from_aomix
+        from byted_pysisyphus.io.aomix import shells_from_aomix
 
         shells = shells_from_aomix(text)
         return shells
@@ -390,7 +390,7 @@ class Shells:
     @file_or_str(".json")
     def from_orca_json(text):
         # import here, to avoid cyclic imports
-        from pysisyphus.io.orca import shells_from_json
+        from byted_pysisyphus.io.orca import shells_from_json
 
         shells = shells_from_json(text)
         return shells
@@ -399,7 +399,7 @@ class Shells:
     @file_or_str(".fchk")
     def from_fchk(text):
         # import here, to avoid cyclic imports
-        from pysisyphus.io.fchk import shells_from_fchk
+        from byted_pysisyphus.io.fchk import shells_from_fchk
 
         shells = shells_from_fchk(text)
         return shells

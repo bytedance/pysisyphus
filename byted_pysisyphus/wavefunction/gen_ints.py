@@ -61,10 +61,10 @@ from sympy.codegen.ast import Assignment
 from sympy.printing.numpy import NumPyPrinter
 from sympy.printing.c import C99CodePrinter
 
-# from pysisyphus.wavefunction.cart2sph import cart2sph_coeffs
+# from byted_pysisyphus.wavefunction.cart2sph import cart2sph_coeffs
 
 try:
-    from pysisyphus.config import L_MAX, L_AUX_MAX
+    from byted_pysisyphus.config import L_MAX, L_AUX_MAX
 except ModuleNotFoundError:
     L_MAX = 4
     L_AUX_MAX = 5
@@ -1364,7 +1364,7 @@ def run():
     C, C_map = get_map("C", center_C)
     D, D_map = get_map("D", center_D)
 
-    boys_import = ("from pysisyphus.wavefunction.ints.boys import boys",)
+    boys_import = ("from byted_pysisyphus.wavefunction.ints.boys import boys",)
 
     #################
     # Cartesian GTO #

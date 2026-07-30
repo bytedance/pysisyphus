@@ -5,10 +5,10 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 from sympy import symbols, diff, lambdify, sympify
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.Geometry import Geometry
-from pysisyphus.interpolate import interpolate
-from pysisyphus.plotters.AnimPlot import AnimPlot
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.interpolate import interpolate
+from byted_pysisyphus.plotters.AnimPlot import AnimPlot
 
 
 class AnaPotBase(Calculator):

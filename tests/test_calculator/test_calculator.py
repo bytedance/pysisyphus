@@ -4,9 +4,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from pysisyphus.helpers_pure import results_to_json, json_to_results
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers_pure import results_to_json, json_to_results
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 def test_results_to_json():

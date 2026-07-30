@@ -2,7 +2,7 @@ import numpy as np
 import qcengine as qcng
 import qcelemental as qcel
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 
 class QCEngine(Calculator):

@@ -10,8 +10,8 @@ import h5py
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.config import Config
-from pysisyphus.helpers_pure import chunks
+from byted_pysisyphus.config import Config
+from byted_pysisyphus.helpers_pure import chunks
 
 
 CIOVL="""mix_aoovl=ao_ovl
@@ -91,7 +91,7 @@ class WFOWrapper2:
             and - for negative doubles."""
             return f"{num:+20.13E}".replace("E", "D")
 
-        base = "$scfmo    scfconv=7  format(4d20.14)\n# from pysisyphus\n" \
+        base = "$scfmo    scfconv=7  format(4d20.14)\n# from byted_pysisyphus\n" \
                "{mo_strings}\n$end"
 
         # WFOverlap expects the string eigenvalue starting at 16, so we have

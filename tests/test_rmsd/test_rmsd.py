@@ -2,7 +2,7 @@ import numpy as np
 from numpy.random import MT19937, RandomState, SeedSequence
 from pytest import approx
 
-from pysisyphus.linalg import rmsd_grad
+from byted_pysisyphus.linalg import rmsd_grad
 
 
 def test_rmsd_grad():

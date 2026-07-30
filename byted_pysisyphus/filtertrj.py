@@ -4,8 +4,8 @@ import sys
 
 import numpy as np
 
-from pysisyphus.helpers import geoms_from_trj
-from pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.helpers import geoms_from_trj
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 def parse_args(args):

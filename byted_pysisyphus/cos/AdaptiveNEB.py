@@ -7,8 +7,8 @@
 
 import numpy as np
 
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.interpolate import interpolate
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.interpolate import interpolate
 
 
 class AdaptiveNEB(NEB):

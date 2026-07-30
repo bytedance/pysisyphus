@@ -4,9 +4,9 @@ except ImportError:
     pass
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.xyzloader import make_xyz_str
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.xyzloader import make_xyz_str
 
 
 class PyPsi4(Calculator):

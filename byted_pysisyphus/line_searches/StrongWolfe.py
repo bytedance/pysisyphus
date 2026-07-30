@@ -1,10 +1,10 @@
 # [1] Nocedal, Numerical Optimization
 
-from pysisyphus.line_searches.LineSearch import LineSearch, \
+from byted_pysisyphus.line_searches.LineSearch import LineSearch, \
                                                 LineSearchNotConverged
 
 
-from pysisyphus.line_searches.interpol import interpol_alpha_quad, interpol_alpha_cubic
+from byted_pysisyphus.line_searches.interpol import interpol_alpha_quad, interpol_alpha_cubic
 
 
 class StrongWolfe(LineSearch):

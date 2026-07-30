@@ -3,8 +3,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords import Torsion
-from pysisyphus.intcoords.derivatives import q_d2, dq_d2, d2q_d2
+from byted_pysisyphus.intcoords import Torsion
+from byted_pysisyphus.intcoords.derivatives import q_d2, dq_d2, d2q_d2
 
 
 class Torsion2(Torsion):

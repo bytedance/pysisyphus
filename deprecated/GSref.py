@@ -5,7 +5,7 @@
 import numpy as np
 from scipy.interpolate import splprep, splev
 
-from pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
+from byted_pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
 
 
 class GrowingString(GrowingChainOfStates):

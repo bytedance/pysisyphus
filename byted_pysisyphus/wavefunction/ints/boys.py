@@ -14,7 +14,7 @@ import sys
 import numpy as np
 from scipy.special import factorial2
 
-from pysisyphus.config import CONFIG_DIR, L_MAX, L_AUX_MAX
+from byted_pysisyphus.config import CONFIG_DIR, L_MAX, L_AUX_MAX
 
 
 _BOYS_TABLE = np.load(

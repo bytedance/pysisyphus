@@ -1,7 +1,7 @@
 import numpy as np
 import rmsd
 
-from pysisyphus.stocastic.Pipeline import Pipeline
+from byted_pysisyphus.stocastic.Pipeline import Pipeline
 
 
 class Kick(Pipeline):

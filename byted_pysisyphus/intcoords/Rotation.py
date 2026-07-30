@@ -3,8 +3,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.linalg import eigvec_grad, rot_quaternion
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.linalg import eigvec_grad, rot_quaternion
 
 
 def compare_to_geometric(c3d, ref_c3d, dR, dF, dqdx, dvdx, atol=1e-14):

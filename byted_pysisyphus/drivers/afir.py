@@ -24,22 +24,22 @@ from rmsd import kabsch_rmsd
 from scipy.spatial.distance import pdist
 from scipy.optimize import least_squares
 
-from pysisyphus import logger as pysis_logger
-from pysisyphus.calculators.AFIR import AFIR, CovRadiiSumZero
-from pysisyphus.calculators import HardSphere
-from pysisyphus.config import AFIR_RMSD_THRESH, OUT_DIR_DEFAULT
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.drivers.opt import run_opt
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import pick_image_inds, check_for_end_sign
-from pysisyphus.helpers_pure import to_sets
-from pysisyphus.intcoords.helpers import get_bond_difference
-from pysisyphus.intcoords.setup import get_pair_covalent_radii
-from pysisyphus.intcoords.setup_fast import find_bonds
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.xyzloader import make_xyz_str
+from byted_pysisyphus import logger as pysis_logger
+from byted_pysisyphus.calculators.AFIR import AFIR, CovRadiiSumZero
+from byted_pysisyphus.calculators import HardSphere
+from byted_pysisyphus.config import AFIR_RMSD_THRESH, OUT_DIR_DEFAULT
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.drivers.opt import run_opt
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import pick_image_inds, check_for_end_sign
+from byted_pysisyphus.helpers_pure import to_sets
+from byted_pysisyphus.intcoords.helpers import get_bond_difference
+from byted_pysisyphus.intcoords.setup import get_pair_covalent_radii
+from byted_pysisyphus.intcoords.setup_fast import find_bonds
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.xyzloader import make_xyz_str
 
 
 logger = pysis_logger.getChild("afir")

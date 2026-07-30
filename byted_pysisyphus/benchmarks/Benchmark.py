@@ -1,6 +1,6 @@
-from pysisyphus.helpers import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.benchmarks.data import *
+from byted_pysisyphus.helpers import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.benchmarks.data import *
 
 
 class Benchmark:

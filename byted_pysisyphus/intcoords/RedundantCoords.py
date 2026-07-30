@@ -11,22 +11,22 @@ from operator import itemgetter
 
 import numpy as np
 
-from pysisyphus.config import (
+from byted_pysisyphus.config import (
     BEND_MIN_DEG,
     LB_MIN_DEG,
     DIHED_MAX_DEG,
 )
-from pysisyphus.elem_data import get_tm_indices
-from pysisyphus.linalg import svd_inv
-from pysisyphus.intcoords.exceptions import PrimitiveNotDefinedException
-from pysisyphus.intcoords.update import transform_int_step
-from pysisyphus.intcoords.eval import (
+from byted_pysisyphus.elem_data import get_tm_indices
+from byted_pysisyphus.linalg import svd_inv
+from byted_pysisyphus.intcoords.exceptions import PrimitiveNotDefinedException
+from byted_pysisyphus.intcoords.update import transform_int_step
+from byted_pysisyphus.intcoords.eval import (
     eval_primitives,
     check_primitives,
 )
 
-from pysisyphus.intcoords.logging_conf import logger
-from pysisyphus.intcoords.PrimTypes import (
+from byted_pysisyphus.intcoords.logging_conf import logger
+from byted_pysisyphus.intcoords.PrimTypes import (
     normalize_prim_inputs,
     PrimTypes,
     # PrimType classes
@@ -41,11 +41,11 @@ from pysisyphus.intcoords.PrimTypes import (
     Translations,
 )
 
-from pysisyphus.intcoords.setup import (
+from byted_pysisyphus.intcoords.setup import (
     setup_redundant,
     get_primitives,
 )
-from pysisyphus.intcoords.valid import check_typed_prims
+from byted_pysisyphus.intcoords.valid import check_typed_prims
 
 
 class RedundantCoords:

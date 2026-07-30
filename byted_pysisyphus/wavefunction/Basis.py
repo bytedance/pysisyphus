@@ -6,12 +6,12 @@ from typing import Tuple
 
 import numpy as np
 
-from pysisyphus.config import BASIS_LIB_DIR
-from pysisyphus.elem_data import ATOMIC_NUMBERS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction import Shell, Shells
-from pysisyphus.wavefunction.helpers import L_MAP
+from byted_pysisyphus.config import BASIS_LIB_DIR
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction import Shell, Shells
+from byted_pysisyphus.wavefunction.helpers import L_MAP
 
 
 def basis_from_json(name):

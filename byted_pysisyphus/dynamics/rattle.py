@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.constants import FORCE2ACC
-from pysisyphus.dynamics.helpers import energy_forces_getter_closure, remove_com_velocity
+from byted_pysisyphus.constants import FORCE2ACC
+from byted_pysisyphus.dynamics.helpers import energy_forces_getter_closure, remove_com_velocity
 
 
 def rattle_closure(geom, constraints, dt, tol=1e-3, max_cycles=25,

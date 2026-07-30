@@ -3,11 +3,11 @@ from typing import List
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.intcoords.exceptions import DifferentPrimitivesException
-from pysisyphus.intcoords.RedundantCoords import RedundantCoords
-from pysisyphus.intcoords.setup import get_bond_sets, BOND_FACTOR
-from pysisyphus.intcoords.Stretch import Stretch
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.intcoords.exceptions import DifferentPrimitivesException
+from byted_pysisyphus.intcoords.RedundantCoords import RedundantCoords
+from byted_pysisyphus.intcoords.setup import get_bond_sets, BOND_FACTOR
+from byted_pysisyphus.intcoords.Stretch import Stretch
 
 
 def get_tangent(prims1, prims2, dihedral_inds, normalize=False):

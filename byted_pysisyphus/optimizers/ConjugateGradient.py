@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
+from byted_pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
 
 # http://ikuz.eu/2015/04/15/the-concept-of-conjugate-gradient-descent-in-python/
 

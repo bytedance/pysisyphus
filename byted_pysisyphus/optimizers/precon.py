@@ -5,16 +5,16 @@ import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from scipy.sparse import dok_matrix
 
-from pysisyphus.helpers_pure import log
-from pysisyphus.intcoords.setup import get_pair_covalent_radii
-from pysisyphus.intcoords.setup_fast import (
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.intcoords.setup import get_pair_covalent_radii
+from byted_pysisyphus.intcoords.setup_fast import (
     find_bonds_for_geom,
     find_bonds_bends,
     find_bonds_bends_dihedrals,
 )
-from pysisyphus.intcoords.derivatives import dq_b, dq_a, dq_d
-from pysisyphus.intcoords import RedundantCoords
-from pysisyphus.optimizers.guess_hessians import get_lindh_alpha
+from byted_pysisyphus.intcoords.derivatives import dq_b, dq_a, dq_d
+from byted_pysisyphus.intcoords import RedundantCoords
+from byted_pysisyphus.optimizers.guess_hessians import get_lindh_alpha
 
 
 # [1] https://www.nature.com/articles/s41598-018-32105-x

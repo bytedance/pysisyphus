@@ -3,9 +3,9 @@ from math import cos, sin
 import numpy as np
 from scipy.optimize import newton
 
-from pysisyphus.irc.IRC import IRC
-from pysisyphus.optimizers.hessian_updates import bfgs_update
-from pysisyphus.TableFormatter import TableFormatter
+from byted_pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update
+from byted_pysisyphus.TableFormatter import TableFormatter
 
 
 # [1] An improved algorithm for reaction path following

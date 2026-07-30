@@ -6,11 +6,11 @@
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import rms
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
-from pysisyphus.optimizers.poly_fit import poly_line_search
-from pysisyphus.optimizers.gdiis import gdiis, gediis
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.optimizers.poly_fit import poly_line_search
+from byted_pysisyphus.optimizers.gdiis import gdiis, gediis
 
 
 class RFOptimizer(HessianOptimizer):

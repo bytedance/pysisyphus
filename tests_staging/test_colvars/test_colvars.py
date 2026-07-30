@@ -1,4 +1,4 @@
-from pysisyphus.dynamics.colvars import CVDistance, CVBend, CVTorsion
+from byted_pysisyphus.dynamics.colvars import CVDistance, CVBend, CVTorsion
 
 import pytest
 import numpy as np

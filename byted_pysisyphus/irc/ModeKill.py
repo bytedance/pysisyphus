@@ -1,9 +1,9 @@
 import numpy as np
 
-from pysisyphus.helpers import do_final_hessian
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.irc.IRC import IRC
-from pysisyphus.optimizers.hessian_updates import bofill_update
+from byted_pysisyphus.helpers import do_final_hessian
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.optimizers.hessian_updates import bofill_update
 
 
 class ModeKill(IRC):

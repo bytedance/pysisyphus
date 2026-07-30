@@ -4,10 +4,10 @@ import itertools as it
 from pathlib import Path
 import shutil
 
-from pysisyphus.helpers import get_baker_opt_ts_geoms
-from pysisyphus.color import green, red
-from pysisyphus.calculators import Gaussian16
-from pysisyphus.irc import EulerPC
+from byted_pysisyphus.helpers import get_baker_opt_ts_geoms
+from byted_pysisyphus.color import green, red
+from byted_pysisyphus.calculators import Gaussian16
+from byted_pysisyphus.irc import EulerPC
 
 
 colors = {

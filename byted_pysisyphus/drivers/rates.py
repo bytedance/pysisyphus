@@ -23,8 +23,8 @@ import numpy as np
 import numpy.typing as npt
 import scipy.integrate as integrate
 
-from pysisyphus.constants import AU2KJPERMOL, AU2SEC, C, KB, KBAU, PLANCK, PLANCKAU
-from pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.constants import AU2KJPERMOL, AU2SEC, C, KB, KBAU, PLANCK, PLANCKAU
+from byted_pysisyphus.io import geom_from_hessian
 
 
 @dataclass

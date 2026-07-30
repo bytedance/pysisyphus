@@ -16,11 +16,11 @@ import numpy as np
 from numpy.typing import ArrayLike
 from scipy.spatial.distance import pdist, squareform
 
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords.PrimTypes import PrimTypes as PT, Bonds, Bends, Dihedrals
-from pysisyphus.intcoords.setup import get_pair_covalent_radii
-from pysisyphus.io.hessian import save_hessian
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes as PT, Bonds, Bends, Dihedrals
+from byted_pysisyphus.intcoords.setup import get_pair_covalent_radii
+from byted_pysisyphus.io.hessian import save_hessian
 
 
 HessInit = Literal[

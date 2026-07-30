@@ -9,12 +9,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.helpers import geom_from_xyz_file, eigval_to_wavenumber, shake_coords
-from pysisyphus.irc.ModeKill import ModeKill
-from pysisyphus.TablePrinter import TablePrinter
-from pysisyphus.xyzloader import coords_to_trj
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.helpers import geom_from_xyz_file, eigval_to_wavenumber, shake_coords
+from byted_pysisyphus.irc.ModeKill import ModeKill
+from byted_pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.xyzloader import coords_to_trj
 
 
 np.set_printoptions(suppress=True, precision=4)

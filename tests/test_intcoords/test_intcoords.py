@@ -4,15 +4,15 @@ import numpy as np
 import pytest
 from pytest import approx
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.PrimTypes import PrimTypes
-from pysisyphus.intcoords.setup import get_fragments, setup_redundant
-from pysisyphus.intcoords.valid import check_typed_prims
-from pysisyphus.io.zmat import geom_from_zmat_str
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes
+from byted_pysisyphus.intcoords.setup import get_fragments, setup_redundant
+from byted_pysisyphus.intcoords.valid import check_typed_prims
+from byted_pysisyphus.io.zmat import geom_from_zmat_str
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 def numhess(geom, step_size=0.0001):

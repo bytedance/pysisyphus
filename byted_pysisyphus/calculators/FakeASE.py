@@ -1,4 +1,4 @@
-from pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.constants import BOHR2ANG
 
 class FakeASE:
 

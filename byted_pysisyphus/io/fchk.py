@@ -2,12 +2,12 @@ import re
 
 import numpy as np
 
-from pysisyphus.elem_data import INV_ATOMIC_NUMBERS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction.shells import Shell, FCHKShells
-from pysisyphus.wavefunction import Wavefunction
-from pysisyphus.wavefunction.helpers import BFType
+from byted_pysisyphus.elem_data import INV_ATOMIC_NUMBERS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction.shells import Shell, FCHKShells
+from byted_pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.helpers import BFType
 
 
 @file_or_str(".fchk")

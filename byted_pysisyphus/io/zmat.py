@@ -2,8 +2,8 @@ from collections import namedtuple
 
 import numpy as np
 
-from pysisyphus.constants import ANG2BOHR as ANG2BOHR
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.constants import ANG2BOHR as ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
 
 
 ZLine = namedtuple(

@@ -7,7 +7,7 @@
 import numpy as np
 from scipy.integrate import quad
 
-from pysisyphus.franckcondon.helpers import nu2angfreq_au
+from byted_pysisyphus.franckcondon.helpers import nu2angfreq_au
 
 
 def get_crossec_integrand(dE_exc: float, gamma: float, displs, nus):

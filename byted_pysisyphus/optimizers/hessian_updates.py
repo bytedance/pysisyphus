@@ -22,7 +22,7 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
 
 
 def bfgs_update(H, dx, dg):

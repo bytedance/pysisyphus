@@ -2,13 +2,13 @@ import shutil
 
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader, align_geoms
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
-from pysisyphus.tsoptimizers import RSPRFOptimizer
-from pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader, align_geoms
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.tsoptimizers import RSPRFOptimizer
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 def calc_getter(charge, mult):

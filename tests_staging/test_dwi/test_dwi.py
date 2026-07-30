@@ -5,8 +5,8 @@ from pprint import pprint
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.irc.DWI import DWI
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.irc.DWI import DWI
 
 
 def test_dwi():

@@ -2,13 +2,13 @@
 
 from time import time
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.interpolate import interpolate_all
-from pysisyphus.calculators import Psi4
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.interpolate import interpolate_all
+from byted_pysisyphus.calculators import Psi4
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
 
 
 def test_psi4():

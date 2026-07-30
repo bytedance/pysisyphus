@@ -4,13 +4,13 @@ from pathlib import Path
 import h5py
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.helpers import get_tangent_trj_str
-from pysisyphus.helpers_pure import rms
-from pysisyphus.intcoords.helpers import get_weighted_bond_mode
-from pysisyphus.linalg import perp_comp, make_unit_vec
-from pysisyphus.optimizers.closures import small_lbfgs_closure
-from pysisyphus.optimizers.restrict_step import get_scale_max
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.helpers import get_tangent_trj_str
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.intcoords.helpers import get_weighted_bond_mode
+from byted_pysisyphus.linalg import perp_comp, make_unit_vec
+from byted_pysisyphus.optimizers.closures import small_lbfgs_closure
+from byted_pysisyphus.optimizers.restrict_step import get_scale_max
 
 
 class RotationConverged(Exception):

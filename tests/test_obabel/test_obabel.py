@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.calculators.OBabel import OBabel
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.OBabel import OBabel
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 @using("obabel")

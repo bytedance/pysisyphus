@@ -12,14 +12,14 @@ except ModuleNotFoundError:
     HAS_OPENBABEL = False
 
 
-from pysisyphus.calculators import (
+from byted_pysisyphus.calculators import (
     Composite,
     HardSphere,
     PWHardSphere,
     TransTorque,
 )
-from pysisyphus.calculators.OBabel import OBabel
-from pysisyphus.drivers.precon_pos_rot import (
+from byted_pysisyphus.calculators.OBabel import OBabel
+from byted_pysisyphus.drivers.precon_pos_rot import (
     center_fragments,
     form_A,
     get_steps_to_active_atom_mean,
@@ -27,12 +27,12 @@ from pysisyphus.drivers.precon_pos_rot import (
     rotate_inplace,
     SteepestDescent,
 )
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import align_coords, geom_loader
-from pysisyphus.io import geom_to_crd_str
-from pysisyphus.linalg import get_rot_mat_for_coords
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.xyzloader import coords_to_trj
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import align_coords, geom_loader
+from byted_pysisyphus.io import geom_to_crd_str
+from byted_pysisyphus.linalg import get_rot_mat_for_coords
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.xyzloader import coords_to_trj
 
 
 def merge_geoms(geom1, geom2, geom1_del=None, geom2_del=None, make_bonds=None):

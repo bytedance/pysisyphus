@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.helpers import get_weighted_bond_mode_getter
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.helpers import get_weighted_bond_mode_getter
 
 
 def test_get_weighted_bond_mode():

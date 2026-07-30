@@ -10,15 +10,15 @@ import warnings
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.elem_data import nuc_charges_for_atoms, MASS_DICT
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction.helpers import BFType
-from pysisyphus.wavefunction.multipole import (
+from byted_pysisyphus.elem_data import nuc_charges_for_atoms, MASS_DICT
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction.helpers import BFType
+from byted_pysisyphus.wavefunction.multipole import (
     get_multipole_moment,
     get_transition_multipole_moment,
 )
-from pysisyphus.wavefunction.shells import Shells
+from byted_pysisyphus.wavefunction.shells import Shells
 
 
 Center = Literal["coc", "com"]
@@ -162,7 +162,7 @@ class Wavefunction:
     @staticmethod
     @file_or_str(".molden", ".molden.input")
     def from_molden(text, **kwargs):
-        from pysisyphus.io.molden import wavefunction_from_molden
+        from byted_pysisyphus.io.molden import wavefunction_from_molden
 
         wf = wavefunction_from_molden(text, **kwargs)
         return wf
@@ -175,7 +175,7 @@ class Wavefunction:
         As of version 5.0.3 ORCA does not create JSON files for systems
         containing an ECP, so this method does not take any additional
         args or kwargs in contrast to from_orca_molden."""
-        from pysisyphus.io.orca import wavefunction_from_json
+        from byted_pysisyphus.io.orca import wavefunction_from_json
 
         wf = wavefunction_from_json(text)
         return wf
@@ -193,7 +193,7 @@ class Wavefunction:
         wavefunction_from_molden will come up with an absurdly high charge.
         """
 
-        from pysisyphus.io.orca import wavefunction_from_molden
+        from byted_pysisyphus.io.orca import wavefunction_from_molden
 
         wf = wavefunction_from_molden(text, **kwargs)
         return wf
@@ -201,7 +201,7 @@ class Wavefunction:
     @staticmethod
     @file_or_str(".molden", ".molden.input")
     def from_fchk(text, **kwargs):
-        from pysisyphus.io.fchk import wavefunction_from_fchk
+        from byted_pysisyphus.io.fchk import wavefunction_from_fchk
 
         wf = wavefunction_from_fchk(text, **kwargs)
         return wf
@@ -209,7 +209,7 @@ class Wavefunction:
     @staticmethod
     @file_or_str(".in")
     def from_aomix(text, **kwargs):
-        from pysisyphus.io.aomix import wavefunction_from_aomix
+        from byted_pysisyphus.io.aomix import wavefunction_from_aomix
 
         wf = wavefunction_from_aomix(text, **kwargs)
         return wf

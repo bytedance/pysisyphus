@@ -1,10 +1,10 @@
-from pysisyphus.line_searches.LineSearch import (
+from byted_pysisyphus.line_searches.LineSearch import (
     LineSearch,
     LineSearchNotConverged,
 )
 
-from pysisyphus.line_searches.interpol import interpol_alpha_quad, interpol_alpha_cubic
-from pysisyphus.optimizers.poly_fit import cubic_fit, quartic_fit
+from byted_pysisyphus.line_searches.interpol import interpol_alpha_quad, interpol_alpha_cubic
+from byted_pysisyphus.optimizers.poly_fit import cubic_fit, quartic_fit
 
 
 class Backtracking(LineSearch):

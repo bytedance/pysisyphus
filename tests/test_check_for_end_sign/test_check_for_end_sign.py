@@ -3,7 +3,7 @@ import tempfile
 
 import pytest
 
-from pysisyphus.helpers import check_for_end_sign
+from byted_pysisyphus.helpers import check_for_end_sign
 
 
 @pytest.mark.parametrize("check_user", (True, False))

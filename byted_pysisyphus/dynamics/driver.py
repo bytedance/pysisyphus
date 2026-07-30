@@ -3,20 +3,20 @@ import logging
 
 import numpy as np
 
-from pysisyphus.config import T_DEFAULT
-from pysisyphus.constants import FORCE2ACC
-from pysisyphus.dynamics.helpers import (
+from byted_pysisyphus.config import T_DEFAULT
+from byted_pysisyphus.constants import FORCE2ACC
+from byted_pysisyphus.dynamics.helpers import (
     kinetic_energy_from_velocities,
     temperature_for_kinetic_energy,
     energy_forces_getter_closure,
     kinetic_energy_for_temperature,
     remove_com_velocity,
 )
-from pysisyphus.dynamics.thermostats import csvr_closure, csvr_closure_2, berendsen_closure
-from pysisyphus.dynamics.rattle import rattle_closure
-from pysisyphus.helpers import check_for_end_sign
-from pysisyphus.helpers_pure import log
-from pysisyphus.io.hdf5 import get_h5_group
+from byted_pysisyphus.dynamics.thermostats import csvr_closure, csvr_closure_2, berendsen_closure
+from byted_pysisyphus.dynamics.rattle import rattle_closure
+from byted_pysisyphus.helpers import check_for_end_sign
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.io.hdf5 import get_h5_group
 
 logger = logging.getLogger("dynamics")
 

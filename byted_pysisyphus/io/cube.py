@@ -8,10 +8,10 @@ import numpy as np
 from numpy.typing import NDArray
 import pyparsing as pp
 
-from pysisyphus.elem_data import ATOMIC_NUMBERS, INV_ATOMIC_NUMBERS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wrapper.jmol import view_cdd_cube
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS, INV_ATOMIC_NUMBERS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wrapper.jmol import view_cdd_cube
 
 
 def get_grid(coords3d, num=10, offset=3.0):

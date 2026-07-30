@@ -1,10 +1,10 @@
 from math import log
 
-from pysisyphus.config import p_DEFAULT, T_DEFAULT
-from pysisyphus.constants import AU2KCALPERMOL, KBAU
-from pysisyphus.helpers_pure import standard_state_corr
-from pysisyphus import logger
-from pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.constants import AU2KCALPERMOL, KBAU
+from byted_pysisyphus.helpers_pure import standard_state_corr
+from byted_pysisyphus import logger
+from byted_pysisyphus.io import geom_from_hessian
 
 
 def G_aq_from_h5_hessian(h5_hessian, solv_en, T=T_DEFAULT, p=p_DEFAULT):

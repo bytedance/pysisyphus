@@ -2,14 +2,14 @@ import h5py
 import numpy as np
 import pytest
 
-import pysisyphus
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import describe
-from pysisyphus.init_logging import init_logging
-from pysisyphus.testing import using
-from pysisyphus.wavefunction.excited_states import norm_ci_coeffs, tden_overlaps
+import byted_pysisyphus as pysisyphus
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import describe
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.wavefunction.excited_states import norm_ci_coeffs, tden_overlaps
 
 
 @pytest.mark.parametrize(

@@ -3,9 +3,9 @@
 import numpy as np
 import pytest
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.PyXTB import PyXTB
-from pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.PyXTB import PyXTB
+from byted_pysisyphus.calculators.XTB import XTB
 
 
 # module load intel/2018.0.33
@@ -29,8 +29,8 @@ def test_pyxtb():
 
 
 def test_pypsi4():
-    from pysisyphus.calculators.PyPsi4 import PyPsi4
-    from pysisyphus.calculators.Psi4 import Psi4
+    from byted_pysisyphus.calculators.PyPsi4 import PyPsi4
+    from byted_pysisyphus.calculators.Psi4 import Psi4
 
     kwargs = {
         "method": "scf",

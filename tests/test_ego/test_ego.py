@@ -2,11 +2,11 @@ from pathlib import Path
 
 import pytest
 
-from pysisyphus.calculators import EGO, XTB, ORCA
-from pysisyphus.helpers import geom_loader, align_geoms
-from pysisyphus.init_logging import init_logging
-from pysisyphus.testing import using
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators import EGO, XTB, ORCA
+from byted_pysisyphus.helpers import geom_loader, align_geoms
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 init_logging()

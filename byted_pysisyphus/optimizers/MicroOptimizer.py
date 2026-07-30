@@ -5,9 +5,9 @@ import sys
 
 import numpy as np
 
-from pysisyphus.optimizers.closures import bfgs_multiply
-from pysisyphus.optimizers.hessian_updates import double_damp
-from pysisyphus.optimizers.poly_fit import poly_line_search
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.optimizers.hessian_updates import double_damp
+from byted_pysisyphus.optimizers.poly_fit import poly_line_search
 
 
 class MicroOptimizer:

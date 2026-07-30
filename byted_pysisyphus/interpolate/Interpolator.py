@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import align_geoms
-from pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import align_geoms
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 class Interpolator:

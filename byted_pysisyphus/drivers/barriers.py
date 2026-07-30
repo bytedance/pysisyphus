@@ -3,11 +3,11 @@ from time import time
 
 import numpy as np
 
-from pysisyphus.config import T_DEFAULT, p_DEFAULT
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.helpers_pure import highlight_text, standard_state_corr
-from pysisyphus.TablePrinter import TablePrinter
-from pysisyphus.thermo import print_thermoanalysis
+from byted_pysisyphus.config import T_DEFAULT, p_DEFAULT
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.helpers_pure import highlight_text, standard_state_corr
+from byted_pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.thermo import print_thermoanalysis
 
 
 def do_endopt_ts_barriers(

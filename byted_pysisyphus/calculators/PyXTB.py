@@ -5,8 +5,8 @@ try:
 except ModuleNotFoundError:
     can_pyxtb = False
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.elem_data import ATOMIC_NUMBERS
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS
 
 
 class PyXTB(Calculator):

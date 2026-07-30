@@ -1,12 +1,12 @@
 from scipy.spatial.distance import pdist
 
-# from pysisyphus.constants import BOHR2ANG, ANG2BOHR
-from pysisyphus.calculators.IDPPCalculator import IDPPCalculator
-from pysisyphus.constants import BOHR2ANG, ANG2BOHR
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import align_geoms
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.interpolate.Interpolator import Interpolator
+# from byted_pysisyphus.constants import BOHR2ANG, ANG2BOHR
+from byted_pysisyphus.calculators.IDPPCalculator import IDPPCalculator
+from byted_pysisyphus.constants import BOHR2ANG, ANG2BOHR
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import align_geoms
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
 
 
 # [1] http://aip.scitation.org/doi/full/10.1063/1.4878664

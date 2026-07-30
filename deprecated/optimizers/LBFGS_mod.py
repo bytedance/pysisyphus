@@ -2,9 +2,9 @@
 
 import numpy as np
 
-from pysisyphus.helpers import fit_rigid, procrustes
-from pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
-from pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.helpers import fit_rigid, procrustes
+from byted_pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
 
 # [1] Nocedal, Wright - Numerical Optimization, 2006
 

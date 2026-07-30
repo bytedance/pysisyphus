@@ -4,10 +4,10 @@ import copy
 
 import pytest
 
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.Geometry import Geometry
-from pysisyphus.optimizers.FIRE import FIRE
-from pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.optimizers.FIRE import FIRE
+from byted_pysisyphus.optimizers.BFGS import BFGS
 
 from qchelper.geometry import parse_xyz_file
 

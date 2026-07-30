@@ -5,12 +5,12 @@ import sys
 import cloudpickle
 import numpy as np
 
-from pysisyphus.constants import EVANG2AUBOHR
-from pysisyphus.helpers import check_for_end_sign, get_geom_getter
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.optimizers.closures import lbfgs_closure_
-import pysisyphus.optimizers.closures as closures
-from pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.constants import EVANG2AUBOHR
+from byted_pysisyphus.helpers import check_for_end_sign, get_geom_getter
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.optimizers.closures import lbfgs_closure_
+import byted_pysisyphus.optimizers.closures as closures
+from byted_pysisyphus.TablePrinter import TablePrinter
 
 
 logger = logging.getLogger("tsoptimizer")

@@ -1,4 +1,4 @@
-from pysisyphus.calculators import XTB, ORCA
+from byted_pysisyphus.calculators import XTB, ORCA
 
 
 LEVELS = (

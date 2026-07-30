@@ -1,8 +1,8 @@
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.cos.AdaptiveNEB import AdaptiveNEB
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.cos.AdaptiveNEB import AdaptiveNEB
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 def test_anapot_aneb():

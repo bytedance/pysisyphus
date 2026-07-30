@@ -2,7 +2,7 @@
 
 import numpy as np
 
-from pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.cos.NEB import NEB
 
 class NoSpringNEB(NEB):
 

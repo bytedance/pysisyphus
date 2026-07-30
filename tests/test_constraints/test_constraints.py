@@ -1,16 +1,16 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.PrimTypes import (
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.PrimTypes import (
     PrimTypes,
     normalize_prim_inputs,
     normalize_prim_input,
 )
-from pysisyphus.optimizers.guess_hessians import get_guess_hessian
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.optimizers.guess_hessians import get_guess_hessian
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 def test_normalize_prim_inputs():

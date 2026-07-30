@@ -3,7 +3,7 @@
 import numpy as np
 from scipy.interpolate import splprep, splev
 
-from pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
 
 class SimpleZTS(ChainOfStates):
 

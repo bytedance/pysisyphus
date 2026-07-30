@@ -4,8 +4,8 @@ import tarfile
 from fabric import Connection
 import yaml
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.helpers_pure import json_to_results
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.helpers_pure import json_to_results
 
 
 class Remote(Calculator):

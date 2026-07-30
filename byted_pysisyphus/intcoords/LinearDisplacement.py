@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.intcoords.derivatives import dq_ld, d2q_ld
-from pysisyphus.linalg import cross3, norm3
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.intcoords.derivatives import dq_ld, d2q_ld
+from byted_pysisyphus.linalg import cross3, norm3
 
 
 class LinearDisplacement(Primitive):

@@ -1,6 +1,6 @@
 import logging
 
-from pysisyphus import logger as pysis_logger
+from byted_pysisyphus import logger as pysis_logger
 
 
 logger = pysis_logger.getChild("internal_coords")

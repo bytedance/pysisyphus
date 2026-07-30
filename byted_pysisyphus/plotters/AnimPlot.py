@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 
-from pysisyphus.helpers import get_coords_diffs
-from pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
+from byted_pysisyphus.helpers import get_coords_diffs
+from byted_pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
 
 
 class AnimPlot:

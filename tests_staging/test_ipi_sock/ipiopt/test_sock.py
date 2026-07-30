@@ -3,8 +3,8 @@ import socket
 
 import numpy as np
 
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader
 
 from socket_helper import send_closure, recv_closure
 from conf import addr as ADDR, get_fmts

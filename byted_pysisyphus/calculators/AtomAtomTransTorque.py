@@ -5,7 +5,7 @@ import itertools as it
 
 import numpy as np
 
-from pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
 
 
 class AtomAtomTransTorque:

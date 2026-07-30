@@ -20,11 +20,11 @@ import time
 import numpy as np
 from scipy.integrate import solve_ivp
 
-from pysisyphus.helpers_pure import rms
-from pysisyphus.io.hessian import save_hessian
-from pysisyphus.irc.DWI import DWI
-from pysisyphus.irc.IRC import IRC
-from pysisyphus.optimizers.hessian_updates import bfgs_update, bofill_update
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.io.hessian import save_hessian
+from byted_pysisyphus.irc.DWI import DWI
+from byted_pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update, bofill_update
 
 
 class EulerPC(IRC):

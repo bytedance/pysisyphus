@@ -9,19 +9,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 import rmsd as rmsd
 
-from pysisyphus.constants import BOHR2ANG, AU2KJPERMOL
-from pysisyphus.cos import *
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords.setup import get_fragments
-from pysisyphus.intcoords.PrimTypes import prim_for_human
-from pysisyphus.drivers.merge import hardsphere_merge as hardsphere_merge_driver
-from pysisyphus.helpers import geom_loader, procrustes, get_coords_diffs, shake_coords
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.interpolate import *
-from pysisyphus.intcoords.helpers import form_coordinate_union
-from pysisyphus.intcoords.PrimTypes import normalize_prim_input, PrimMap
-from pysisyphus.io.pdb import geom_to_pdb_str
-from pysisyphus.stocastic.align import match_geom_atoms
+from byted_pysisyphus.constants import BOHR2ANG, AU2KJPERMOL
+from byted_pysisyphus.cos import *
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords.setup import get_fragments
+from byted_pysisyphus.intcoords.PrimTypes import prim_for_human
+from byted_pysisyphus.drivers.merge import hardsphere_merge as hardsphere_merge_driver
+from byted_pysisyphus.helpers import geom_loader, procrustes, get_coords_diffs, shake_coords
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.interpolate import *
+from byted_pysisyphus.intcoords.helpers import form_coordinate_union
+from byted_pysisyphus.intcoords.PrimTypes import normalize_prim_input, PrimMap
+from byted_pysisyphus.io.pdb import geom_to_pdb_str
+from byted_pysisyphus.stocastic.align import match_geom_atoms
 
 
 INTERPOLATE = {

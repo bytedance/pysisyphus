@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.dynamics.velocity_verlet import md
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.dynamics.velocity_verlet import md
 
 
 def test_velocity_verlet():
@@ -76,7 +76,7 @@ def ase_md_playground():
 
     traj = ase.io.read(traj_fn+"@:")#, "r")
     pos = [a.get_positions() for a in traj]
-    from pysisyphus.constants import BOHR2ANG
+    from byted_pysisyphus.constants import BOHR2ANG
     pos = np.array(pos) / BOHR2ANG
 
     calc = geom.calculator

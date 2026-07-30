@@ -1,8 +1,8 @@
 import logging
 
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
-from pysisyphus.tsoptimizers.TRIM import TRIM
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.tsoptimizers.TRIM import TRIM
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
 
 __all__ = [
     "RSPRFOptimizer",

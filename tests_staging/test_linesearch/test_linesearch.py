@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 def test_linesearch():

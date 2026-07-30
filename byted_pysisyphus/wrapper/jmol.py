@@ -5,9 +5,9 @@ from pathlib import Path
 import jinja2
 import numpy as np
 
-from pysisyphus.config import get_cmd
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.helpers_pure import interpolate_colors
+from byted_pysisyphus.config import get_cmd
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.helpers_pure import interpolate_colors
 
 
 CUBE_ISO_VAL = 0.001

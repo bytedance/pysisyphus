@@ -11,15 +11,15 @@ import tempfile
 import h5py
 import numpy as np
 
-from pysisyphus import logger
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.calculators.WFOWrapper import WFOWrapper
-from pysisyphus.config import get_cmd
-from pysisyphus.helpers_pure import describe
-from pysisyphus.io.hdf5 import get_h5_group
-from pysisyphus.wrapper.mwfn import make_cdd, get_mwfn_exc_str
-from pysisyphus.wrapper.jmol import render_cdd_cube as render_cdd_cube_jmol
-from pysisyphus.wavefunction.excited_states import (
+from byted_pysisyphus import logger
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.WFOWrapper import WFOWrapper
+from byted_pysisyphus.config import get_cmd
+from byted_pysisyphus.helpers_pure import describe
+from byted_pysisyphus.io.hdf5 import get_h5_group
+from byted_pysisyphus.wrapper.mwfn import make_cdd, get_mwfn_exc_str
+from byted_pysisyphus.wrapper.jmol import render_cdd_cube as render_cdd_cube_jmol
+from byted_pysisyphus.wavefunction.excited_states import (
     rAB as top_rAB,
     tden_overlaps,
     nto_overlaps,

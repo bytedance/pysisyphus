@@ -4,9 +4,9 @@ import logging
 import numpy as np
 from sklearn.neighbors import KDTree
 
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.helpers_pure import log, timed
-from pysisyphus.intcoords.valid import bend_valid, dihedral_valid
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.helpers_pure import log, timed
+from byted_pysisyphus.intcoords.valid import bend_valid, dihedral_valid
 
 
 logger = logging.getLogger("internal_coords")

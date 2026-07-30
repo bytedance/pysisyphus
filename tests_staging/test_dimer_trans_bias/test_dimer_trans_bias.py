@@ -1,14 +1,14 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.Dimer import Dimer
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.Dimer import Dimer
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.testing import using
 
 
 init_logging()
@@ -100,7 +100,7 @@ def test_bias_translation():
         "dump": True,
     }
     # opt = PreconLBFGS(geom, **opt_kwargs)
-    from pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
+    from byted_pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
     opt = PreconSteepestDescent(geom, **opt_kwargs)
     opt.run()
 

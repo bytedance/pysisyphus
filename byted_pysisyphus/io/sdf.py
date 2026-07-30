@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.Geometry import Geometry
 
 
 def parse_coord_line(line):

@@ -2,11 +2,11 @@
 
 import numpy as np
 
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators.Turbomole import Turbomole
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file
 
 
 init_logging()
@@ -31,7 +31,7 @@ def test_pyscf():
     print(H.reshape(-1, 9))
 
     ref_geom = geom.copy()
-    from pysisyphus.calculators.Gaussian16 import Gaussian16
+    from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
     g16 = Gaussian16("hf/3-21G", pal=4)
     # g16 = Gaussian16("mp2/3-21G", pal=4)
     ref_geom.set_calculator(g16)

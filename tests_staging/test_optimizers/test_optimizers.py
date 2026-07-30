@@ -3,12 +3,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot4 import AnaPot4
-from pysisyphus.Geometry import Geometry
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.plotters.RFOPlotter import RFOPlotter
+from byted_pysisyphus.calculators.AnaPot4 import AnaPot4
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.plotters.RFOPlotter import RFOPlotter
 
 
 def test_rfoptimizer():

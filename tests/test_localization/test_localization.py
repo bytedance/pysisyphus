@@ -2,9 +2,9 @@ import h5py
 import numpy as np
 import pytest
 
-from pysisyphus.config import WF_LIB_DIR
-from pysisyphus.linalg import matrix_power
-from pysisyphus.wavefunction import (
+from byted_pysisyphus.config import WF_LIB_DIR
+from byted_pysisyphus.linalg import matrix_power
+from byted_pysisyphus.wavefunction import (
     cholesky,
     edmiston_ruedenberg,
     foster_boys,

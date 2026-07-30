@@ -4,9 +4,9 @@ import itertools as it
 import os
 from pathlib import Path
 
-from pysisyphus.helpers import geom_from_library, highlight_text
-from pysisyphus.calculators.Turbomole import Turbomole
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.helpers import geom_from_library, highlight_text
+from byted_pysisyphus.calculators.Turbomole import Turbomole
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 THIS_DIR = Path(os.path.dirname(os.path.realpath(__file__)))

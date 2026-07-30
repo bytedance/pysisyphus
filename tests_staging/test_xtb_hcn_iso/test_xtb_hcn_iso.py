@@ -4,15 +4,15 @@ import os
 from pathlib import Path
 import pytest
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.IDPP import idpp_interpolate
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.SteepestDescent import SteepestDescent
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.SciPyOptimizer import SciPyOptimizer
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.IDPP import idpp_interpolate
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.SteepestDescent import SteepestDescent
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.SciPyOptimizer import SciPyOptimizer
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.cos.NEB import NEB
 
 
 def prepare_opt(idpp=True):

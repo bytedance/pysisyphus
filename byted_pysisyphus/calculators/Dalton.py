@@ -3,8 +3,8 @@ try:
 except ModuleNotFoundError:
     print("daltonproject is not installed!")
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import BOHR2ANG
 
 
 class Dalton(Calculator):

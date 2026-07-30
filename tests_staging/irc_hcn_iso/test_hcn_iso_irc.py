@@ -6,12 +6,12 @@ import pathlib
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.irc.GonzalesSchlegel import GonzalesSchlegel
-from pysisyphus.irc.DampedVelocityVerlet import DampedVelocityVerlet
-from pysisyphus.irc.ParamPlot import ParamPlot
+from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.irc.GonzalesSchlegel import GonzalesSchlegel
+from byted_pysisyphus.irc.DampedVelocityVerlet import DampedVelocityVerlet
+from byted_pysisyphus.irc.ParamPlot import ParamPlot
 
 from qchelper.geometry import parse_xyz_file
 

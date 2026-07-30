@@ -1,11 +1,11 @@
 import pytest
 
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators import Gaussian16, XTB
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.PreconSteepestDescent import PreconSteepestDescent
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators import Gaussian16, XTB
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

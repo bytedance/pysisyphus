@@ -8,13 +8,13 @@ import textwrap
 
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.calculators.parser import parse_turbo_gradient
-from pysisyphus.calculators.ORCA import save_orca_pc_file
-from pysisyphus.constants import BOHR2ANG, BOHRPERFS2AU
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.xyzloader import make_xyz_str
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.parser import parse_turbo_gradient
+from byted_pysisyphus.calculators.ORCA import save_orca_pc_file
+from byted_pysisyphus.constants import BOHR2ANG, BOHRPERFS2AU
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.xyzloader import make_xyz_str
 
 
 OptResult = namedtuple("OptResult", "opt_geom opt_log")

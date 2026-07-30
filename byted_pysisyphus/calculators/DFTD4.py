@@ -11,8 +11,8 @@ except ModuleNotFoundError:
     # import DFT4.
     DFTD4 = None
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.elem_data import nuc_charges_for_atoms
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.elem_data import nuc_charges_for_atoms
 
 
 @dataclasses.dataclass

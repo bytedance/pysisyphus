@@ -1,4 +1,4 @@
-from pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
+from byted_pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
 
 
 class SteepestDescent(BacktrackingOptimizer):

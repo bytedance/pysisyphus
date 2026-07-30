@@ -16,11 +16,11 @@ import numpy as np
 from numpy.typing import NDArray
 import psutil
 
-from pysisyphus.config import p_DEFAULT, T_DEFAULT
-from pysisyphus.constants import AU2J, BOHR2ANG, C, R, AU2KJPERMOL, NA
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.constants import AU2J, BOHR2ANG, C, R, AU2KJPERMOL, NA
 
 
-"""Functions defined here don't import anything from pysisyphus, besides
+"""Functions defined here don't import anything from byted_pysisyphus, besides
 the constants module, but only from the stdlib and from third parties."""
 
 

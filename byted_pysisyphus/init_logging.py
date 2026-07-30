@@ -3,7 +3,7 @@ from pathlib import Path
 
 from distributed import Client
 
-from pysisyphus.helpers import slugify_worker
+from byted_pysisyphus.helpers import slugify_worker
 
 LOGGERS = {
     "calculator": "calculator.log",

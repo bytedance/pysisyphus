@@ -1,12 +1,12 @@
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-# from pysisyphus.helpers_pure import filter_fixture_store
-from pysisyphus.intcoords.augment_bonds import augment_bonds
-from pysisyphus.testing import using
-from pysisyphus.tsoptimizers import *
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+# from byted_pysisyphus.helpers_pure import filter_fixture_store
+from byted_pysisyphus.intcoords.augment_bonds import augment_bonds
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.tsoptimizers import *
 
 
 def calc_getter(charge, mult):

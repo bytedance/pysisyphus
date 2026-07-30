@@ -3,8 +3,8 @@ import sympy as sym
 from sympy import atan, exp, tan, sin, pi
 
 
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 # https://www.wolframalpha.com/input/?i=plot+arccot(-exp(y)*cot(x/2-pi/4))+-+2*exp(-(y-sin(x))^2/2)
 # [1] http://aip.scitation.org/doi/abs/10.1063/1.461606

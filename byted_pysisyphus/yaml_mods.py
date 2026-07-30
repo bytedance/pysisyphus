@@ -1,4 +1,4 @@
-from pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV, ANG2BOHR, BOHR2M
+from byted_pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV, ANG2BOHR, BOHR2M
 
 import numpy as np
 import yaml

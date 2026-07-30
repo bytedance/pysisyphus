@@ -2,8 +2,8 @@ from typing import Optional
 
 import numpy as np
 
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.cos.stiffness import get_stiff_stress
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.cos.stiffness import get_stiff_stress
 
 # [1] http://aip.scitation.org/doi/pdf/10.1063/1.1323224
 #     10.1063/1.1323224

@@ -6,12 +6,12 @@ from scipy.constants import N_A as NA
 from thermoanalysis.QCData import QCData
 from thermoanalysis.thermo import thermochemistry
 
-from pysisyphus.calculators import Gaussian16, ORCA
-from pysisyphus.constants import AU2J
-from pysisyphus.helpers import geom_loader, highlight_text, eigval_to_wavenumber
-from pysisyphus.io.hessian import save_hessian
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import Gaussian16, ORCA
+from byted_pysisyphus.constants import AU2J
+from byted_pysisyphus.helpers import geom_loader, highlight_text, eigval_to_wavenumber
+from byted_pysisyphus.io.hessian import save_hessian
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 """
 See

@@ -4,10 +4,10 @@ import numpy as np
 from pytest import approx
 
 
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.calculators.Psi4 import Psi4
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.calculators.Psi4 import Psi4
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.helpers import geom_from_library
 
 
 np.set_printoptions(suppress=True, precision=3, linewidth=150)
@@ -33,7 +33,7 @@ def test_h2o2_dlc_constraints():
     xyz_fn2 = "h2o2_rot2.xyz"
     geom2 = geom_from_library(xyz_fn2, coord_type="dlc")
     tangent = geom2 - geom
-    from pysisyphus.intcoords.helpers import get_tangent
+    from byted_pysisyphus.intcoords.helpers import get_tangent
     prim_tangent = get_tangent(geom2.internal.prim_coords,
                                geom.internal.prim_coords,
                                geom2.internal.dihed_start)
@@ -61,7 +61,7 @@ def run():
     # XTB
     calc = XTB()
     # Psi4
-    # from pysisyphus.calculators.Psi4 import Psi4
+    # from byted_pysisyphus.calculators.Psi4 import Psi4
     # calc = Psi4(method="hf", basis="sto-3g")
 
     geom.set_calculator(calc)

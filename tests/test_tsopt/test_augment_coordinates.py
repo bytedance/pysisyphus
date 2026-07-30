@@ -2,12 +2,12 @@
 
 import pytest
 
-from pysisyphus.calculators import Gaussian16
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.intcoords.augment_bonds import augment_bonds
-from pysisyphus.testing import using
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.calculators import Gaussian16
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.intcoords.augment_bonds import augment_bonds
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
 
 
 @using("pyscf")

@@ -7,8 +7,8 @@ import sys
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.elem_data import ATOMIC_NUMBERS
-from pysisyphus.wavefunction.helpers import get_l
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS
+from byted_pysisyphus.wavefunction.helpers import get_l
 
 
 def parse_libmol(text):

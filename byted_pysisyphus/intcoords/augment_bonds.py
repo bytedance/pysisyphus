@@ -2,11 +2,11 @@ import logging
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import log
-from pysisyphus.intcoords.setup import get_bond_sets
-from pysisyphus.intcoords import RedundantCoords
-from pysisyphus.intcoords.PrimTypes import PrimTypes
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.intcoords.setup import get_bond_sets
+from byted_pysisyphus.intcoords import RedundantCoords
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes
 
 
 logger = logging.getLogger("internal_coords")

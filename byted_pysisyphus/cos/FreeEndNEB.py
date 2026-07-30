@@ -1,4 +1,4 @@
-from pysisyphus.cos.AdaptiveNEB import AdaptiveNEB
+from byted_pysisyphus.cos.AdaptiveNEB import AdaptiveNEB
 
 # [1] https://www.pnas.org/content/pnas/104/9/3031.full.pdf
 #     Zhu, 2006

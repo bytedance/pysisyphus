@@ -3,11 +3,11 @@ import itertools as it
 import numpy as np
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators import XTB
-from pysisyphus.irc.IRCDummy import IRCDummy
-from pysisyphus.run import run_endopt
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.irc.IRCDummy import IRCDummy
+from byted_pysisyphus.run import run_endopt
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture
@@ -24,7 +24,7 @@ def calc_getter(charge=0, mult=1):
 
 
 def gen_all_coords(ts):
-    from pysisyphus.irc import EulerPC
+    from byted_pysisyphus.irc import EulerPC
     irc = EulerPC(ts, rms_grad_thresh=5e-4, hessian_recalc=10)
     irc.run()
     np.savetxt("all_coords", irc.all_coords)

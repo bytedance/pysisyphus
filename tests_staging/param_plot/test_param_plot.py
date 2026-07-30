@@ -3,7 +3,7 @@ import pathlib
 
 import numpy as np
 
-from pysisyphus.irc.ParamPlot import ParamPlot
+from byted_pysisyphus.irc.ParamPlot import ParamPlot
 
 THIS_DIR = pathlib.Path(os.path.dirname(os.path.realpath(__file__)))
 

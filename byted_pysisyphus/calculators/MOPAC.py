@@ -3,9 +3,9 @@ import textwrap
 
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG, AU2KCALPERMOL
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.constants import BOHR2ANG, AU2KCALPERMOL
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.helpers_pure import file_or_str
 
 
 class MOPAC(Calculator):

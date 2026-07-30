@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.linalg import get_rot_mat
-from pysisyphus.intcoords import (
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.linalg import get_rot_mat
+from byted_pysisyphus.intcoords import (
     Bend,
     Bend2,
     BondedFragment,
@@ -28,7 +28,7 @@ from pysisyphus.intcoords import (
     TranslationY,
     TranslationZ,
 )
-from pysisyphus.intcoords.derivatives import (
+from byted_pysisyphus.intcoords.derivatives import (
     q_b,
     dq_b,
     d2q_b,
@@ -48,9 +48,9 @@ from pysisyphus.intcoords.derivatives import (
     dq_oop,
     d2q_oop,
 )
-import pysisyphus.intcoords.mp_derivatives as mp_d
-from pysisyphus.intcoords.findiffs import fin_diff_prim, fin_diff_B
-from pysisyphus.io.zmat import geom_from_zmat, zmat_from_str
+import byted_pysisyphus.intcoords.mp_derivatives as mp_d
+from byted_pysisyphus.intcoords.findiffs import fin_diff_prim, fin_diff_B
+from byted_pysisyphus.io.zmat import geom_from_zmat, zmat_from_str
 
 
 @pytest.mark.parametrize("length", np.linspace(0.1, 1, 10))

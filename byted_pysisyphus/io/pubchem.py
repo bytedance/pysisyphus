@@ -2,7 +2,7 @@ import json
 import urllib.request
 from urllib.error import HTTPError
 
-from pysisyphus.io.sdf import geom_from_sdf
+from byted_pysisyphus.io.sdf import geom_from_sdf
 
 
 def cid_from_name(name):

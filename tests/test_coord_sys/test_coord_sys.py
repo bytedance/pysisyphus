@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.helpers import geom_loader
-from pysisyphus.calculators import XTB
-from pysisyphus.testing import using
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.testing import using
 
 
 @using("xtb")

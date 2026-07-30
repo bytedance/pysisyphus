@@ -4,7 +4,7 @@ import itertools as it
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.helpers import geom_from_library
 
 
 def h2o_comp():
@@ -16,7 +16,7 @@ def h2o_comp():
 
     # from geometric.internal import Distance, Angle, Dihedral
     from internal import Distance, Angle, Dihedral
-    from pysisyphus.intcoords.derivatives import d2q_b, d2q_a, d2q_d
+    from byted_pysisyphus.intcoords.derivatives import d2q_b, d2q_a, d2q_d
     funcs = {
         2: Distance,
         3: Angle,

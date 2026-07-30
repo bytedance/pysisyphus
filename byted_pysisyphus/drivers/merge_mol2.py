@@ -6,10 +6,10 @@ import warnings
 
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.drivers.merge import merge_with_frozen_geom
-from pysisyphus.helpers import geom_loader
-from pysisyphus.io.mol2 import parse_mol2, dict_to_mol2_string
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.drivers.merge import merge_with_frozen_geom
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io.mol2 import parse_mol2, dict_to_mol2_string
 
 
 def delete_atoms_bonds_inplace(
@@ -20,7 +20,7 @@ def delete_atoms_bonds_inplace(
     Parameter
     ---------
     as_dict
-        mol2-dict as returned from pysisyphus.io.mol2.parse_mol2.
+        mol2-dict as returned from byted_pysisyphus.io.mol2.parse_mol2.
     inds
         List of positive integer atom_ids to be deleted.
     atom_offset

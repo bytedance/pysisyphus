@@ -1,10 +1,10 @@
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.elem_data import ATOMIC_NUMBERS, nuc_charges_for_atoms
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction import get_l, Shell, AOMixShells, Wavefunction
-from pysisyphus.wavefunction.helpers import BFType
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS, nuc_charges_for_atoms
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction import get_l, Shell, AOMixShells, Wavefunction
+from byted_pysisyphus.wavefunction.helpers import BFType
 
 AOMIX_EXTS = ".in"
 

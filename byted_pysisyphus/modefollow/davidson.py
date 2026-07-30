@@ -8,10 +8,10 @@ import sys
 
 import numpy as np
 
-from pysisyphus.helpers_pure import eigval_to_wavenumber
-from pysisyphus.Geometry import get_trans_rot_projector
-from pysisyphus.modefollow.NormalMode import NormalMode
-from pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus.Geometry import get_trans_rot_projector
+from byted_pysisyphus.modefollow.NormalMode import NormalMode
+from byted_pysisyphus.TablePrinter import TablePrinter
 
 
 DavidsonResult = namedtuple(

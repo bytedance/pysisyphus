@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.intcoords.Primitive import Primitive
 
 
 class Cartesian(Primitive):

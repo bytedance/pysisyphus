@@ -4,7 +4,7 @@ import textwrap
 
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 # CFOUR doesn't use scientific notation for final energy or gradient.
 cfour_float_regex = r"([-]?\d+\.\d+)"

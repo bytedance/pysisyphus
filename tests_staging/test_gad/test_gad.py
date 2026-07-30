@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.WolfeQuapp import WolfeQuapp
-from pysisyphus.tsoptimizers.GAD import GAD
+from byted_pysisyphus.calculators.WolfeQuapp import WolfeQuapp
+from byted_pysisyphus.tsoptimizers.GAD import GAD
 
 
 def test():

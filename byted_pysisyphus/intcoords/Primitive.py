@@ -4,9 +4,9 @@ from math import exp
 
 import numpy as np
 
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.helpers_pure import hash_arr
-from pysisyphus.linalg import norm3
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.helpers_pure import hash_arr
+from byted_pysisyphus.linalg import norm3
 
 
 class Primitive(metaclass=abc.ABCMeta):

@@ -1,6 +1,6 @@
 import pytest
 
-from pysisyphus.io.pubchem import cid_from_name, sdf_from_cid, geom_from_pubchem_name
+from byted_pysisyphus.io.pubchem import cid_from_name, sdf_from_cid, geom_from_pubchem_name
 
 
 @pytest.mark.skip

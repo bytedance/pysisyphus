@@ -3,7 +3,7 @@ import tempfile
 
 from jinja2 import Template
 
-from pysisyphus.config import get_cmd
+from byted_pysisyphus.config import get_cmd
 
 
 TPL = """tolerance {{ tolerance }}

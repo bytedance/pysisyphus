@@ -3,14 +3,14 @@ from typing import List, Optional
 import h5py
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import log
-from pysisyphus.intcoords.augment_bonds import augment_bonds
-from pysisyphus.intcoords.PrimTypes import normalize_prim_input, normalize_prim_inputs
-from pysisyphus.optimizers import poly_fit
-from pysisyphus.optimizers.guess_hessians import ts_hessian, HessInit
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer, HessUpdate
-from pysisyphus.optimizers.Optimizer import get_data_model, get_h5_group
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.intcoords.augment_bonds import augment_bonds
+from byted_pysisyphus.intcoords.PrimTypes import normalize_prim_input, normalize_prim_inputs
+from byted_pysisyphus.optimizers import poly_fit
+from byted_pysisyphus.optimizers.guess_hessians import ts_hessian, HessInit
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer, HessUpdate
+from byted_pysisyphus.optimizers.Optimizer import get_data_model, get_h5_group
 
 
 class TSHessianOptimizer(HessianOptimizer):

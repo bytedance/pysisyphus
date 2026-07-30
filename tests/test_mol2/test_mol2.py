@@ -2,7 +2,7 @@ import textwrap
 
 import pytest
 
-from pysisyphus.io import geom_from_mol2
+from byted_pysisyphus.io import geom_from_mol2
 
 
 @pytest.fixture

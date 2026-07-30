@@ -17,14 +17,14 @@ import luigi
 import numpy as np
 import psutil
 
-from pysisyphus.calculators import XTB
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.helpers import geom_loader, do_final_hessian
-from pysisyphus.cos.GrowingNT import GrowingNT
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
-from pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
-from pysisyphus.irc import EulerPC
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.helpers import geom_loader, do_final_hessian
+from byted_pysisyphus.cos.GrowingNT import GrowingNT
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.tsoptimizers.RSPRFOptimizer import RSPRFOptimizer
+from byted_pysisyphus.irc import EulerPC
 
 
 class Params(luigi.Config):

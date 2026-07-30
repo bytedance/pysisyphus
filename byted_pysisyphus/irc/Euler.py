@@ -1,7 +1,7 @@
 import numpy as np
 
-from pysisyphus.irc.IRC import IRC
-from pysisyphus.TableFormatter import TableFormatter
+from byted_pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.TableFormatter import TableFormatter
 
 
 class Euler(IRC):

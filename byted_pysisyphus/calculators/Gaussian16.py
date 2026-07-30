@@ -9,9 +9,9 @@ import textwrap
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.constants import AU2EV, BOHR2ANG
-from pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.constants import AU2EV, BOHR2ANG
+from byted_pysisyphus.helpers_pure import file_or_str
 
 
 class Gaussian16(OverlapCalculator):

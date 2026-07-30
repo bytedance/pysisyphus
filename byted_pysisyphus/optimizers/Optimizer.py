@@ -12,20 +12,20 @@ from typing import Literal, Optional, Tuple
 import numpy as np
 import yaml
 
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import (
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import (
     check_for_end_sign,
     fit_rigid,
     get_coords_diffs,
     procrustes,
 )
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.intcoords.exceptions import RebuiltInternalsException
-from pysisyphus.intcoords.helpers import interfragment_distance
-from pysisyphus.io.hdf5 import get_h5_group, resize_h5_group
-from pysisyphus.optimizers.exceptions import ZeroStepLength
-from pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.intcoords.exceptions import RebuiltInternalsException
+from byted_pysisyphus.intcoords.helpers import interfragment_distance
+from byted_pysisyphus.io.hdf5 import get_h5_group, resize_h5_group
+from byted_pysisyphus.optimizers.exceptions import ZeroStepLength
+from byted_pysisyphus.TablePrinter import TablePrinter
 
 
 def get_data_model(geometry, is_cos, max_cycles):

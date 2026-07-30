@@ -1,13 +1,13 @@
 import argparse
 import sys
 
-from pysisyphus.config import p_DEFAULT, T_DEFAULT
-from pysisyphus.thermo import get_thermoanalysis_from_hess_h5, print_thermoanalysis
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.thermo import get_thermoanalysis_from_hess_h5, print_thermoanalysis
 
 
 def parse_args(args):
     parser = argparse.ArgumentParser()
-    parser.add_argument("hess_h5", help="HDF5 Hessian file from pysisyphus.")
+    parser.add_argument("hess_h5", help="HDF5 Hessian file from byted_pysisyphus.")
     parser.add_argument("-T", default=T_DEFAULT, type=float, help="Temperature")
     parser.add_argument("-p", default=p_DEFAULT, type=float, help="Pressure")
     parser.add_argument("--pg", default="c1", help="Point group.")

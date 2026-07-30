@@ -3,8 +3,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.tsoptimizers.dimerv2 import dimer_method
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.tsoptimizers.dimerv2 import dimer_method
 
 
 def run_dimer():

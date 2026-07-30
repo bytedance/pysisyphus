@@ -1,12 +1,12 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import ORCA5, ConicalIntersection
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ORCA5, ConicalIntersection
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.ConjugateGradient import ConjugateGradient
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 init_logging()

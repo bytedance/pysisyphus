@@ -3,13 +3,13 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.StabilizedQNMethod import StabilizedQNMethod
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.StabilizedQNMethod import StabilizedQNMethod
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
 
 
 def test_sqnm():
@@ -70,7 +70,7 @@ def test_sqnm_xtb():
     }
     opt = StabilizedQNMethod(geom, **opt_kwargs)
 
-    # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+    # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
     # opt = RFOptimizer(geom)
 
     opt.run()
@@ -94,7 +94,7 @@ def test_mecoome_sqnm_xtb():
     }
     opt = StabilizedQNMethod(geom, **opt_kwargs)
 
-    # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+    # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
     # opt = RFOptimizer(geom)
 
     opt.run()
@@ -117,14 +117,14 @@ def test_mecoome_sqnm_g16():
     }
     opt = StabilizedQNMethod(geom, **opt_kwargs)
 
-    # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+    # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
     # opt = RFOptimizer(geom)
 
     opt.run()
 
 
 # def test_abnr_xtb():
-    # from pysisyphus.optimizers.ABNR import ABNR
+    # from byted_pysisyphus.optimizers.ABNR import ABNR
     # geom = geom_from_library("split.image_021.xyz")
     # # geom = geom_from_library("split.image_021.xyz", coord_type="redund")
     # xtb = XTB()
@@ -138,7 +138,7 @@ def test_mecoome_sqnm_g16():
     # }
     # opt = ABNR(geom, **opt_kwargs)
 
-    # # from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+    # # from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
     # # opt = RFOptimizer(geom)
 
     # opt.run()

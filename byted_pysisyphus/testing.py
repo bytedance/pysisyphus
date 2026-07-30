@@ -1,8 +1,8 @@
 import importlib
 import shutil
 
-from pysisyphus.config import Config, DEFAULTS
-from pysisyphus import logger
+from byted_pysisyphus.config import Config, DEFAULTS
+from byted_pysisyphus import logger
 
 try:
     import pytest

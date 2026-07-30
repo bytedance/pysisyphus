@@ -5,6 +5,6 @@ __all__ = [
 ]
 
 
-from pysisyphus.modefollow.davidson import geom_davidson
-from pysisyphus.modefollow.lanczos import geom_lanczos
-from pysisyphus.modefollow.NormalMode import NormalMode
+from byted_pysisyphus.modefollow.davidson import geom_davidson
+from byted_pysisyphus.modefollow.lanczos import geom_lanczos
+from byted_pysisyphus.modefollow.NormalMode import NormalMode

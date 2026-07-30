@@ -3,11 +3,11 @@
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.drivers import relaxed_scan
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.intcoords.setup import get_bond_mat
-from pysisyphus.intcoords.PrimTypes import normalize_prim_inputs
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.drivers import relaxed_scan
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.intcoords.setup import get_bond_mat
+from byted_pysisyphus.intcoords.PrimTypes import normalize_prim_inputs
 
 
 def bond_order(r, r0, b=2):

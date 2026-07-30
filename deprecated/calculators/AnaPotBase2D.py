@@ -1,7 +1,7 @@
 import numpy as np
 from sympy import symbols, diff, lambdify, sympify
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 class AnaPotBase2D(Calculator):
 

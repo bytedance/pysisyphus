@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.io import geom_from_cjson
+from byted_pysisyphus.io import geom_from_cjson
 
 
 def test_cjson(this_dir):

@@ -3,9 +3,9 @@ import re
 import jinja2
 import numpy as np
 
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import file_or_str
 
 
 @file_or_str(".crd")

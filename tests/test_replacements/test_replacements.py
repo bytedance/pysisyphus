@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.drivers.replace import replace_atom, replace_atoms
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.drivers.replace import replace_atom, replace_atoms
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 @pytest.mark.parametrize("opt", [pytest.param(True, marks=using("obabel")), (False)])

@@ -1,10 +1,10 @@
 import pytest
 
-from pysisyphus.calculators.Rastrigin import Rastrigin
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.stocastic import *
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.Rastrigin import Rastrigin
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.stocastic import *
+from byted_pysisyphus.testing import using
 
 
 def test_get_fragments():

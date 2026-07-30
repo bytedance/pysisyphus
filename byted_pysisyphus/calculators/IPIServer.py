@@ -3,8 +3,8 @@ import socket
 
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.socket_helper import (
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.socket_helper import (
     send_closure,
     recv_closure,
     get_fmts,

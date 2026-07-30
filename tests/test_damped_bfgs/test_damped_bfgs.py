@@ -1,15 +1,15 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.QuickMin import QuickMin
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.optimizers.closures import bfgs_multiply
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.calculators import XTB
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.QuickMin import QuickMin
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.testing import using
 
 
 def test_bfgs_multiply_empty_lists():

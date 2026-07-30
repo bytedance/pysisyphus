@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.constants import AU2J, C, M_E, NA, PLANCK, AU2EV
+from byted_pysisyphus.constants import AU2J, C, M_E, NA, PLANCK, AU2EV
 
 
 # Computation of prefactor from Gaussian whitepaper
@@ -49,7 +49,7 @@ class Spectrum:
 
     @staticmethod
     def from_orca(wf_fn, cis_fn, log_fn, **kwargs):
-        from pysisyphus.calculators.ORCA import get_exc_ens_fosc
+        from byted_pysisyphus.calculators.ORCA import get_exc_ens_fosc
 
         exc_ens, fosc = get_exc_ens_fosc(wf_fn, cis_fn, log_fn)
         return spectrum_from_ens_fosc(exc_ens, fosc, **kwargs)

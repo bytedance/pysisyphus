@@ -10,21 +10,21 @@ import sys
 import h5py
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG, AU2KJPERMOL
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import check_for_end_sign
-from pysisyphus.helpers_pure import (
+from byted_pysisyphus.constants import BOHR2ANG, AU2KJPERMOL
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import check_for_end_sign
+from byted_pysisyphus.helpers_pure import (
     highlight_text,
     eigval_to_wavenumber,
     report_isotopes,
     rms,
 )
-from pysisyphus.irc.initial_displ import cubic_displ, third_deriv_fd, cubic_displ_for_h5
-from pysisyphus.irc.Instanton import T_crossover_from_eigval
-from pysisyphus.io import save_third_deriv
-from pysisyphus.optimizers.guess_hessians import get_guess_hessian
-from pysisyphus.TablePrinter import TablePrinter
-from pysisyphus.xyzloader import make_trj_str, make_xyz_str
+from byted_pysisyphus.irc.initial_displ import cubic_displ, third_deriv_fd, cubic_displ_for_h5
+from byted_pysisyphus.irc.Instanton import T_crossover_from_eigval
+from byted_pysisyphus.io import save_third_deriv
+from byted_pysisyphus.optimizers.guess_hessians import get_guess_hessian
+from byted_pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.xyzloader import make_trj_str, make_xyz_str
 
 
 class IRC:

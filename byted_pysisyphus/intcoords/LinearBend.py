@@ -2,9 +2,9 @@ from math import sin
 
 import numpy as np
 
-from pysisyphus.intcoords.derivatives import dq_lb, d2q_lb
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.linalg import cross3, norm3
+from byted_pysisyphus.intcoords.derivatives import dq_lb, d2q_lb
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.linalg import cross3, norm3
 
 
 # [1] 10.1080/00268977200102361

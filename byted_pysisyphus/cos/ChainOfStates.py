@@ -6,9 +6,9 @@ from distributed import Client
 import numpy as np
 from scipy.interpolate import interp1d, splprep, splev
 
-from pysisyphus.helpers import align_coords, get_coords_diffs
-from pysisyphus.helpers_pure import hash_arr
-from pysisyphus.modefollow import geom_lanczos
+from byted_pysisyphus.helpers import align_coords, get_coords_diffs
+from byted_pysisyphus.helpers_pure import hash_arr
+from byted_pysisyphus.modefollow import geom_lanczos
 
 
 # [1] http://dx.doi.org/10.1063/1.1323224

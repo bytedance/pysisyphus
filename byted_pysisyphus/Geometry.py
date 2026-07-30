@@ -18,23 +18,23 @@ try:
 except ModuleNotFoundError:
     pass
 
-from pysisyphus import logger
-from pysisyphus.config import p_DEFAULT, T_DEFAULT
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.elem_data import (
+from byted_pysisyphus import logger
+from byted_pysisyphus.config import p_DEFAULT, T_DEFAULT
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.elem_data import (
     MASS_DICT,
     ISOTOPE_DICT,
     ATOMIC_NUMBERS,
     COVALENT_RADII as CR,
     VDW_RADII as VDWR,
 )
-from pysisyphus.helpers_pure import (
+from byted_pysisyphus.helpers_pure import (
     eigval_to_wavenumber,
     full_expand,
     molecular_volume,
     to_subscript_num,
 )
-from pysisyphus.intcoords import (
+from byted_pysisyphus.intcoords import (
     DLC,
     HDLC,
     RedundantCoords,
@@ -44,15 +44,15 @@ from pysisyphus.intcoords import (
     CartesianCoords,
     MWCartesianCoords,
 )
-from pysisyphus.intcoords.exceptions import (
+from byted_pysisyphus.intcoords.exceptions import (
     NeedNewInternalsException,
     RebuiltInternalsException,
     DifferentCoordLengthsException,
 )
-from pysisyphus.intcoords.helpers import get_tangent
-from pysisyphus.intcoords.setup import BOND_FACTOR
-from pysisyphus.intcoords.setup_fast import find_bonds
-from pysisyphus.xyzloader import make_xyz_str
+from byted_pysisyphus.intcoords.helpers import get_tangent
+from byted_pysisyphus.intcoords.setup import BOND_FACTOR
+from byted_pysisyphus.intcoords.setup_fast import find_bonds
+from byted_pysisyphus.xyzloader import make_xyz_str
 
 
 def inertia_tensor(coords3d, masses):
@@ -1400,7 +1400,7 @@ class Geometry:
         atoms = ase.Atoms(symbols=self.atoms, positions=self.coords3d * BOHR2ANG)
 
         if self.calculator is not None:
-            from pysisyphus.calculators import FakeASE
+            from byted_pysisyphus.calculators import FakeASE
 
             ase_calc = FakeASE(self.calculator)
             atoms.set_calculator(ase_calc)

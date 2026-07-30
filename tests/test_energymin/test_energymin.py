@@ -1,13 +1,13 @@
 import pytest
 
-from pysisyphus.calculators import EnergyMin, XTB
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.cos.NEB import NEB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.testing import using
-from pysisyphus.interpolate import interpolate
-from pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.calculators import EnergyMin, XTB
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.cos.NEB import NEB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.interpolate import interpolate
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
 
 
 init_logging()

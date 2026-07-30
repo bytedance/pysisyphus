@@ -4,10 +4,10 @@ import os
 from pathlib import Path
 import pytest
 
-from pysisyphus.helpers import geom_from_xyz_file
-from pysisyphus.optimizers.BFGS import BFGS
-from pysisyphus.calculators.OpenMolcas import OpenMolcas
-from pysisyphus.init_logging import init_logging
+from byted_pysisyphus.helpers import geom_from_xyz_file
+from byted_pysisyphus.optimizers.BFGS import BFGS
+from byted_pysisyphus.calculators.OpenMolcas import OpenMolcas
+from byted_pysisyphus.init_logging import init_logging
 
 
 @pytest.mark.skip

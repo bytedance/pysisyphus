@@ -6,10 +6,10 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.hessian_updates import double_damp
-from pysisyphus.optimizers.closures import bfgs_multiply
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.optimizers.hessian_updates import double_damp
+from byted_pysisyphus.optimizers.closures import bfgs_multiply
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
 
 
 class StringOptimizer(Optimizer):

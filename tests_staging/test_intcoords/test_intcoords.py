@@ -6,9 +6,9 @@ import itertools as it
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.intcoords.derivatives import dq_b, d2q_b, dq_a, d2q_a, dq_d, d2q_d
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.intcoords.derivatives import dq_b, d2q_b, dq_a, d2q_a, dq_d, d2q_d
 
 
 def test_wilson():

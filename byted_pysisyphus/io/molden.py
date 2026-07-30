@@ -3,12 +3,12 @@ import re
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.elem_data import ATOMIC_NUMBERS
-from pysisyphus.Geometry import Geometry
-from pysisyphus.io.xyz import parse_xyz
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.wavefunction import MoldenShells, Shell, Wavefunction
-from pysisyphus.wavefunction.helpers import BFType
+from byted_pysisyphus.elem_data import ATOMIC_NUMBERS
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.io.xyz import parse_xyz
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.wavefunction import MoldenShells, Shell, Wavefunction
+from byted_pysisyphus.wavefunction.helpers import BFType
 
 
 @file_or_str(".molden", ".input")

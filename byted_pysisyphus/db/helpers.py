@@ -1,5 +1,5 @@
 import itertools as it
-from pysisyphus.db import MOLECULES, LEVELS, LEVEL_DIR
+from byted_pysisyphus.db import MOLECULES, LEVELS, LEVEL_DIR
 
 
 def full_name(molecule_name, level_name):

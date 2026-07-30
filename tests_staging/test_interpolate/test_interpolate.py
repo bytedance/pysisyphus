@@ -2,12 +2,12 @@
 
 import numpy as np
 
-from pysisyphus.InternalCoordinates import RedundantCoords
-from pysisyphus.Geometry import Geometry
-from pysisyphus.xyzloader import write_geoms_to_trj
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file
-from pysisyphus.interpolate.LST import LST
-from pysisyphus.interpolate.IDPP import IDPP
+from byted_pysisyphus.InternalCoordinates import RedundantCoords
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file
+from byted_pysisyphus.interpolate.LST import LST
+from byted_pysisyphus.interpolate.IDPP import IDPP
 
 
 np.set_printoptions(suppress=True, precision=4)
@@ -130,7 +130,7 @@ def test_redund():
     initial = geom_from_xyz_file("bare_split.image_000.xyz", coord_type="redund")
     final = geom_from_xyz_file("bare_split.image_056.xyz", coord_type="redund")
 
-    from pysisyphus.interpolate.helpers import interpolate_all
+    from byted_pysisyphus.interpolate.helpers import interpolate_all
 
     geoms = interpolate_all((initial, final), 18, kind="redund", align=True)
     out_fn = "dlc_interpolate.trj"

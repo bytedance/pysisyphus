@@ -1,15 +1,15 @@
 import pytest
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.io import geom_from_hessian
-from pysisyphus.testing import using
-from pysisyphus.thermo import (
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.thermo import (
     print_thermoanalysis,
     get_thermoanalysis_from_hess_h5,
 )
-from pysisyphus.run import run_from_dict
+from byted_pysisyphus.run import run_from_dict
 
 
 @pytest.mark.skip

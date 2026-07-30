@@ -5,8 +5,8 @@ import numpy as np
 from numpy.typing import NDArray
 import scipy as sp
 
-from pysisyphus.wavefunction.helpers import symmetric_orthogonalization
-from pysisyphus.wavefunction import Wavefunction
+from byted_pysisyphus.wavefunction.helpers import symmetric_orthogonalization
+from byted_pysisyphus.wavefunction import Wavefunction
 
 
 @dataclass

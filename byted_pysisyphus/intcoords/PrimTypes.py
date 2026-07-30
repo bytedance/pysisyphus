@@ -3,9 +3,9 @@ from typing import Union, Sequence
 
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.helpers_pure import OrderedEnum
-from pysisyphus.intcoords import (
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.helpers_pure import OrderedEnum
+from byted_pysisyphus.intcoords import (
     Bend,
     Bend2,
     BondedFragment,

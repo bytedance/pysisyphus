@@ -6,4 +6,4 @@ __all__ = [
     "Geodesic"
 ]
 
-from pysisyphus.interpolate.helpers import interpolate, interpolate_all
+from byted_pysisyphus.interpolate.helpers import interpolate, interpolate_all

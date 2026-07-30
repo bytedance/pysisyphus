@@ -3,8 +3,8 @@ import math
 import numpy as np
 import pytest
 
-from pysisyphus.dynamics.Gaussian import Gaussian
-from pysisyphus.dynamics.colvars import CVDistance
+from byted_pysisyphus.dynamics.Gaussian import Gaussian
+from byted_pysisyphus.dynamics.colvars import CVDistance
 
 
 EXP_HALF = math.exp(-1 / 2)

@@ -34,10 +34,10 @@ import warnings
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.helpers_pure import rms
-from pysisyphus.linalg import matrix_power, pivoted_cholesky
-from pysisyphus.wavefunction import logger, Wavefunction
-from pysisyphus.wavefunction.DIIS import DIIS
+from byted_pysisyphus.helpers_pure import rms
+from byted_pysisyphus.linalg import matrix_power, pivoted_cholesky
+from byted_pysisyphus.wavefunction import logger, Wavefunction
+from byted_pysisyphus.wavefunction.DIIS import DIIS
 
 
 PI_QUART = np.pi / 4

@@ -3,10 +3,10 @@ import numpy as np
 
 import pytest
 
-from pysisyphus.calculators.FourWellAnaPot import FourWellAnaPot
-from pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
-from pysisyphus.cos.GrowingNT import GrowingNT
-from pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
+from byted_pysisyphus.calculators.FourWellAnaPot import FourWellAnaPot
+from byted_pysisyphus.calculators.MullerBrownSympyPot import MullerBrownPot
+from byted_pysisyphus.cos.GrowingNT import GrowingNT
+from byted_pysisyphus.optimizers.PreconLBFGS import PreconLBFGS
 
 
 def plot_gnt(calc, gnt):
@@ -87,9 +87,9 @@ def test_four_well_growingnt():
 
 
 import pytest
-from pysisyphus.calculators import XTB
-from pysisyphus.helpers import geom_loader
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.testing import using
 
 
 @pytest.mark.skip
@@ -123,7 +123,7 @@ def test_biaryl_growingnt(bonds, this_dir):
         "dump": True,
     }
     # opt = PreconLBFGS(gnt, **opt_kwargs)
-    from pysisyphus.optimizers.LBFGS import LBFGS
+    from byted_pysisyphus.optimizers.LBFGS import LBFGS
 
     opt = LBFGS(gnt, max_step=0.1, **opt_kwargs)
     opt.run()
@@ -161,7 +161,7 @@ def test_diels_alder_growingnt(bonds, this_dir):
         "line_search": False,
     }
     opt = PreconLBFGS(gnt, **opt_kwargs)
-    # from pysisyphus.optimizers.LBFGS import LBFGS
+    # from byted_pysisyphus.optimizers.LBFGS import LBFGS
     # opt = LBFGS(gnt, max_step=0.1, **opt_kwargs)
 
     opt.run()
@@ -175,7 +175,7 @@ def test_hcn_growingnt():
     geom1 = geoms[-1]
     geom0.set_calculator(XTB(pal=1, quiet=True))
 
-    # from pysisyphus.intcoords import Bend
+    # from byted_pysisyphus.intcoords import Bend
     # indices = (1, 0, 2)
     # _, r = Bend._calculate(geom0.coords3d, indices, gradient=True)
 
@@ -194,7 +194,7 @@ def test_hcn_growingnt():
         "line_search": False,
     }
     opt = PreconLBFGS(gnt, **opt_kwargs)
-    # from pysisyphus.optimizers.LBFGS import LBFGS
+    # from byted_pysisyphus.optimizers.LBFGS import LBFGS
     # opt = LBFGS(gnt, **opt_kwargs)
 
     opt.run()

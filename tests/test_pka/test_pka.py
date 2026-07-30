@@ -1,7 +1,7 @@
 import pytest
 
-from pysisyphus.drivers.pka import direct_cycle
-from pysisyphus.testing import using
+from byted_pysisyphus.drivers.pka import direct_cycle
+from byted_pysisyphus.testing import using
 
 
 @using("thermoanalysis")

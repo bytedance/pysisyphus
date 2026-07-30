@@ -10,7 +10,7 @@
 
 import numpy as np
 
-from pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
+from byted_pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
 
 
 class RSPRFOptimizer(TSHessianOptimizer):

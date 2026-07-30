@@ -12,12 +12,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import splrep, splev
 
-from pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV
-from pysisyphus.config import OUT_DIR_DEFAULT
-from pysisyphus.dynamics import Gaussian
-from pysisyphus.io import parse_xyz
-from pysisyphus.peakdetect import peakdetect
-from pysisyphus.wrapper.jmol import render_cdd_cube
+from byted_pysisyphus.constants import AU2KJPERMOL, AU2KCALPERMOL, AU2EV
+from byted_pysisyphus.config import OUT_DIR_DEFAULT
+from byted_pysisyphus.dynamics import Gaussian
+from byted_pysisyphus.io import parse_xyz
+from byted_pysisyphus.peakdetect import peakdetect
+from byted_pysisyphus.wrapper.jmol import render_cdd_cube
 
 
 CDD_PNG_FNS = "cdd_png_fns"

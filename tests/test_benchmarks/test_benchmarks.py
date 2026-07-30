@@ -1,8 +1,8 @@
 import pytest
 
-from pysisyphus.benchmarks import Benchmark
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.testing import using
+from byted_pysisyphus.benchmarks import Benchmark
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.testing import using
 
 
 S22_SIZE = 22

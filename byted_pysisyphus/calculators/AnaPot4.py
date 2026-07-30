@@ -1,4 +1,4 @@
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
 
 
 class AnaPot4(AnaPotBase):

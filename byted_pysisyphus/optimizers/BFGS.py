@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.hessian_updates import double_damp
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.hessian_updates import double_damp
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
 
 
 # [1] Nocedal, Wright - Numerical Optimization, 2006

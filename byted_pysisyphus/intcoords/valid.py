@@ -1,9 +1,9 @@
 import numpy as np
 
-from pysisyphus.helpers_pure import log
-from pysisyphus.intcoords.PrimTypes import PrimTypes
-from pysisyphus.intcoords import Bend
-from pysisyphus.linalg import norm3
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes
+from byted_pysisyphus.intcoords import Bend
+from byted_pysisyphus.linalg import norm3
 
 
 def bend_valid(coords3d, indices, min_deg, max_deg):

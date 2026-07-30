@@ -3,7 +3,7 @@ from math import exp, sqrt
 import numpy as np
 from numpy.random import default_rng
 
-from pysisyphus.constants import KBAU
+from byted_pysisyphus.constants import KBAU
 
 
 """

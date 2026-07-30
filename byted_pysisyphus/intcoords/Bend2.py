@@ -3,8 +3,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords.Bend import Bend
-from pysisyphus.intcoords.derivatives import q_a2, dq_a2, d2q_a2
+from byted_pysisyphus.intcoords.Bend import Bend
+from byted_pysisyphus.intcoords.derivatives import q_a2, dq_a2, d2q_a2
 
 
 class Bend2(Bend):

@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.calculators.Dalton import Dalton
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.Dalton import Dalton
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 @using("dalton")

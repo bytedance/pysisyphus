@@ -27,9 +27,9 @@ import time
 import numpy as np
 import yaml
 
-from pysisyphus.calculators import ORCA, ORCA5, Gaussian16
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators import ORCA, ORCA5, Gaussian16
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
 
 
 init_logging()

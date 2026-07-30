@@ -1,8 +1,8 @@
 # import numpy as np
 from sympy import atan, symbols
 
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
-from pysisyphus.calculators.LEPSExpr import LEPSExpr
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.LEPSExpr import LEPSExpr
 
 # [1] 10.1063/1.4962019 Free-end adaptive NEB
 

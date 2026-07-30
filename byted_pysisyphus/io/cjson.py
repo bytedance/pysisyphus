@@ -2,9 +2,9 @@ import json
 
 import numpy as np
 
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.elem_data import INV_ATOMIC_NUMBERS
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.elem_data import INV_ATOMIC_NUMBERS
 
 
 def parse_cjson(fn):

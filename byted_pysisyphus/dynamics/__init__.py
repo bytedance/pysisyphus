@@ -1,12 +1,12 @@
 import logging
 
-from pysisyphus.dynamics.colvars import get_colvar
-from pysisyphus.dynamics.Gaussian import Gaussian
-from pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
-from pysisyphus.dynamics.mdp import mdp
-from pysisyphus.dynamics.rattle import rattle_closure
-from pysisyphus.dynamics.driver import md
-from pysisyphus.dynamics.wigner import get_wigner_sampler
+from byted_pysisyphus.dynamics.colvars import get_colvar
+from byted_pysisyphus.dynamics.Gaussian import Gaussian
+from byted_pysisyphus.dynamics.helpers import get_mb_velocities_for_geom
+from byted_pysisyphus.dynamics.mdp import mdp
+from byted_pysisyphus.dynamics.rattle import rattle_closure
+from byted_pysisyphus.dynamics.driver import md
+from byted_pysisyphus.dynamics.wigner import get_wigner_sampler
 
 
 logger = logging.getLogger("dynamics")

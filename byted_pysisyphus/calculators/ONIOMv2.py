@@ -29,7 +29,7 @@ from collections import namedtuple
 import numpy as np
 import scipy.sparse as sparse
 
-from pysisyphus.calculators import (
+from byted_pysisyphus.calculators import (
     Composite,
     Gaussian16,
     MOPAC,
@@ -42,12 +42,12 @@ from pysisyphus.calculators import (
     XTB,
     PyXTB,
 )
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import full_expand
-from pysisyphus.intcoords.setup import get_bond_sets
-from pysisyphus.intcoords.setup_fast import get_bond_vec_getter
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import full_expand
+from byted_pysisyphus.intcoords.setup import get_bond_sets
+from byted_pysisyphus.intcoords.setup_fast import get_bond_vec_getter
 
 
 CALC_DICT = {
@@ -65,7 +65,7 @@ CALC_DICT = {
     "pyxtb": PyXTB.PyXTB,
 }
 try:
-    from pysisyphus.calculators.PySCF import PySCF
+    from byted_pysisyphus.calculators.PySCF import PySCF
 
     CALC_DICT["pyscf"] = PySCF
 except (ModuleNotFoundError, ImportError, OSError):
@@ -1029,7 +1029,7 @@ class ONIOM(Calculator):
                 self.log(f"sum(charges)={ee_charge_sum:.4f}")
 
                 # Enable for debugging
-                # from pysisyphus.wrapper.jmol import render_geom_and_charges
+                # from byted_pysisyphus.wrapper.jmol import render_geom_and_charges
                 # if len(layer) == 1:
                 # model = layer[0]
                 # tmp_atoms, tmp_coords = model.capped_atoms_coords(atoms, coords)

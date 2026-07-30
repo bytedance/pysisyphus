@@ -2,13 +2,13 @@ from typing import Optional
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.intcoords.exceptions import NeedNewInternalsException
-from pysisyphus.optimizers.closures import bfgs_multiply, get_update_mu_reg
-from pysisyphus.optimizers.hessian_updates import double_damp
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
-from pysisyphus.optimizers.poly_fit import poly_line_search
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.intcoords.exceptions import NeedNewInternalsException
+from byted_pysisyphus.optimizers.closures import bfgs_multiply, get_update_mu_reg
+from byted_pysisyphus.optimizers.hessian_updates import double_damp
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.optimizers.poly_fit import poly_line_search
 
 
 class LBFGS(Optimizer):

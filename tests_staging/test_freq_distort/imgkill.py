@@ -6,11 +6,11 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 
-# from pysisyphus.calculators.ORCA import ORCA
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.helpers import geom_from_xyz_file, eigval_to_wavenumber
-from pysisyphus.TablePrinter import TablePrinter
-from pysisyphus.xyzloader import coords_to_trj
+# from byted_pysisyphus.calculators.ORCA import ORCA
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.helpers import geom_from_xyz_file, eigval_to_wavenumber
+from byted_pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.xyzloader import coords_to_trj
 
 
 np.set_printoptions(suppress=True, precision=4)

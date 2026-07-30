@@ -2,10 +2,10 @@ from pprint import pprint
 
 import pytest
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.run import run_from_dict
-from pysisyphus.testing import using
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.run import run_from_dict
+from byted_pysisyphus.testing import using
 
 
 @using("pyscf")

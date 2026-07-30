@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
+from byted_pysisyphus.Geometry import Geometry
 
 
 class FreezingString:

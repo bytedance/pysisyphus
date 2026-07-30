@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from pysisyphus.helpers import procrustes
-from pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
+from byted_pysisyphus.helpers import procrustes
+from byted_pysisyphus.optimizers.BacktrackingOptimizer import BacktrackingOptimizer
 
 class NaiveSteepestDescent(BacktrackingOptimizer):
 

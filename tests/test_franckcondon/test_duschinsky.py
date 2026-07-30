@@ -1,11 +1,11 @@
 import numpy as np
 import pytest
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.helpers import geom_loader
-from pysisyphus.io import geom_from_hessian
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.io import geom_from_hessian
 
-from pysisyphus.franckcondon import (
+from byted_pysisyphus.franckcondon import (
     unitless_displs_from_eigensystem,
     duschinsky,
     DuschinskyRef,

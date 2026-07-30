@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 import sphinx_rtd_theme
 
-import pysisyphus
+import byted_pysisyphus as pysisyphus
 
 
 # -- Project information -----------------------------------------------------

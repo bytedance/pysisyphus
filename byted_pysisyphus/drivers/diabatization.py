@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import yaml
 
-from pysisyphus.constants import AU2EV
-from pysisyphus.wavefunction.diabatization import dq_diabatization
+from byted_pysisyphus.constants import AU2EV
+from byted_pysisyphus.wavefunction.diabatization import dq_diabatization
 
 
 def make_array(nstates, components, lines):

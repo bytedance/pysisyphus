@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.intcoords.derivatives import dq_oop, d2q_oop
-from pysisyphus.linalg import cross3, norm3
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.intcoords.derivatives import dq_oop, d2q_oop
+from byted_pysisyphus.linalg import cross3, norm3
 
 
 class OutOfPlane(Primitive):

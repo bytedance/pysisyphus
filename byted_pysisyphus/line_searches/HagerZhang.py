@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.line_searches.LineSearch import LineSearch, \
+from byted_pysisyphus.line_searches.LineSearch import LineSearch, \
                                                 LineSearchNotConverged
 
 

@@ -4,9 +4,9 @@
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.interpolate.Interpolator import Interpolator
-from pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.constants import BOHR2ANG
 
 try:
     from geodesic_interpolate.interpolation import redistribute

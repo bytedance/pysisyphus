@@ -1,4 +1,4 @@
-from pysisyphus.interpolate import IDPP, LST, Interpolator, Redund, Geodesic
+from byted_pysisyphus.interpolate import IDPP, LST, Interpolator, Redund, Geodesic
 
 
 INTERPOLATE = {

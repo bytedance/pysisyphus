@@ -1,6 +1,6 @@
 import pyparsing as pp
 
-from pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.helpers_pure import file_or_str
 
 
 @file_or_str(".psf")

@@ -12,19 +12,19 @@ import itertools as it
 
 import numpy as np
 
-from pysisyphus.calculators import (
+from byted_pysisyphus.calculators import (
     HardSphere,
     TransTorque,
     AtomAtomTransTorque,
     Composite,
 )
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import align_coords
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.init_logging import init_logging
-from pysisyphus.intcoords.setup import get_fragments, get_bond_sets
-from pysisyphus.xyzloader import coords_to_trj, make_xyz_str
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import align_coords
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.intcoords.setup import get_fragments, get_bond_sets
+from byted_pysisyphus.xyzloader import coords_to_trj, make_xyz_str
 
 
 init_logging()

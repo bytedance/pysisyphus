@@ -4,7 +4,7 @@ import warnings
 import numpy as np
 from numpy.typing import NDArray
 
-from pysisyphus.intcoords.Coords import CoordSys
+from byted_pysisyphus.intcoords.Coords import CoordSys
 
 
 class CartesianCoords(CoordSys):

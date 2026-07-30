@@ -1,12 +1,12 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.AnaPot import AnaPot
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.irc.initial_displ import cubic_displ_for_geom
-from pysisyphus.irc import EulerPC
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.AnaPot import AnaPot
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.irc.initial_displ import cubic_displ_for_geom
+from byted_pysisyphus.irc import EulerPC
+from byted_pysisyphus.testing import using
 
 
 @pytest.fixture
@@ -52,7 +52,7 @@ def test_hcn_initial_displ(displ):
 def plot_quadratic_cubic_displacement():
     import matplotlib.pyplot as plt
 
-    from pysisyphus.irc.initial_displ import get_curv_vec
+    from byted_pysisyphus.irc.initial_displ import get_curv_vec
 
     ts_coords = (0.61173113, 1.49297317, 0.0)
     geom = AnaPot.get_geom(ts_coords)

@@ -1,4 +1,4 @@
-from pysisyphus.io.psf import parse_psf
+from byted_pysisyphus.io.psf import parse_psf
 
 
 def test_parse_3nir(this_dir):

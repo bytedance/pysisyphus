@@ -6,7 +6,7 @@ from pprint import pprint
 import numpy as np
 import sympy as sym
 
-from pysisyphus.helpers_pure import log
+from byted_pysisyphus.helpers_pure import log
 
 
 logger = logging.getLogger("optimizer")

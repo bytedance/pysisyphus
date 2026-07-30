@@ -13,10 +13,10 @@ import logging
 import numpy as np
 import scipy as sp
 
-from pysisyphus import logger as pysis_logger
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import align_coords, get_coords_diffs
-from pysisyphus.helpers_pure import eigval_to_wavenumber
+from byted_pysisyphus import logger as pysis_logger
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import align_coords, get_coords_diffs
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber
 
 
 def T_crossover_from_eigval(eigval):

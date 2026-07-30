@@ -5,7 +5,7 @@ import itertools as it
 
 import numpy as np
 
-from pysisyphus.helpers_pure import get_molecular_radius
+from byted_pysisyphus.helpers_pure import get_molecular_radius
 
 
 class HardSphere:

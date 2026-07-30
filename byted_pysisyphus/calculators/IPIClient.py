@@ -3,7 +3,7 @@ import socket
 
 import numpy as np
 
-from pysisyphus.socket_helper import send_closure, recv_closure, get_fmts
+from byted_pysisyphus.socket_helper import send_closure, recv_closure, get_fmts
 
 
 def ipi_client(

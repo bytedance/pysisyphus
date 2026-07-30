@@ -17,7 +17,7 @@ sympleints was executed with the following arguments:
 """
 
 import numpy
-from pysisyphus.wavefunction.ints.boys import boys
+from byted_pysisyphus.wavefunction.ints.boys import boys
 
 
 def int2c2e3d_00(ax, da, A, bx, db, B):

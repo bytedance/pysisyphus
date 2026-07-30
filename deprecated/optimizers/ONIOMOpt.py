@@ -1,10 +1,10 @@
 import numpy as np
 
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.LBFGS import LBFGS
-from pysisyphus.optimizers.closures import small_lbfgs_closure
-from pysisyphus.optimizers.restrict_step import scale_by_max_step
-from pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus.optimizers.closures import small_lbfgs_closure
+from byted_pysisyphus.optimizers.restrict_step import scale_by_max_step
+from byted_pysisyphus.helpers_pure import highlight_text
 
 
 class ONIOMOpt(Optimizer):

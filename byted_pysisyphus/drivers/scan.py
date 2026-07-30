@@ -1,10 +1,10 @@
 import h5py
 import numpy as np
 
-from pysisyphus.drivers.opt import run_opt
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.TablePrinter import TablePrinter
+from byted_pysisyphus.drivers.opt import run_opt
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.TablePrinter import TablePrinter
 
 
 def relaxed_scan(

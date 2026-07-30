@@ -1,6 +1,6 @@
 import pytest
 
-from pysisyphus.helpers_pure import full_expand
+from byted_pysisyphus.helpers_pure import full_expand
 
 
 

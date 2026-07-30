@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.constants import ANG2BOHR, AU2KJPERMOL
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.calculators.LennardJones import LennardJones
+from byted_pysisyphus.constants import ANG2BOHR, AU2KJPERMOL
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.LennardJones import LennardJones
 
 # [1] https://aip.scitation.org/doi/abs/10.1063/1.445869
 #     Jorgensen, 1983

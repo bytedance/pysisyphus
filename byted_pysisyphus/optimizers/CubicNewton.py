@@ -6,8 +6,8 @@ from math import sqrt
 
 import numpy as np
 
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
-from pysisyphus.optimizers.exceptions import OptimizationError
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.optimizers.exceptions import OptimizationError
 
 
 class CubicNewton(HessianOptimizer):

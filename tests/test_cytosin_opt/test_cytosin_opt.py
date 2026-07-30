@@ -2,12 +2,12 @@ from pathlib import Path
 
 import pytest
 
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.calculators import Turbomole, ORCA, ORCA5, Gaussian16, Psi4
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.calculators import Turbomole, ORCA, ORCA5, Gaussian16, Psi4
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 init_logging()

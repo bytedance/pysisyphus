@@ -4,8 +4,8 @@
 
 import numpy as np
 
-from pysisyphus.intcoords.Primitive import Primitive
-from pysisyphus.intcoords.derivatives import (
+from byted_pysisyphus.intcoords.Primitive import Primitive
+from byted_pysisyphus.intcoords.derivatives import (
     q_rd1,
     dq_rd1,
     d2q_rd1,

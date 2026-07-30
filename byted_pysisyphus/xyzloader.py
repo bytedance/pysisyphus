@@ -2,7 +2,7 @@ import re
 
 import numpy as np
 
-from pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.constants import BOHR2ANG
 
 
 def make_xyz_str(atoms, coords, comment=""):

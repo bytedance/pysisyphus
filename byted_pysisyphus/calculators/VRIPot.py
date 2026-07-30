@@ -4,7 +4,7 @@
 
 import numpy as np
 
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
 
 
 class VRIPot(AnaPotBase):

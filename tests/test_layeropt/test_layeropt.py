@@ -7,11 +7,11 @@ import time
 
 import pytest
 
-from pysisyphus.calculators import ONIOM
-from pysisyphus.calculators.IPIClient import calc_ipi_client
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ONIOM
+from byted_pysisyphus.calculators.IPIClient import calc_ipi_client
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.testing import using
 
 
 init_logging()

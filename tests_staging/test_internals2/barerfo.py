@@ -7,12 +7,12 @@ import sys
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library, geom_from_xyz_file
-from pysisyphus.calculators.XTB import XTB
-from pysisyphus.calculators.Gaussian16 import Gaussian16
-from pysisyphus.optimizers.hessian_updates import bfgs_update, flowchart_update
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.optimizers.RSRFOptimizer import RSRFOptimizer
+from byted_pysisyphus.helpers import geom_from_library, geom_from_xyz_file
+from byted_pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update, flowchart_update
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.optimizers.RSRFOptimizer import RSRFOptimizer
 
 
 np.set_printoptions(suppress=True, precision=4)

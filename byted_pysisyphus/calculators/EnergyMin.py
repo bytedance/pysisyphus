@@ -8,9 +8,9 @@
 
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.helpers import norm_max_rms
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.helpers import norm_max_rms
 
 
 class EnergyMin(Calculator):

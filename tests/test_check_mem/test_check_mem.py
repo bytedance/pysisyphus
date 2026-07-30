@@ -3,9 +3,9 @@ from collections import namedtuple
 import psutil
 import pytest
 
-from pysisyphus.helpers_pure import check_mem
-from pysisyphus.init_logging import init_logging
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.helpers_pure import check_mem
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 
 init_logging()

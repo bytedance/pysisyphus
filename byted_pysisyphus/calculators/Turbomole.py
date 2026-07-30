@@ -10,16 +10,16 @@ from jinja2 import Template
 import numpy as np
 import pyparsing as pp
 
-from pysisyphus.calculators.cosmo_data import COSMO_RADII
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.calculators.parser import (
+from byted_pysisyphus.calculators.cosmo_data import COSMO_RADII
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.calculators.parser import (
     parse_turbo_gradient,
     parse_turbo_ccre0_ascii,
     parse_turbo_mos,
     # parse_turbo_exstates,
     parse_turbo_exstates_re as parse_turbo_exstates,
 )
-from pysisyphus.helpers_pure import file_or_str, get_random_path
+from byted_pysisyphus.helpers_pure import file_or_str, get_random_path
 
 
 def index_strs_for_atoms(atoms):

@@ -3,8 +3,8 @@
 
 import numpy as np
 
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
-from pysisyphus.helpers_pure import eigval_to_wavenumber 
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.helpers_pure import eigval_to_wavenumber 
 
 
 class NCOptimizer(HessianOptimizer):

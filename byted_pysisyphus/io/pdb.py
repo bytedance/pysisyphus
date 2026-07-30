@@ -6,11 +6,11 @@ import textwrap
 from jinja2 import Template
 import numpy as np
 
-from pysisyphus.elem_data import KNOWN_ATOMS
-from pysisyphus.constants import ANG2BOHR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers_pure import chunks, file_or_str
-from pysisyphus.intcoords.setup_fast import find_bonds
+from byted_pysisyphus.elem_data import KNOWN_ATOMS
+from byted_pysisyphus.constants import ANG2BOHR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers_pure import chunks, file_or_str
+from byted_pysisyphus.intcoords.setup_fast import find_bonds
 
 
 AMINOS = (

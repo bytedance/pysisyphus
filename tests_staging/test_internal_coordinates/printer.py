@@ -4,8 +4,8 @@ import re
 
 import numpy as np
 
-from pysisyphus.helpers import geom_from_library
-from pysisyphus.constants import BOHR2ANG, ANG2BOHR
+from byted_pysisyphus.helpers import geom_from_library
+from byted_pysisyphus.constants import BOHR2ANG, ANG2BOHR
 
 
 def print_gaussian_ints(geom):

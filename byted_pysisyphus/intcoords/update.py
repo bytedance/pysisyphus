@@ -1,11 +1,11 @@
 import numpy as np
 
-from pysisyphus.config import BEND_MIN_DEG, LB_MIN_DEG
-from pysisyphus.helpers_pure import log
-from pysisyphus.intcoords.eval import eval_primitives
-from pysisyphus.intcoords.exceptions import NeedNewInternalsException
-from pysisyphus.intcoords.valid import bend_valid, dihedral_valid
-from pysisyphus.intcoords.PrimTypes import Bends, Dihedrals, Rotations
+from byted_pysisyphus.config import BEND_MIN_DEG, LB_MIN_DEG
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.intcoords.eval import eval_primitives
+from byted_pysisyphus.intcoords.exceptions import NeedNewInternalsException
+from byted_pysisyphus.intcoords.valid import bend_valid, dihedral_valid
+from byted_pysisyphus.intcoords.PrimTypes import Bends, Dihedrals, Rotations
 
 
 def correct_dihedrals(new_dihedrals, old_dihedrals):

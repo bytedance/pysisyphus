@@ -1,4 +1,4 @@
-from pysisyphus.calculators.Gaussian16 import Gaussian16
+from byted_pysisyphus.calculators.Gaussian16 import Gaussian16
 
 
 class Gaussian09(Gaussian16):

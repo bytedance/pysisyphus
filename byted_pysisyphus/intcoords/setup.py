@@ -11,14 +11,14 @@ import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from sklearn.cluster import KMeans
 
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.config import BEND_MIN_DEG, DIHED_MAX_DEG
-from pysisyphus.helpers_pure import log, sort_by_central, merge_sets
-from pysisyphus.elem_data import VDW_RADII, COVALENT_RADII as CR
-from pysisyphus.intcoords import Stretch, Bend, LinearBend, Torsion
-from pysisyphus.intcoords.setup_fast import find_bonds as find_bonds_fast
-from pysisyphus.intcoords.PrimTypes import PrimTypes, PrimMap, Rotations
-from pysisyphus.intcoords.valid import bend_valid, dihedral_valid
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.config import BEND_MIN_DEG, DIHED_MAX_DEG
+from byted_pysisyphus.helpers_pure import log, sort_by_central, merge_sets
+from byted_pysisyphus.elem_data import VDW_RADII, COVALENT_RADII as CR
+from byted_pysisyphus.intcoords import Stretch, Bend, LinearBend, Torsion
+from byted_pysisyphus.intcoords.setup_fast import find_bonds as find_bonds_fast
+from byted_pysisyphus.intcoords.PrimTypes import PrimTypes, PrimMap, Rotations
+from byted_pysisyphus.intcoords.valid import bend_valid, dihedral_valid
 
 
 BOND_FACTOR = 1.3

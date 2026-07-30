@@ -7,7 +7,7 @@ import numpy as np
 from scipy.interpolate import interp1d
 
 
-from pysisyphus.overlaps.sorter import sort_cut
+from byted_pysisyphus.overlaps.sorter import sort_cut
 
 np.set_printoptions(suppress=True, precision=2)
 

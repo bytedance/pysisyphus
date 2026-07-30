@@ -1,8 +1,8 @@
 import numpy as np
 
-from pysisyphus.constants import BOHR2M, AU2J, AMU2KG
-from pysisyphus.irc.IRC import IRC
-from pysisyphus.TableFormatter import TableFormatter
+from byted_pysisyphus.constants import BOHR2M, AU2J, AMU2KG
+from byted_pysisyphus.irc.IRC import IRC
+from byted_pysisyphus.TableFormatter import TableFormatter
 
 
 # [1] https://pubs.acs.org/doi/10.1021/jp012125b

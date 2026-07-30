@@ -1,4 +1,4 @@
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
 
 # [1] https://aip.scitation.org/doi/abs/10.1063/1.442352
 #     Cerjan, Miller

@@ -1,1 +1,1 @@
-from pysisyphus.benchmarks.Benchmark import Benchmark
+from byted_pysisyphus.benchmarks.Benchmark import Benchmark

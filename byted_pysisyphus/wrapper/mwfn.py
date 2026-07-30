@@ -6,9 +6,9 @@ from subprocess import PIPE, Popen
 
 import numpy as np
 
-from pysisyphus.config import get_cmd
-from pysisyphus.constants import AU2EV
-from pysisyphus.wrapper.exceptions import SegfaultException
+from byted_pysisyphus.config import get_cmd
+from byted_pysisyphus.constants import AU2EV
+from byted_pysisyphus.wrapper.exceptions import SegfaultException
 
 
 logger = logging.getLogger("mwfn")

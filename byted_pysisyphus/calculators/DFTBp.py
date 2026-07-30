@@ -6,8 +6,8 @@ import textwrap
 import jinja2
 import numpy as np
 
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.constants import BOHR2ANG, AU2EV
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.constants import BOHR2ANG, AU2EV
 
 
 def parse_mo(eigvec):

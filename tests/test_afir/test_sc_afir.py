@@ -1,10 +1,10 @@
 import pytest
 import numpy as np
 
-from pysisyphus.calculators import ORCA, XTB
-from pysisyphus.constants import AU2KJPERMOL, ANG2BOHR
-from pysisyphus.elem_data import COVALENT_RADII as CR
-from pysisyphus.drivers.afir import (
+from byted_pysisyphus.calculators import ORCA, XTB
+from byted_pysisyphus.constants import AU2KJPERMOL, ANG2BOHR
+from byted_pysisyphus.elem_data import COVALENT_RADII as CR
+from byted_pysisyphus.drivers.afir import (
     coordinates_similar,
     decrease_distance,
     determine_target_pairs_for_geom,
@@ -14,12 +14,12 @@ from pysisyphus.drivers.afir import (
     find_candidates,
     prepare_sc_afir,
 )
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.intcoords import Stretch
-from pysisyphus.intcoords.setup_fast import find_bonds
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.intcoords import Stretch
+from byted_pysisyphus.intcoords.setup_fast import find_bonds
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
 
 
 init_logging()
@@ -116,7 +116,7 @@ def test_sc_afir_claisen(calc_cls, calc_kwargs, ref_cc_dist, ref_oc_dist, geom):
     afir_kwargs.update(_afir_kwargs)
 
     calc = calc_getter()
-    from pysisyphus.calculators import AFIR
+    from byted_pysisyphus.calculators import AFIR
     afir_calc = AFIR(calc, **afir_kwargs)
     geom.set_calculator(afir_calc)
 

@@ -3,10 +3,10 @@ import json
 import numpy as np
 import pytest
 
-from pysisyphus.config import WF_LIB_DIR
-from pysisyphus.io.fchk import parse_fchk
-from pysisyphus.wavefunction import get_l, Shells
-from pysisyphus.wavefunction.cart2sph import cart2sph_coeffs_for
+from byted_pysisyphus.config import WF_LIB_DIR
+from byted_pysisyphus.io.fchk import parse_fchk
+from byted_pysisyphus.wavefunction import get_l, Shells
+from byted_pysisyphus.wavefunction.cart2sph import cart2sph_coeffs_for
 
 
 @pytest.mark.parametrize(

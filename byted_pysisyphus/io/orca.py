@@ -8,16 +8,16 @@ import json
 import numpy as np
 from scipy.special import gamma
 
-from pysisyphus.helpers_pure import file_or_str
-from pysisyphus.io import molden
-from pysisyphus.wavefunction import (
+from byted_pysisyphus.helpers_pure import file_or_str
+from byted_pysisyphus.io import molden
+from byted_pysisyphus.wavefunction import (
     get_l,
     Shell,
     ORCAShells,
     ORCAMoldenShells,
     Wavefunction,
 )
-from pysisyphus.wavefunction.helpers import BFType
+from byted_pysisyphus.wavefunction.helpers import BFType
 
 
 @file_or_str(".json")

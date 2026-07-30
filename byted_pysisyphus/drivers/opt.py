@@ -13,19 +13,19 @@ import sys
 
 import numpy as np
 
-from pysisyphus.calculators import Dimer, ExternalPotential
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.config import T_DEFAULT, p_DEFAULT
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import do_final_hessian
-from pysisyphus.helpers_pure import highlight_text, report_frozen_atoms
-from pysisyphus.io import save_hessian
-from pysisyphus.modefollow import NormalMode, geom_davidson
-from pysisyphus.optimizers.cls_map import get_opt_cls, key_is_tsopt
-from pysisyphus.optimizers.Optimizer import Optimizer
-from pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
-from pysisyphus.optimizers.hessian_updates import bfgs_update
-from pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
+from byted_pysisyphus.calculators import Dimer, ExternalPotential
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.config import T_DEFAULT, p_DEFAULT
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import do_final_hessian
+from byted_pysisyphus.helpers_pure import highlight_text, report_frozen_atoms
+from byted_pysisyphus.io import save_hessian
+from byted_pysisyphus.modefollow import NormalMode, geom_davidson
+from byted_pysisyphus.optimizers.cls_map import get_opt_cls, key_is_tsopt
+from byted_pysisyphus.optimizers.Optimizer import Optimizer
+from byted_pysisyphus.optimizers.HessianOptimizer import HessianOptimizer
+from byted_pysisyphus.optimizers.hessian_updates import bfgs_update
+from byted_pysisyphus.tsoptimizers.TSHessianOptimizer import TSHessianOptimizer
 
 
 def opt_davidson(opt, tsopt=True, res_rms_thresh=1e-4):

@@ -2,14 +2,14 @@ import sys
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.interpolate.Interpolator import Interpolator
-from pysisyphus.intcoords.exceptions import (
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.intcoords.exceptions import (
     DifferentPrimitivesException,
     RebuiltInternalsException,
 )
-from pysisyphus.intcoords.helpers import get_tangent, form_coordinate_union
-from pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.intcoords.helpers import get_tangent, form_coordinate_union
+from byted_pysisyphus.xyzloader import write_geoms_to_trj
 
 
 class Redund(Interpolator):

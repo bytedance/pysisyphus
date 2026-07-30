@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from pysisyphus.calculators import XTB
-from pysisyphus.calculators.PySCF import PySCF
-from pysisyphus.helpers import geom_loader
-from pysisyphus.optimizers.hessian_updates import (
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.calculators.PySCF import PySCF
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.optimizers.hessian_updates import (
     bfgs_update,
     damped_bfgs_update,
     double_damp,
@@ -14,9 +14,9 @@ from pysisyphus.optimizers.hessian_updates import (
     mod_flowchart_update,
     bofill_update,
 )
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
-from pysisyphus.testing import using
-from pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.testing import using
+from byted_pysisyphus.tsoptimizers.RSIRFOptimizer import RSIRFOptimizer
 
 
 @pytest.mark.parametrize(

@@ -2,8 +2,8 @@ import numpy as np
 from scipy.spatial.distance import pdist
 from scipy.optimize import minimize
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
 
 
 # [1] https://www.sciencedirect.com/science/article/pii/S0927025603001113

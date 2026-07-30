@@ -8,9 +8,9 @@ from functools import partial
 
 import numpy as np
 
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import rms
-from pysisyphus.optimizers.closures import lbfgs_closure_ as lbfgs_closure
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import rms
+from byted_pysisyphus.optimizers.closures import lbfgs_closure_ as lbfgs_closure
 
 
 RotResult = namedtuple("RotResult",

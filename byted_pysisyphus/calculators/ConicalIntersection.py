@@ -10,9 +10,9 @@ from math import sqrt
 
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.helpers_pure import hash_args
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.helpers_pure import hash_args
 
 
 def update_y(x, x_prev, y_prev):

@@ -1,8 +1,8 @@
 import logging
 import sys
 
-from pysisyphus.stocastic.Kick import Kick
-from pysisyphus.stocastic.FragmentKick import FragmentKick
+from byted_pysisyphus.stocastic.Kick import Kick
+from byted_pysisyphus.stocastic.FragmentKick import FragmentKick
 
 
 __all__ = [

@@ -1,9 +1,9 @@
 import pytest
 
-from pysisyphus.calculators import ORCA
-from pysisyphus.helpers import geom_loader
-from pysisyphus.init_logging import init_logging
-from pysisyphus.testing import using
+from byted_pysisyphus.calculators import ORCA
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.init_logging import init_logging
+from byted_pysisyphus.testing import using
 
 
 @using("orca")

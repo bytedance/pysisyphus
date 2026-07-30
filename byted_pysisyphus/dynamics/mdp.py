@@ -8,14 +8,14 @@ import re
 
 import numpy as np
 
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.dynamics.driver import md, MDResult
-from pysisyphus.dynamics.helpers import (
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.dynamics.driver import md, MDResult
+from byted_pysisyphus.dynamics.helpers import (
     dump_coords,
     get_mb_velocities_for_geom,
     temperature_for_kinetic_energy,
 )
-from pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.helpers_pure import highlight_text
 
 
 def parse_raw_term_func(raw_term_func):

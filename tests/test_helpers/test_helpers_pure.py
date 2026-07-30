@@ -1,7 +1,7 @@
 import time
 import pytest
 
-from pysisyphus.helpers_pure import estimate, increment_fn
+from byted_pysisyphus.helpers_pure import estimate, increment_fn
 
 
 

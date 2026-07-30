@@ -3,9 +3,9 @@ import sympy as sym
 
 # from sympy import sympify, lambdify,
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
-from pysisyphus.calculators import ORCA, Turbomole, DFTD4
+from byted_pysisyphus.calculators import ORCA, Turbomole, DFTD4
 
 
 CALC_CLASSES = {
@@ -14,7 +14,7 @@ CALC_CLASSES = {
     "turbomole": Turbomole.Turbomole,
 }
 try:
-    from pysisyphus.calculators import PySCF
+    from byted_pysisyphus.calculators import PySCF
 
     CALC_CLASSES["pyscf"] = PySCF.PySCF
 except (ModuleNotFoundError, OSError):

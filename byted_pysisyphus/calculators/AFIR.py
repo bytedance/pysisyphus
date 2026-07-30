@@ -11,13 +11,13 @@ import autograd.numpy as anp
 import numpy as np
 import numpy.typing as npt
 
-from pysisyphus.calculators.Calculator import Calculator
-from pysisyphus.elem_data import COVALENT_RADII
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import complete_fragments
-from pysisyphus.helpers_pure import log
-from pysisyphus.io.hdf5 import get_h5_group, resize_h5_group
-from pysisyphus.linalg import finite_difference_hessian
+from byted_pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.elem_data import COVALENT_RADII
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import complete_fragments
+from byted_pysisyphus.helpers_pure import log
+from byted_pysisyphus.io.hdf5 import get_h5_group, resize_h5_group
+from byted_pysisyphus.linalg import finite_difference_hessian
 
 
 def get_data_model(atoms, max_cycles):

@@ -14,11 +14,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import linregress
 
-from pysisyphus.calculators import ORCA5, XTB
-from pysisyphus.drivers.pka import direct_cycle, G_aq_from_h5_hessian
-from pysisyphus.helpers_pure import highlight_text
-from pysisyphus.helpers import geom_loader, do_final_hessian
-from pysisyphus.optimizers.RFOptimizer import RFOptimizer
+from byted_pysisyphus.calculators import ORCA5, XTB
+from byted_pysisyphus.drivers.pka import direct_cycle, G_aq_from_h5_hessian
+from byted_pysisyphus.helpers_pure import highlight_text
+from byted_pysisyphus.helpers import geom_loader, do_final_hessian
+from byted_pysisyphus.optimizers.RFOptimizer import RFOptimizer
 
 
 class Params(luigi.Config):

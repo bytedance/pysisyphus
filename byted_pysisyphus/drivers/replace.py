@@ -1,16 +1,16 @@
 import argparse
 import sys
 
-from pysisyphus import logger
-from pysisyphus.calculators import XTB
-from pysisyphus.calculators.OBabel import OBabel
-from pysisyphus.config import LIB_DIR
-from pysisyphus.Geometry import Geometry
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import chunks
-from pysisyphus.intcoords.setup import get_bond_sets
-from pysisyphus.linalg import get_rot_mat_for_coords
-from pysisyphus.optimizers.LBFGS import LBFGS
+from byted_pysisyphus import logger
+from byted_pysisyphus.calculators import XTB
+from byted_pysisyphus.calculators.OBabel import OBabel
+from byted_pysisyphus.config import LIB_DIR
+from byted_pysisyphus.Geometry import Geometry
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import chunks
+from byted_pysisyphus.intcoords.setup import get_bond_sets
+from byted_pysisyphus.linalg import get_rot_mat_for_coords
+from byted_pysisyphus.optimizers.LBFGS import LBFGS
 
 
 def get_bond_subgeom(geom, ind, invert=False):

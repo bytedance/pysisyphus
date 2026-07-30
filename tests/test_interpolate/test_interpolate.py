@@ -1,13 +1,13 @@
 import pytest
 
-# from pysisyphus.xyzloader import write_geoms_to_trj
-from pysisyphus.helpers import geom_loader
-from pysisyphus.interpolate.Interpolator import Interpolator
-from pysisyphus.interpolate.LST import LST
-from pysisyphus.interpolate.IDPP import IDPP
-from pysisyphus.interpolate.Redund import Redund
-from pysisyphus.interpolate.Geodesic import Geodesic
-from pysisyphus.testing import using
+# from byted_pysisyphus.xyzloader import write_geoms_to_trj
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.interpolate.Interpolator import Interpolator
+from byted_pysisyphus.interpolate.LST import LST
+from byted_pysisyphus.interpolate.IDPP import IDPP
+from byted_pysisyphus.interpolate.Redund import Redund
+from byted_pysisyphus.interpolate.Geodesic import Geodesic
+from byted_pysisyphus.testing import using
 
 
 def test_idpp():

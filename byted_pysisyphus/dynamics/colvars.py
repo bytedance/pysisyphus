@@ -5,7 +5,7 @@ import numpy as np
 import autograd
 import autograd.numpy as anp
 
-from pysisyphus.intcoords.derivatives import dq_b, dq_a
+from byted_pysisyphus.intcoords.derivatives import dq_b, dq_a
 
 
 class Colvar(metaclass=abc.ABCMeta):

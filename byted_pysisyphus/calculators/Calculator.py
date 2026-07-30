@@ -11,12 +11,12 @@ from typing import Callable, Optional
 
 from natsort import natsorted
 
-from pysisyphus import logger
-from pysisyphus import helpers_pure
-from pysisyphus.config import get_cmd, OUT_DIR_DEFAULT
-from pysisyphus.constants import BOHR2ANG
-from pysisyphus.helpers import geom_loader
-from pysisyphus.linalg import finite_difference_hessian
+from byted_pysisyphus import logger
+from byted_pysisyphus import helpers_pure
+from byted_pysisyphus.config import get_cmd, OUT_DIR_DEFAULT
+from byted_pysisyphus.constants import BOHR2ANG
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.linalg import finite_difference_hessian
 
 
 KeepKind = Enum("KeepKind", ["ALL", "LATEST", "NONE"])

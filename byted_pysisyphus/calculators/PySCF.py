@@ -18,8 +18,8 @@ except Exception as e:
     #raise e
     pass
 
-from pysisyphus.calculators.OverlapCalculator import OverlapCalculator
-from pysisyphus.helpers import geom_loader
+from byted_pysisyphus.calculators.OverlapCalculator import OverlapCalculator
+from byted_pysisyphus.helpers import geom_loader
 
 
 class PySCF(OverlapCalculator):

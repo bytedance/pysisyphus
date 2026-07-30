@@ -4,6 +4,6 @@ __all__ = [
     "StrongWolfe",
 ]
 
-from pysisyphus.line_searches.Backtracking import Backtracking
-from pysisyphus.line_searches.HagerZhang import HagerZhang
-from pysisyphus.line_searches.StrongWolfe import StrongWolfe
+from byted_pysisyphus.line_searches.Backtracking import Backtracking
+from byted_pysisyphus.line_searches.HagerZhang import HagerZhang
+from byted_pysisyphus.line_searches.StrongWolfe import StrongWolfe

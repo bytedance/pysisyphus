@@ -1,14 +1,14 @@
 import numpy as np
 from scipy.interpolate import splprep, splev
 
-from pysisyphus.constants import AU2KJPERMOL
-from pysisyphus.intcoords.exceptions import (
+from byted_pysisyphus.constants import AU2KJPERMOL
+from byted_pysisyphus.intcoords.exceptions import (
     DifferentCoordLengthsException,
     DifferentPrimitivesException,
     RebuiltInternalsException,
 )
-from pysisyphus.cos.ChainOfStates import ChainOfStates
-from pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
+from byted_pysisyphus.cos.ChainOfStates import ChainOfStates
+from byted_pysisyphus.cos.GrowingChainOfStates import GrowingChainOfStates
 
 
 # [1] https://aip.scitation.org/doi/abs/10.1063/1.1691018

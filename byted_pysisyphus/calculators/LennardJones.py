@@ -1,6 +1,6 @@
 import numpy as np
 
-from pysisyphus.calculators.Calculator import Calculator
+from byted_pysisyphus.calculators.Calculator import Calculator
 
 
 class LennardJones(Calculator):

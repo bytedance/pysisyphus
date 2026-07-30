@@ -1,4 +1,4 @@
-from pysisyphus.calculators.AnaPotBase import AnaPotBase
+from byted_pysisyphus.calculators.AnaPotBase import AnaPotBase
 
 # See J. Chem. Phys. 122 174106 (2005)
 # https://doi.org/10.1063/1.1885467

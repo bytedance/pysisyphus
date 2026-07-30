@@ -3,14 +3,14 @@ from math import pi as PI, ceil
 from pathlib import Path
 import sys
 
-from pysisyphus.constants import AMU2KG
-from pysisyphus.helpers import geom_loader
-from pysisyphus.helpers_pure import get_input, highlight_text
-from pysisyphus.io.pdb import geom_to_pdb_str
-from pysisyphus.wrapper.packmol import make_input, call_packmol
+from byted_pysisyphus.constants import AMU2KG
+from byted_pysisyphus.helpers import geom_loader
+from byted_pysisyphus.helpers_pure import get_input, highlight_text
+from byted_pysisyphus.io.pdb import geom_to_pdb_str
+from byted_pysisyphus.wrapper.packmol import make_input, call_packmol
 
-from pysisyphus.db import LEVELS, MOLECULES
-from pysisyphus.db.helpers import get_path as db_get_path
+from byted_pysisyphus.db import LEVELS, MOLECULES
+from byted_pysisyphus.db.helpers import get_path as db_get_path
 
 
 AMU2G = AMU2KG * 1e3

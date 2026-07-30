@@ -4,7 +4,7 @@ import socket
 import numpy as np
 import pytest
 
-from pysisyphus.calculators.XTB import XTB
+from byted_pysisyphus.calculators.XTB import XTB
 
 
 @pytest.mark.skip
