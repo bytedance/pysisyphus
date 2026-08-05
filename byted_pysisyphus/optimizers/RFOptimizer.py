@@ -101,6 +101,8 @@ class RFOptimizer(HessianOptimizer):
         # GDIIS / GEDIIS, prefer GDIIS over GEDIIS
         if self.gdiis and can_diis:
             # Gradients as error vectors
+            fs = self.forces
+            assert all([f.size == fs[0].size for f in fs]), "Internal coord rebuilt has happened, gdiis cannot work, please turn gdiis off."
             err_vecs = -np.array(self.forces)
             diis_result = gdiis(
                 err_vecs,
