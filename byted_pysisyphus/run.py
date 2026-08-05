@@ -1124,11 +1124,19 @@ def get_defaults(conf_dict, T_default=T_DEFAULT, p_default=p_DEFAULT):
             "type": "frag",
         }
 
+    # Henry 20260805: Fullfill the promise:
+    # geom block in endopt takes same keywords as above (outside geom block)
+    _opt_geom_defaults = {
+        "type": "redund",
+        "coord_kwargs": {},
+    }
+    if "geom" in conf_dict:
+        existing_geom = conf_dict["geom"]
+        for key in _opt_geom_defaults:
+            if key in existing_geom:
+                _opt_geom_defaults[key] = existing_geom[key]
     def get_opt_geom_defaults():
-        return {
-            "type": "redund",
-            "coord_kwargs": {},
-        }
+        return _opt_geom_defaults
 
     if "tsopt" in conf_dict:
         dd["tsopt"] = mol_opt_defaults.copy()

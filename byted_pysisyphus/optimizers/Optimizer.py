@@ -913,6 +913,7 @@ class Optimizer(metaclass=abc.ABCMeta):
 
             # Update coordinates
             new_coords = self.geometry.coords.copy() + step
+            old_cart_coords = self.geometry.cart_coords.copy()
             try:
                 self.geometry.coords = new_coords
                 # Use the actual step. It may differ from the proposed step
@@ -921,6 +922,11 @@ class Optimizer(metaclass=abc.ABCMeta):
                 self.steps[-1] = self.geometry.coords - self.coords[-1]
             except RebuiltInternalsException as exception:
                 print("Rebuilt internal coordinates!")
+                new_cart_coords = self.geometry.cart_coords.copy()
+                max_cart_step_size = np.max(np.abs(new_cart_coords - old_cart_coords))
+                if max_cart_step_size > 1:
+                    raise Exception(f"Huge change in Cartesian coordinates ({max_cart_step_size}) is detected after internal coordinate rebuild, "
+                                    "likely indicating a blowup in geometry. Please change to a different coordinate system.")
                 rebuilt_fn = self.get_path_for_fn("rebuilt_primitives.xyz")
                 with open(rebuilt_fn, "w") as handle:
                     handle.write(self.geometry.as_xyz())
